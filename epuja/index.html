@@ -1416,11 +1416,66 @@ p {
   .concerns-grid { gap: 14px; }
 }
 
+/* Floating top navigation back button styling */
+.top-nav {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  z-index: 100;
+  display: flex;
+  align-items: center;
+}
+
+.back-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: rgba(255, 255, 255, 0.75);
+  border: 1.5px solid rgba(141, 104, 82, 0.25);
+  color: var(--brown-1);
+  cursor: pointer;
+  box-shadow: 0 4px 16px rgba(43, 29, 21, 0.08);
+  transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+.back-btn:hover {
+  background: rgba(255, 255, 255, 0.95);
+  border-color: var(--gold-1);
+  transform: scale(1.05);
+  box-shadow: 0 6px 20px rgba(212, 175, 55, 0.15);
+}
+
+.back-btn:active {
+  transform: scale(0.95);
+}
+
+.back-btn svg {
+  width: 20px;
+  height: 20px;
+  stroke: var(--brown-1);
+  stroke-width: 2.5;
+}
+
 </style>
 </head>
 <body>
 
 <div class="page">
+
+  <!-- Floating Navigation -->
+  <div class="top-nav">
+    <button class="back-btn" onclick="triggerNavigation('callBackPressed')" aria-label="Go Back">
+      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+        <line x1="19" y1="12" x2="5" y2="12"></line>
+        <polyline points="12 19 5 12 12 5"></polyline>
+      </svg>
+    </button>
+  </div>
 
   <!-- ═══════════════ HERO ═══════════════ -->
   <header class="hero">
@@ -2697,32 +2752,46 @@ function handleStickyCtaClick() {
   }
 }
 
+function triggerNavigation(deeplink) {
+  console.log("[Bridge] Triggering navigation for:", deeplink);
+  
+  // iOS WebKit Message Handlers
+  if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.navigate) {
+    window.webkit.messageHandlers.navigate.postMessage(deeplink);
+  }
+  // Android Web Interfaces
+  else if (window.Android && typeof window.Android.navigate === 'function') {
+    window.Android.navigate(deeplink);
+  }
+  else if (window.AndroidInterface && typeof window.AndroidInterface.navigate === 'function') {
+    window.AndroidInterface.navigate(deeplink);
+  }
+  // JSBridge Interface
+  else if (window.JSBridge && typeof window.JSBridge.navigate === 'function') {
+    window.JSBridge.navigate(deeplink);
+  }
+  // Browser Fallback
+  else {
+    console.log("[Bridge Fallback] Calling 'navigate' with value:", deeplink);
+    if (deeplink === 'callBackPressed') {
+      if (window.history.length > 1) {
+        window.history.back();
+      } else {
+        console.log("[Bridge Fallback] No history stack. Action logged: callBackPressed.");
+      }
+    } else {
+      window.location.href = deeplink;
+    }
+  }
+}
+
 function setupBridgeCTA() {
   const primaryCta = document.getElementById('primaryCta');
   if (primaryCta) {
     primaryCta.addEventListener('click', (e) => {
       e.preventDefault();
       const deeplink = primaryCta.getAttribute('data-deeplink') || primaryCta.href || "srimandir://open?screen=chadhava&action=add_to_cart&action_id=ae29526-bc7c-4585-a82d-8711724524da&store_type=pooja&utm_campaign=Jupiter_transition_recommendation";
-      
-      // iOS
-      if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.navigate) {
-        window.webkit.messageHandlers.navigate.postMessage(deeplink);
-      }
-      // Android
-      else if (window.Android && typeof window.Android.navigate === 'function') {
-        window.Android.navigate(deeplink);
-      }
-      else if (window.AndroidInterface && typeof window.AndroidInterface.navigate === 'function') {
-        window.AndroidInterface.navigate(deeplink);
-      }
-      else if (window.JSBridge && typeof window.JSBridge.navigate === 'function') {
-        window.JSBridge.navigate(deeplink);
-      }
-      // Browser Fallback
-      else {
-        console.log("[Bridge Fallback] Calling 'navigate' with value:", deeplink);
-        window.location.href = deeplink;
-      }
+      triggerNavigation(deeplink);
     });
   }
 }

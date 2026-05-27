@@ -1,0 +1,2406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<meta name="theme-color" content="#FBF6EC">
+<title>Jupiter Enters Cancer — Sri Mandir</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:ital,wght@0,400;0,500;0,600;0,700;0,800;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+  /* Brand palette — warm devotional */
+  --cream-1: #FBF6EC;
+  --cream-2: #F5EBD4;
+  --cream-3: #EFE0BE;
+  --ivory: #FFFEF9;
+  --gold-1: #E8B547;
+  --gold-2: #C9952E;
+  --gold-3: #B8842C;
+  --gold-deep: #8B6418;
+  --brown-1: #2B1810;
+  --brown-2: #3D2317;
+  --brown-3: #5C3A23;
+  --maroon: #8B2C26;
+  --maroon-deep: #6B1F1A;
+  --soft-shadow: 0 4px 24px rgba(139, 100, 24, 0.08);
+  --warm-shadow: 0 8px 32px rgba(91, 58, 35, 0.12);
+  --glow-gold: 0 0 0 1px rgba(232, 181, 71, 0.4), 0 8px 28px rgba(232, 181, 71, 0.25);
+  
+  --font-display: 'Plus Jakarta Sans', -apple-system, sans-serif;
+  --font-serif: 'Plus Jakarta Sans', -apple-system, sans-serif;
+  --font-body: 'Inter', -apple-system, sans-serif;
+  
+  --radius-sm: 12px;
+  --radius-md: 18px;
+  --radius-lg: 24px;
+  --radius-xl: 32px;
+  --radius-pill: 999px;
+}
+
+* { box-sizing: border-box; margin: 0; padding: 0; -webkit-tap-highlight-color: transparent; }
+html { scroll-behavior: smooth; }
+body {
+  font-family: var(--font-body);
+  background: var(--cream-1);
+  color: var(--brown-1);
+  line-height: 1.5;
+  -webkit-font-smoothing: antialiased;
+  overflow-x: hidden;
+}
+
+/* Layout container — mobile-first webview */
+.page {
+  max-width: 480px;
+  margin: 0 auto;
+  background: var(--cream-1);
+  position: relative;
+  overflow-x: hidden;
+  padding-bottom: 100px;
+}
+
+/* ============ HERO ============ */
+.hero {
+  position: relative;
+  padding: 24px 24px 48px;
+  background: 
+    radial-gradient(ellipse 80% 60% at 50% 40%, rgba(232, 181, 71, 0.35) 0%, transparent 60%),
+    radial-gradient(ellipse 100% 80% at 50% 100%, rgba(184, 132, 44, 0.25) 0%, transparent 70%),
+    linear-gradient(180deg, #F8EED1 0%, #F5E5BA 40%, #EFD79A 100%);
+  overflow: hidden;
+  min-height: 92vh;
+}
+
+.hero::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  background-image: 
+    radial-gradient(circle at 12% 18%, rgba(184,132,44,0.5) 0.8px, transparent 1.5px),
+    radial-gradient(circle at 78% 24%, rgba(184,132,44,0.4) 1px, transparent 2px),
+    radial-gradient(circle at 22% 62%, rgba(184,132,44,0.4) 0.6px, transparent 1.2px),
+    radial-gradient(circle at 88% 72%, rgba(184,132,44,0.5) 0.8px, transparent 1.5px),
+    radial-gradient(circle at 45% 88%, rgba(184,132,44,0.4) 0.7px, transparent 1.4px),
+    radial-gradient(circle at 8% 45%, rgba(184,132,44,0.4) 0.6px, transparent 1.2px),
+    radial-gradient(circle at 65% 8%, rgba(184,132,44,0.4) 0.5px, transparent 1px);
+  background-size: 100% 100%;
+  pointer-events: none;
+  z-index: 1;
+}
+
+/* Jupiter planet — CSS art with image-slot styling */
+.jupiter-orb {
+  position: absolute;
+  width: 480px;
+  height: 480px;
+  left: 50%;
+  top: 38%;
+  transform: translateX(-50%);
+  border-radius: 50%;
+  background: 
+    radial-gradient(circle at 35% 30%, rgba(255, 240, 200, 0.9) 0%, rgba(232, 181, 71, 0.8) 20%, rgba(184, 132, 44, 0.7) 45%, rgba(139, 100, 24, 0.6) 70%, rgba(91, 58, 35, 0.5) 100%);
+  box-shadow: 
+    inset -40px -30px 80px rgba(91, 58, 35, 0.5),
+    inset 20px 20px 50px rgba(255, 240, 200, 0.3),
+    0 0 80px rgba(232, 181, 71, 0.5),
+    0 0 160px rgba(232, 181, 71, 0.3);
+  opacity: 0.55;
+  z-index: 1;
+  animation: jupiter-drift 30s ease-in-out infinite;
+}
+.jupiter-orb::before {
+  content: '';
+  position: absolute;
+  inset: 0;
+  border-radius: 50%;
+  background: 
+    repeating-linear-gradient(
+      0deg,
+      transparent 0px,
+      rgba(91, 58, 35, 0.1) 18px,
+      transparent 36px,
+      rgba(255, 240, 200, 0.1) 54px,
+      transparent 72px,
+      rgba(91, 58, 35, 0.15) 90px
+    );
+  mix-blend-mode: overlay;
+}
+
+@keyframes jupiter-drift {
+  0%, 100% { transform: translateX(-50%) translateY(0); }
+  50% { transform: translateX(-50%) translateY(-8px); }
+}
+
+/* Constellation arc */
+.constellation {
+  position: absolute;
+  top: 0; left: 0; right: 0;
+  height: 200px;
+  z-index: 2;
+  pointer-events: none;
+  opacity: 0.6;
+}
+
+.hero-content { position: relative; z-index: 3; }
+
+.badge-pill {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 10px 20px;
+  border: 1.5px solid var(--gold-2);
+  border-radius: var(--radius-pill);
+  background: rgba(255, 254, 249, 0.6);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  color: var(--maroon);
+  font-size: 13px;
+  font-weight: 600;
+  letter-spacing: 0.2px;
+  margin: 16px auto 0;
+  position: relative;
+  width: fit-content;
+  display: flex;
+}
+
+.badge-pill svg { flex-shrink: 0; }
+
+.hero-headline {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 52px;
+  line-height: 1.02;
+  letter-spacing: -0.02em;
+  color: var(--brown-1);
+  margin-top: 32px;
+  text-align: left;
+  font-variation-settings: "opsz" 144;
+}
+
+.hero-headline .accent {
+  display: block;
+  color: var(--gold-3);
+  font-style: italic;
+  font-weight: 600;
+  margin-top: 4px;
+}
+
+.hero-sub {
+  font-size: 16px;
+  line-height: 1.65;
+  color: var(--brown-2);
+  margin-top: 24px;
+  max-width: 380px;
+  font-weight: 400;
+}
+.hero-sub strong { color: var(--brown-1); font-weight: 700; }
+
+/* Hero stat cards */
+.hero-stats {
+  margin-top: 36px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  position: relative;
+  z-index: 4;
+}
+
+.stat-card {
+  background: var(--ivory);
+  border-radius: var(--radius-lg);
+  padding: 20px 22px;
+  box-shadow: var(--warm-shadow);
+  border: 1px solid rgba(232, 181, 71, 0.15);
+}
+
+.stat-card-icon {
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold-3);
+  margin-bottom: 12px;
+}
+
+.stat-card-title {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 21px;
+  color: var(--brown-1);
+  margin-bottom: 6px;
+}
+
+.stat-card-desc {
+  font-size: 14px;
+  line-height: 1.55;
+  color: var(--brown-3);
+}
+
+/* Countdown */
+.countdown-strip {
+  margin-top: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 14px;
+  padding: 16px;
+  background: linear-gradient(135deg, rgba(255,254,249,0.85), rgba(245,235,212,0.85));
+  border: 1px solid rgba(232, 181, 71, 0.3);
+  border-radius: var(--radius-md);
+  position: relative;
+  z-index: 4;
+}
+
+.countdown-label {
+  font-family: var(--font-serif);
+  font-size: 13px;
+  font-style: italic;
+  color: var(--brown-3);
+  font-weight: 500;
+}
+
+.countdown-units {
+  display: flex;
+  gap: 10px;
+  align-items: baseline;
+}
+
+.countdown-unit {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 40px;
+}
+
+.countdown-num {
+  font-family: var(--font-display);
+  font-size: 26px;
+  font-weight: 700;
+  color: var(--gold-deep);
+  line-height: 1;
+  font-variation-settings: "opsz" 144;
+}
+
+.countdown-tag {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+  color: var(--brown-3);
+  margin-top: 4px;
+  font-weight: 600;
+}
+
+.countdown-sep {
+  color: var(--gold-2);
+  font-size: 18px;
+  font-weight: 300;
+  align-self: center;
+}
+
+/* Personalized greeting (only renders if URL has ?name=) */
+.personal-greeting {
+  position: relative;
+  z-index: 4;
+  margin-top: 24px;
+  padding: 14px 18px;
+  background: rgba(255, 254, 249, 0.7);
+  backdrop-filter: blur(6px);
+  border-radius: var(--radius-md);
+  border-left: 3px solid var(--gold-1);
+  font-family: var(--font-serif);
+  font-size: 15px;
+  font-style: italic;
+  color: var(--brown-2);
+  display: none;
+}
+.personal-greeting.is-visible { display: block; }
+.personal-greeting strong { color: var(--brown-1); font-style: normal; font-family: var(--font-body); font-weight: 600; }
+
+/* ============ SECTION HEADERS ============ */
+.section {
+  padding: 64px 24px;
+  position: relative;
+}
+
+.section-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 11px;
+  text-transform: uppercase;
+  letter-spacing: 2.5px;
+  font-weight: 600;
+  color: var(--gold-2);
+  margin-bottom: 16px;
+}
+.section-eyebrow::before {
+  content: '';
+  display: inline-block;
+  width: 28px;
+  height: 1px;
+  background: var(--gold-2);
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 32px;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  color: var(--brown-1);
+  margin-bottom: 16px;
+  font-variation-settings: "opsz" 144;
+}
+.section-title em {
+  font-style: italic;
+  color: var(--gold-3);
+  font-weight: 500;
+}
+
+.section-intro {
+  font-size: 15px;
+  line-height: 1.6;
+  color: var(--brown-3);
+  margin-bottom: 32px;
+  max-width: 380px;
+}
+
+/* Ornamental divider */
+.divider-ornament {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto;
+  gap: 12px;
+  color: var(--gold-2);
+  opacity: 0.7;
+}
+.divider-ornament::before, .divider-ornament::after {
+  content: '';
+  height: 1px;
+  flex: 1;
+  max-width: 60px;
+  background: linear-gradient(90deg, transparent, var(--gold-2), transparent);
+}
+
+/* ============ SECTION 2: What is this transit ============ */
+.what-section {
+  background: var(--cream-1);
+}
+
+.edu-card {
+  background: var(--ivory);
+  border-radius: var(--radius-lg);
+  padding: 24px;
+  margin-bottom: 14px;
+  border: 1px solid rgba(232, 181, 71, 0.15);
+  box-shadow: var(--soft-shadow);
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.edu-card:hover { box-shadow: var(--warm-shadow); }
+
+.edu-card-head {
+  display: flex;
+  align-items: flex-start;
+  gap: 16px;
+}
+
+.edu-icon {
+  width: 48px;
+  height: 48px;
+  flex-shrink: 0;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--cream-2), var(--cream-3));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold-deep);
+}
+
+.edu-text { flex: 1; }
+
+.edu-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 20px;
+  color: var(--brown-1);
+  margin-bottom: 4px;
+  font-variation-settings: "opsz" 144;
+}
+
+.edu-desc {
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: var(--brown-3);
+}
+
+.edu-more {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--gold-2);
+  margin-top: 10px;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.edu-expand {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, margin-top 0.4s ease;
+  font-size: 14px;
+  line-height: 1.6;
+  color: var(--brown-3);
+}
+
+.edu-card.is-open .edu-expand {
+  max-height: 240px;
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px dashed rgba(184, 132, 44, 0.3);
+}
+
+.edu-card.is-open .edu-more { color: var(--gold-3); }
+
+/* ============ SECTION 3: Cosmic Window timeline ============ */
+.cosmic-section {
+  background: linear-gradient(180deg, var(--cream-1) 0%, var(--cream-2) 100%);
+  padding: 56px 24px;
+}
+
+.timeline {
+  position: relative;
+  margin-top: 32px;
+  padding: 0 12px;
+}
+
+.timeline-track {
+  position: absolute;
+  top: 22px;
+  left: 32px;
+  right: 32px;
+  height: 2px;
+  background: linear-gradient(90deg, var(--gold-3), var(--gold-1), var(--gold-3));
+}
+
+.timeline-points {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  position: relative;
+}
+
+.tl-point { text-align: center; position: relative; }
+
+.tl-dot {
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--ivory);
+  border: 2px solid var(--gold-2);
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold-deep);
+  position: relative;
+  z-index: 2;
+  box-shadow: 0 4px 12px rgba(184,132,44,0.2);
+}
+
+.tl-point.is-active .tl-dot {
+  background: linear-gradient(135deg, var(--gold-1), var(--gold-3));
+  color: var(--ivory);
+  box-shadow: 0 0 0 6px rgba(232,181,71,0.25), 0 6px 20px rgba(184,132,44,0.35);
+  animation: pulse 2.5s ease-in-out infinite;
+}
+
+@keyframes pulse {
+  0%, 100% { box-shadow: 0 0 0 6px rgba(232,181,71,0.25), 0 6px 20px rgba(184,132,44,0.35); }
+  50% { box-shadow: 0 0 0 12px rgba(232,181,71,0.08), 0 6px 24px rgba(184,132,44,0.4); }
+}
+
+.tl-label {
+  font-family: var(--font-display);
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--brown-1);
+  margin-top: 12px;
+  font-variation-settings: "opsz" 144;
+}
+
+.tl-date {
+  font-size: 11px;
+  color: var(--brown-3);
+  margin-top: 2px;
+  letter-spacing: 0.3px;
+}
+
+.cosmic-tagline {
+  text-align: center;
+  margin-top: 28px;
+  padding: 20px;
+  background: var(--ivory);
+  border-radius: var(--radius-md);
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 16px;
+  color: var(--brown-2);
+  line-height: 1.5;
+  border: 1px solid rgba(232,181,71,0.2);
+}
+
+.cosmic-tagline .quote-mark {
+  display: block;
+  font-size: 32px;
+  color: var(--gold-2);
+  line-height: 0.5;
+  margin-bottom: 8px;
+  font-family: var(--font-display);
+}
+
+/* ============ SECTION 4: Rashi Carousel ============ */
+.rashi-section { background: var(--cream-1); padding-right: 0; padding-left: 0; }
+.rashi-section .section-head { padding: 0 24px; }
+
+.rashi-carousel {
+  display: flex;
+  gap: 14px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 8px 24px 24px;
+  scrollbar-width: none;
+}
+.rashi-carousel::-webkit-scrollbar { display: none; }
+
+.rashi-card {
+  flex: 0 0 260px;
+  scroll-snap-align: start;
+  background: var(--ivory);
+  border-radius: var(--radius-lg);
+  padding: 22px 20px;
+  border: 1px solid rgba(232,181,71,0.2);
+  box-shadow: var(--soft-shadow);
+  cursor: pointer;
+  transition: all 0.3s ease;
+  position: relative;
+}
+
+.rashi-card.is-expanded {
+  flex: 0 0 300px;
+  box-shadow: var(--glow-gold);
+}
+
+.rashi-symbol {
+  width: 56px;
+  height: 56px;
+  margin-bottom: 14px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(135deg, var(--cream-2), var(--cream-3));
+  border-radius: 50%;
+  color: var(--gold-deep);
+  border: 1px solid rgba(184, 132, 44, 0.15);
+  /* IMAGE-SLOT: replace with traditional rashi illustrations */
+}
+
+.rashi-name-en {
+  font-family: var(--font-display);
+  font-size: 22px;
+  font-weight: 700;
+  color: var(--brown-1);
+  font-variation-settings: "opsz" 144;
+  line-height: 1.1;
+}
+.rashi-name-sa {
+  font-family: var(--font-serif);
+  font-size: 14px;
+  font-style: italic;
+  color: var(--gold-3);
+  margin-top: 2px;
+}
+
+.rashi-summary {
+  font-size: 13.5px;
+  line-height: 1.5;
+  color: var(--brown-3);
+  margin-top: 12px;
+}
+
+.rashi-detail {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.4s ease, margin-top 0.4s ease, padding-top 0.4s ease;
+}
+.rashi-card.is-expanded .rashi-detail {
+  max-height: 400px;
+  margin-top: 14px;
+  padding-top: 14px;
+  border-top: 1px dashed rgba(184,132,44,0.3);
+}
+
+.rashi-block { margin-bottom: 10px; }
+.rashi-block-label {
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 1.2px;
+  font-weight: 700;
+  color: var(--gold-2);
+  margin-bottom: 4px;
+}
+.rashi-block-text {
+  font-size: 13px;
+  line-height: 1.5;
+  color: var(--brown-2);
+}
+
+.rashi-hint {
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+  font-size: 11px;
+  color: var(--gold-3);
+  margin-top: 12px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.8px;
+}
+
+.scroll-hint {
+  text-align: center;
+  font-size: 11px;
+  color: var(--brown-3);
+  letter-spacing: 1.5px;
+  text-transform: uppercase;
+  margin-bottom: 8px;
+  opacity: 0.6;
+}
+
+/* ============ SECTION 5: Concerns selector ============ */
+.concerns-section {
+  background: linear-gradient(180deg, var(--cream-2) 0%, var(--cream-1) 100%);
+  padding: 64px 24px 32px;
+}
+
+.concerns-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 8px;
+}
+
+.concern-card {
+  background: var(--ivory);
+  border: 2px solid rgba(232,181,71,0.18);
+  border-radius: var(--radius-md);
+  padding: 18px 14px;
+  cursor: pointer;
+  transition: all 0.25s ease;
+  position: relative;
+  text-align: left;
+  min-height: 140px;
+  display: flex;
+  flex-direction: column;
+}
+
+.concern-card:hover { border-color: rgba(232,181,71,0.4); }
+
+.concern-card.is-selected {
+  border-color: var(--gold-2);
+  background: linear-gradient(135deg, var(--ivory) 0%, #FFF8E6 100%);
+  box-shadow: var(--glow-gold);
+  transform: translateY(-2px);
+}
+
+.concern-check {
+  position: absolute;
+  top: 12px;
+  right: 12px;
+  width: 22px;
+  height: 22px;
+  border-radius: 50%;
+  background: var(--ivory);
+  border: 1.5px solid rgba(184,132,44,0.3);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.2s ease;
+}
+
+.concern-card.is-selected .concern-check {
+  background: linear-gradient(135deg, var(--gold-1), var(--gold-3));
+  border-color: var(--gold-3);
+  color: var(--ivory);
+}
+
+.concern-check svg {
+  opacity: 0;
+  transition: opacity 0.2s ease;
+}
+.concern-card.is-selected .concern-check svg { opacity: 1; }
+
+.concern-icon {
+  width: 40px; height: 40px;
+  border-radius: 12px;
+  background: linear-gradient(135deg, var(--cream-2), var(--cream-3));
+  display: flex; align-items: center; justify-content: center;
+  color: var(--gold-deep);
+  margin-bottom: 12px;
+}
+
+.concern-card.is-selected .concern-icon {
+  background: linear-gradient(135deg, var(--gold-1), var(--gold-2));
+  color: var(--ivory);
+}
+
+.concern-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 15px;
+  line-height: 1.2;
+  color: var(--brown-1);
+  font-variation-settings: "opsz" 144;
+}
+
+.concern-sub {
+  font-size: 12px;
+  color: var(--brown-3);
+  line-height: 1.4;
+  margin-top: 6px;
+}
+
+.concerns-footer {
+  margin-top: 28px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 14px;
+}
+
+.concerns-counter {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 14px;
+  color: var(--brown-3);
+}
+.concerns-counter strong {
+  font-style: normal;
+  font-family: var(--font-display);
+  color: var(--gold-3);
+  font-weight: 700;
+}
+
+.btn-reveal {
+  display: inline-flex;
+  align-items: center;
+  gap: 10px;
+  padding: 16px 32px;
+  border: none;
+  border-radius: var(--radius-pill);
+  background: linear-gradient(135deg, var(--gold-1) 0%, var(--gold-3) 100%);
+  color: var(--brown-1);
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgba(184,132,44,0.35);
+  transition: all 0.2s ease;
+  opacity: 0.4;
+  pointer-events: none;
+}
+
+.btn-reveal.is-ready {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.btn-reveal.is-ready:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 12px 32px rgba(184,132,44,0.45);
+}
+.btn-reveal:active { transform: translateY(0); }
+
+/* ============ SECTION 6: Recommendation reveal ============ */
+.reco-section {
+  padding: 48px 24px;
+  background: var(--cream-1);
+  display: none;
+}
+.reco-section.is-visible {
+  display: block;
+  animation: reveal-in 0.7s ease;
+}
+
+@keyframes reveal-in {
+  0% { opacity: 0; transform: translateY(24px); }
+  100% { opacity: 1; transform: translateY(0); }
+}
+
+.reco-card {
+  background: linear-gradient(180deg, var(--ivory) 0%, #FFF8E6 100%);
+  border-radius: var(--radius-xl);
+  padding: 32px 24px;
+  border: 1px solid rgba(232,181,71,0.3);
+  box-shadow: var(--warm-shadow);
+  position: relative;
+  overflow: hidden;
+}
+
+.reco-card::before {
+  content: '';
+  position: absolute;
+  top: -80px;
+  right: -80px;
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  background: radial-gradient(circle, rgba(232,181,71,0.2), transparent 70%);
+  pointer-events: none;
+}
+
+.reco-eyebrow {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  padding: 6px 14px;
+  background: rgba(232,181,71,0.15);
+  border-radius: var(--radius-pill);
+  color: var(--gold-deep);
+  font-size: 11px;
+  font-weight: 700;
+  letter-spacing: 1.2px;
+  text-transform: uppercase;
+}
+
+.reco-puja-name {
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.1;
+  letter-spacing: -0.01em;
+  color: var(--brown-1);
+  margin-top: 16px;
+  font-variation-settings: "opsz" 144;
+}
+
+.reco-tagline {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 16px;
+  color: var(--gold-3);
+  margin-top: 10px;
+  line-height: 1.4;
+}
+
+.reco-why {
+  margin-top: 22px;
+  padding: 16px 18px;
+  background: rgba(255,254,249,0.6);
+  border-left: 3px solid var(--gold-1);
+  border-radius: 0 12px 12px 0;
+  font-size: 14.5px;
+  line-height: 1.6;
+  color: var(--brown-2);
+}
+.reco-why strong { color: var(--brown-1); font-weight: 600; }
+
+/* Deities */
+.reco-block {
+  margin-top: 32px;
+}
+
+.reco-block-title {
+  font-family: var(--font-display);
+  font-size: 18px;
+  font-weight: 600;
+  color: var(--brown-1);
+  margin-bottom: 4px;
+  font-variation-settings: "opsz" 144;
+}
+.reco-block-subtitle {
+  font-size: 13px;
+  color: var(--brown-3);
+  margin-bottom: 16px;
+}
+
+.deities-grid {
+  display: flex;
+  gap: 12px;
+  overflow-x: auto;
+  scrollbar-width: none;
+  padding-bottom: 8px;
+  margin: 0 -24px;
+  padding-left: 24px;
+  padding-right: 24px;
+}
+.deities-grid::-webkit-scrollbar { display: none; }
+
+.deity-card {
+  flex: 0 0 160px;
+  background: var(--ivory);
+  border-radius: var(--radius-md);
+  padding: 14px;
+  border: 1px solid rgba(232,181,71,0.2);
+  scroll-snap-align: start;
+}
+
+.deity-image {
+  width: 100%;
+  aspect-ratio: 1;
+  border-radius: var(--radius-sm);
+  background: 
+    radial-gradient(circle at 50% 40%, rgba(232,181,71,0.3), transparent 60%),
+    linear-gradient(180deg, var(--cream-2), var(--cream-3));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 12px;
+  border: 1px solid rgba(184,132,44,0.2);
+  position: relative;
+  overflow: hidden;
+  /* IMAGE-SLOT: deity portrait — replace background with actual image */
+}
+
+.deity-image::before {
+  content: 'ॐ';
+  font-family: var(--font-display);
+  font-size: 36px;
+  color: var(--gold-deep);
+  opacity: 0.5;
+}
+
+.deity-name {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 15px;
+  color: var(--brown-1);
+  margin-bottom: 4px;
+  font-variation-settings: "opsz" 144;
+}
+.deity-role {
+  font-size: 12px;
+  line-height: 1.4;
+  color: var(--brown-3);
+}
+
+/* Ritual steps */
+.ritual-step {
+  display: flex;
+  gap: 14px;
+  padding: 12px 0;
+  border-bottom: 1px dashed rgba(184,132,44,0.2);
+}
+.ritual-step:last-child { border-bottom: none; }
+
+.ritual-step-num {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--gold-1), var(--gold-3));
+  color: var(--ivory);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.ritual-step-text { flex: 1; }
+.ritual-step-title {
+  font-weight: 600;
+  font-size: 14px;
+  color: var(--brown-1);
+}
+.ritual-step-desc {
+  font-size: 13px;
+  color: var(--brown-3);
+  margin-top: 2px;
+  line-height: 1.5;
+}
+
+/* Logistics row */
+.logistics-row {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-top: 12px;
+}
+.logistics-chip {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 8px 12px;
+  background: var(--cream-2);
+  border-radius: var(--radius-pill);
+  font-size: 12px;
+  color: var(--brown-2);
+  font-weight: 500;
+}
+.logistics-chip svg { color: var(--gold-3); }
+
+/* Outcomes */
+.outcomes-list {
+  list-style: none;
+  margin-top: 8px;
+}
+.outcomes-list li {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 8px 0;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--brown-2);
+}
+.outcome-mark {
+  flex-shrink: 0;
+  margin-top: 4px;
+  width: 6px;
+  height: 6px;
+  border-radius: 50%;
+  background: var(--gold-2);
+}
+
+/* Social proof */
+.social-proof {
+  margin-top: 28px;
+  padding: 18px;
+  background: rgba(255,254,249,0.7);
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(232,181,71,0.2);
+}
+
+.proof-count {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--brown-2);
+  font-weight: 500;
+}
+.proof-count strong {
+  font-family: var(--font-display);
+  font-size: 18px;
+  color: var(--gold-3);
+}
+.proof-avatars {
+  display: flex;
+  margin-right: 4px;
+}
+.proof-avatar {
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, var(--cream-3), var(--gold-2));
+  border: 2px solid var(--ivory);
+  margin-left: -8px;
+}
+.proof-avatar:first-child { margin-left: 0; }
+
+.proof-quote {
+  margin-top: 14px;
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 14px;
+  line-height: 1.5;
+  color: var(--brown-2);
+  padding-left: 14px;
+  border-left: 2px solid var(--gold-1);
+}
+.proof-quote-author {
+  font-style: normal;
+  font-family: var(--font-body);
+  font-size: 12px;
+  color: var(--brown-3);
+  margin-top: 6px;
+  display: block;
+}
+
+/* CTA buttons */
+.cta-stack {
+  margin-top: 28px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.btn-primary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 18px 24px;
+  border: none;
+  border-radius: var(--radius-pill);
+  background: linear-gradient(135deg, var(--maroon) 0%, var(--maroon-deep) 100%);
+  color: var(--ivory);
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 16px;
+  letter-spacing: 0.3px;
+  cursor: pointer;
+  box-shadow: 0 8px 24px rgba(139,44,38,0.3);
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+.btn-primary:hover { transform: translateY(-2px); box-shadow: 0 12px 32px rgba(139,44,38,0.4); }
+
+.btn-secondary {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 8px;
+  padding: 14px 24px;
+  background: transparent;
+  border: 1.5px solid var(--gold-2);
+  border-radius: var(--radius-pill);
+  color: var(--brown-2);
+  font-family: var(--font-body);
+  font-weight: 600;
+  font-size: 14px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  text-decoration: none;
+}
+.btn-secondary:hover { background: rgba(232,181,71,0.1); }
+
+/* ============ SECTION 7: Trust ============ */
+.trust-section {
+  background: linear-gradient(180deg, var(--cream-1) 0%, var(--cream-2) 100%);
+  padding: 56px 24px;
+}
+
+.trust-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 12px;
+  margin-top: 24px;
+}
+
+.trust-card {
+  background: var(--ivory);
+  border-radius: var(--radius-md);
+  padding: 20px 16px;
+  text-align: center;
+  border: 1px solid rgba(232,181,71,0.2);
+}
+
+.trust-icon {
+  width: 44px;
+  height: 44px;
+  margin: 0 auto 10px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--gold-3);
+  background: var(--cream-2);
+  border-radius: 50%;
+}
+
+.trust-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--brown-1);
+  margin-bottom: 4px;
+  font-variation-settings: "opsz" 144;
+}
+.trust-desc {
+  font-size: 12px;
+  color: var(--brown-3);
+  line-height: 1.4;
+}
+
+.sacred-location {
+  margin-top: 24px;
+  padding: 24px 20px;
+  background: var(--ivory);
+  border-radius: var(--radius-md);
+  border: 1px solid rgba(232,181,71,0.2);
+  display: flex;
+  gap: 16px;
+  align-items: center;
+}
+
+.sacred-image {
+  flex-shrink: 0;
+  width: 80px;
+  height: 80px;
+  border-radius: var(--radius-sm);
+  background: 
+    linear-gradient(180deg, rgba(232,181,71,0.3), rgba(184,132,44,0.4)),
+    radial-gradient(circle at 50% 60%, var(--cream-3), var(--gold-2));
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--ivory);
+  /* IMAGE-SLOT: sacred location photo */
+}
+
+.sacred-text { flex: 1; }
+.sacred-title {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 16px;
+  color: var(--brown-1);
+}
+.sacred-desc {
+  font-size: 13px;
+  color: var(--brown-3);
+  margin-top: 4px;
+  line-height: 1.5;
+}
+
+/* ============ Final closing section ============ */
+.final-section {
+  background: 
+    radial-gradient(ellipse at top, rgba(232,181,71,0.3), transparent 70%),
+    var(--cream-1);
+  padding: 56px 24px 80px;
+  text-align: center;
+}
+
+.final-headline {
+  font-family: var(--font-display);
+  font-weight: 600;
+  font-size: 28px;
+  line-height: 1.15;
+  color: var(--brown-1);
+  font-variation-settings: "opsz" 144;
+  letter-spacing: -0.01em;
+}
+.final-headline em {
+  font-style: italic;
+  color: var(--gold-3);
+  font-weight: 500;
+}
+
+.final-sub {
+  font-family: var(--font-serif);
+  font-style: italic;
+  font-size: 16px;
+  color: var(--brown-3);
+  margin-top: 14px;
+  line-height: 1.5;
+}
+
+/* ============ Sticky CTA ============ */
+.sticky-cta {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%) translateY(120%);
+  width: 100%;
+  max-width: 480px;
+  padding: 16px 20px calc(20px + env(safe-area-inset-bottom));
+  background: linear-gradient(180deg, transparent, rgba(251,246,236,0.96) 30%);
+  z-index: 100;
+  transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+  pointer-events: none;
+}
+.sticky-cta.is-visible {
+  transform: translateX(-50%) translateY(0);
+  pointer-events: auto;
+}
+
+.sticky-cta-inner {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  padding: 16px 24px;
+  background: linear-gradient(135deg, var(--gold-1) 0%, var(--gold-3) 100%);
+  border-radius: var(--radius-pill);
+  color: var(--brown-1);
+  font-family: var(--font-body);
+  font-weight: 700;
+  font-size: 15px;
+  letter-spacing: 0.2px;
+  box-shadow: 0 12px 32px rgba(184,132,44,0.4);
+  cursor: pointer;
+}
+
+/* Util */
+.is-hidden { display: none !important; }
+
+/* Responsive bump for tablets */
+@media (min-width: 600px) {
+  .hero-headline { font-size: 64px; }
+  .section-title { font-size: 38px; }
+  .concerns-grid { gap: 14px; }
+}
+
+</style>
+</head>
+<body>
+
+<div class="page">
+
+  <!-- ═══════════════ HERO ═══════════════ -->
+  <header class="hero">
+    <div class="jupiter-orb" aria-hidden="true"></div>
+    
+    <svg class="constellation" viewBox="0 0 400 200" aria-hidden="true">
+      <g stroke="rgba(184,132,44,0.5)" stroke-width="0.6" fill="none">
+        <line x1="20" y1="60" x2="80" y2="40"/>
+        <line x1="80" y1="40" x2="140" y2="55"/>
+        <line x1="140" y1="55" x2="200" y2="30"/>
+        <line x1="200" y1="30" x2="260" y2="50"/>
+        <line x1="260" y1="50" x2="320" y2="35"/>
+        <line x1="320" y1="35" x2="380" y2="55"/>
+      </g>
+      <g fill="#B8842C">
+        <circle cx="20" cy="60" r="1.5"/>
+        <circle cx="80" cy="40" r="2"/>
+        <circle cx="140" cy="55" r="1.5"/>
+        <circle cx="200" cy="30" r="2.5"/>
+        <circle cx="260" cy="50" r="1.5"/>
+        <circle cx="320" cy="35" r="2"/>
+        <circle cx="380" cy="55" r="1.5"/>
+      </g>
+    </svg>
+
+    <div class="hero-content">
+      <div class="badge-pill">
+        <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M12 2l1.5 4.5L18 8l-4.5 1.5L12 14l-1.5-4.5L6 8l4.5-1.5L12 2zM5 14l.8 2.2L8 17l-2.2.8L5 20l-.8-2.2L2 17l2.2-.8L5 14zM19 14l.8 2.2L22 17l-2.2.8L19 20l-.8-2.2L16 17l2.2-.8L19 14z"/></svg>
+        A Once-in-12-Years Divine Event
+      </div>
+
+      <h1 class="hero-headline">
+        Jupiter Enters<br>Cancer
+      </h1>
+
+      <p class="hero-sub" id="heroSub">
+        On <strong>2 June 2026</strong>, Brihaspati — the karak planet for wisdom, wealth, and progeny — transits into his exalted home, Kark Rashi. Vedic tradition calls this rare alignment <em>a drop of divine nectar</em>, expanding every house it touches.
+      </p>
+
+      <div class="personal-greeting" id="personalGreeting">
+        Welcome, <strong id="greetName">devotee</strong> — this transit holds special significance for <strong id="greetRashi">your moon sign</strong>.
+      </div>
+
+      <!-- Stat cards -->
+      <div class="hero-stats">
+        <div class="stat-card">
+          <div class="stat-card-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/><circle cx="12" cy="16" r="2.5" fill="currentColor"/></svg>
+          </div>
+          <div class="stat-card-title">Exalted Transit</div>
+          <div class="stat-card-desc">Jupiter sits at its highest dignity, amplifying every remedy performed during this window.</div>
+        </div>
+        
+        <div class="stat-card">
+          <div class="stat-card-icon">
+            <svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><polygon points="12 2 15 9 22 9.5 17 14.5 18.5 22 12 18 5.5 22 7 14.5 2 9.5 9 9 12 2"/></svg>
+          </div>
+          <div class="stat-card-title">A 12-Year Window</div>
+          <div class="stat-card-desc">After this transit, Jupiter's exalted alignment will not return until <strong>2038</strong>.</div>
+        </div>
+      </div>
+
+    </div>
+  </header>
+
+  <!-- ═══════════════ SECTION 2: What is this transit ═══════════════ -->
+  <section class="section what-section">
+    <div class="section-eyebrow">The Significance</div>
+    <h2 class="section-title">A transit unlike <em>any other</em></h2>
+    <p class="section-intro">Three reasons Vedic astrologers across India are calling this one of the most powerful spiritual moments of the decade.</p>
+
+    <div class="edu-card" onclick="toggleEdu(this)">
+      <div class="edu-card-head">
+        <div class="edu-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3 2"/><circle cx="12" cy="12" r="1.5" fill="currentColor"/></svg>
+        </div>
+        <div class="edu-text">
+          <h3 class="edu-title">Who is Brihaspati?</h3>
+          <p class="edu-desc">Guru of Devtagan — karak of wisdom, wealth, marriage, and children. The Vedas call him a <em>drop of nectar</em> in times of difficulty.</p>
+          <span class="edu-more">Learn more ↓</span>
+        </div>
+      </div>
+      <div class="edu-expand">
+        Brihaspati is the spiritual preceptor of the gods — the planet of expansion, hope, and divine possibility. He governs higher knowledge, ethics, fortune, and the blessings of teachers. Vedic tradition teaches that no <em>Mangal Karya</em> — no auspicious beginning, no major undertaking — can fully succeed without his blessing.
+      </div>
+    </div>
+
+    <div class="edu-card" onclick="toggleEdu(this)">
+      <div class="edu-card-head">
+        <div class="edu-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4-6.2-4.5-6.2 4.5 2.4-7.4L2 9.4h7.6z"/></svg>
+        </div>
+        <div class="edu-text">
+          <h3 class="edu-title">Why Cancer is sacred</h3>
+          <p class="edu-desc">Cancer (Kark) is Jupiter's <em>uchcha</em> — its exaltation sign. Here, Jupiter operates at absolute peak strength.</p>
+          <span class="edu-more">Learn more ↓</span>
+        </div>
+      </div>
+      <div class="edu-expand">
+        Every planet has one sign where its energy reaches maximum potency. For Jupiter, that sign is Cancer — ruled by the Moon. When Jupiter sits with the Moon's energy, the auspicious <em>Gaj Kesari yoga</em> is born, wisdom meets compassion, and every prayer, mantra, and ritual carries multiplied power.
+      </div>
+    </div>
+
+    <div class="edu-card" onclick="toggleEdu(this)">
+      <div class="edu-card-head">
+        <div class="edu-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"><path d="M12 2v6M12 22v-6M2 12h6M22 12h-6M5 5l4 4M19 19l-4-4M5 19l4-4M19 5l-4 4"/></svg>
+        </div>
+        <div class="edu-text">
+          <h3 class="edu-title">Why <em>now</em>, not later</h3>
+          <p class="edu-desc">Jupiter stays in each rashi for only ~13 months. This exalted window will not return until 2038.</p>
+          <span class="edu-more">Learn more ↓</span>
+        </div>
+      </div>
+      <div class="edu-expand">
+        Jupiter takes nearly one year in each rashi, twelve years to complete the full cycle. After this transit through Cancer ends, his exalted home will not be revisited until 2038. Vedic tradition teaches that remedies done during exaltation carry effects that ripple for years afterward — making this a rare, time-bound opportunity to grab.
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ SECTION 3: Cosmic Window timeline ═══════════════ -->
+  <section class="section cosmic-section">
+    <div class="section-eyebrow">The Sacred Window</div>
+    <h2 class="section-title">Mark these <em>three</em> moments</h2>
+
+    <div class="timeline">
+      <div class="timeline-track"></div>
+      <div class="timeline-points">
+        <div class="tl-point is-active">
+          <div class="tl-dot">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4-6.2-4.5-6.2 4.5 2.4-7.4L2 9.4h7.6z" fill="currentColor"/></svg>
+          </div>
+          <div class="tl-label">Window Opens</div>
+          <div class="tl-date">2 June 2026</div>
+        </div>
+        <div class="tl-point">
+          <div class="tl-dot">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="4" fill="currentColor"/><path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M5 19l2-2M17 7l2-2"/></svg>
+          </div>
+          <div class="tl-label">Peak Energy</div>
+          <div class="tl-date">Aug 2026</div>
+        </div>
+        <div class="tl-point">
+          <div class="tl-dot">
+            <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><circle cx="12" cy="12" r="9"/><path d="M8 12l3 3 5-6"/></svg>
+          </div>
+          <div class="tl-label">Transit Closes</div>
+          <div class="tl-date">Jul 2027</div>
+        </div>
+      </div>
+    </div>
+
+    <div class="cosmic-tagline">
+      <span class="quote-mark">"</span>
+      The most powerful remedies happen at the moment of transit. Sankalp taken during this window carries the blessing of Guru's exaltation itself.
+    </div>
+  </section>
+
+  <!-- ═══════════════ SECTION 4: Rashi Carousel ═══════════════ -->
+  <section class="section rashi-section">
+    <div class="section-head">
+      <div class="section-eyebrow">Effects On Each Rashi</div>
+      <h2 class="section-title">How this transit shapes <em>your moon sign</em></h2>
+      <p class="section-intro">Jupiter's blessings unfold uniquely for each rashi based on the house this transit activates. Find yours below — your full kundali and running dasha shape the precise pattern for you.</p>
+    </div>
+    
+    <p class="scroll-hint">← swipe to explore →</p>
+
+    <div class="rashi-carousel" id="rashiCarousel">
+      <!-- Rashi cards injected via JS -->
+    </div>
+  </section>
+
+  <!-- ═══════════════ SECTION 5: Concerns Selector ═══════════════ -->
+  <section class="section concerns-section" id="concernsSection">
+    <div class="section-eyebrow">Your Concerns</div>
+    <h2 class="section-title">Where do you seek <em>Brihaspati's blessings?</em></h2>
+    <p class="section-intro">Select the areas of life where you feel obstacles or want growth. We'll recommend the right remedy for the transit.</p>
+
+    <div class="concerns-grid" id="concernsGrid">
+      <!-- Concern cards injected via JS -->
+    </div>
+
+    <div class="concerns-footer">
+      <div class="concerns-counter"><strong id="selCount">0</strong> of 6 areas selected</div>
+      <button class="btn-reveal" id="revealBtn" onclick="revealRecommendation()">
+        <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 2l1.5 4.5L18 8l-4.5 1.5L12 14l-1.5-4.5L6 8l4.5-1.5L12 2zM18 14l.8 2.2L21 17l-2.2.8L18 20l-.8-2.2L15 17l2.2-.8L18 14z"/></svg>
+        Reveal My Recommendation
+      </button>
+    </div>
+  </section>
+
+  <!-- ═══════════════ SECTION 6: Recommendation Reveal ═══════════════ -->
+  <section class="section reco-section" id="recoSection">
+    <div class="reco-card">
+      <div class="reco-eyebrow">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4-6.2-4.5-6.2 4.5 2.4-7.4L2 9.4h7.6z"/></svg>
+        Your Tailored Remedy
+      </div>
+
+      <h2 class="reco-puja-name" id="recoName">—</h2>
+      <p class="reco-tagline" id="recoTagline">—</p>
+
+      <div class="reco-why" id="recoWhy">—</div>
+
+      <!-- Deities -->
+      <div class="reco-block">
+        <h3 class="reco-block-title">The Divine Energies Invoked</h3>
+        <p class="reco-block-subtitle">Each deity in this puja serves a specific purpose for your concerns.</p>
+        <div class="deities-grid" id="recoDeities"></div>
+      </div>
+
+      <!-- Ritual -->
+      <div class="reco-block">
+        <h3 class="reco-block-title">The Sacred Ritual</h3>
+        <p class="reco-block-subtitle">A traditional step-by-step Vedic ceremony performed by certified pandits.</p>
+        <div id="recoSteps"></div>
+      </div>
+
+      <!-- Logistics -->
+      <div class="reco-block">
+        <h3 class="reco-block-title">When &amp; Where</h3>
+        <div class="logistics-row">
+          <div class="logistics-chip">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><rect x="3" y="4" width="18" height="18" rx="2"/><line x1="16" y1="2" x2="16" y2="6"/><line x1="8" y1="2" x2="8" y2="6"/><line x1="3" y1="10" x2="21" y2="10"/></svg>
+            2 June 2026
+          </div>
+          <div class="logistics-chip">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0116 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            Sacred Temple, Varanasi
+          </div>
+          <div class="logistics-chip">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M17 21v-2a4 4 0 00-4-4H5a4 4 0 00-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M23 21v-2a4 4 0 00-3-3.87M16 3.13a4 4 0 010 7.75"/></svg>
+            Certified Vedic Pandits
+          </div>
+        </div>
+      </div>
+
+      <!-- Outcomes -->
+      <div class="reco-block">
+        <h3 class="reco-block-title">What This Puja Will Bring</h3>
+        <ul class="outcomes-list" id="recoOutcomes"></ul>
+      </div>
+
+      <!-- Social proof -->
+      <div class="social-proof">
+        <div class="proof-count">
+          <div class="proof-avatars">
+            <div class="proof-avatar"></div>
+            <div class="proof-avatar"></div>
+            <div class="proof-avatar"></div>
+          </div>
+          <span><strong id="proofCount">2,847</strong> devotees have already booked</span>
+        </div>
+        <p class="proof-quote">
+          After participating in last year's Jupiter puja through Sri Mandir, my career took a turn I had been praying for. The sankalp in my name made it feel deeply personal.
+          <span class="proof-quote-author">— Priya R., Mumbai</span>
+        </p>
+      </div>
+
+      <!-- CTAs -->
+      <div class="cta-stack">
+        <a href="#" class="btn-primary" id="primaryCta">
+          Book This Puja
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg>
+        </a>
+        <button class="btn-secondary" onclick="document.getElementById('concernsSection').scrollIntoView({behavior:'smooth'})">
+          Change my concerns
+        </button>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ SECTION 7: Trust ═══════════════ -->
+  <section class="section trust-section">
+    <div class="section-eyebrow">Why Sri Mandir</div>
+    <h2 class="section-title">Authentic. <em>Transparent.</em> Sacred.</h2>
+
+    <div class="trust-grid">
+      <div class="trust-card">
+        <div class="trust-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M12 2l3 7h7l-5.5 4 2 7-6.5-4.5L5.5 20l2-7L2 9h7z" fill="currentColor"/></svg>
+        </div>
+        <div class="trust-title">Certified Pandits</div>
+        <div class="trust-desc">Trained in Vedic shastras with 15+ years of experience.</div>
+      </div>
+      <div class="trust-card">
+        <div class="trust-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><polygon points="23 7 16 12 23 17 23 7" fill="currentColor"/><rect x="1" y="5" width="15" height="14" rx="2" ry="2"/></svg>
+        </div>
+        <div class="trust-title">Live Video</div>
+        <div class="trust-desc">Watch your puja being performed in real-time.</div>
+      </div>
+      <div class="trust-card">
+        <div class="trust-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round"><path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z"/><circle cx="12" cy="9" r="2.5" fill="currentColor"/></svg>
+        </div>
+        <div class="trust-title">Sankalp in Your Name</div>
+        <div class="trust-desc">Your name and gotra are chanted during the ritual.</div>
+      </div>
+      <div class="trust-card">
+        <div class="trust-icon">
+          <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"><path d="M21 16V8a2 2 0 00-1-1.73l-7-4a2 2 0 00-2 0l-7 4A2 2 0 003 8v8a2 2 0 001 1.73l7 4a2 2 0 002 0l7-4A2 2 0 0021 16z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/></svg>
+        </div>
+        <div class="trust-title">Prasad Delivered</div>
+        <div class="trust-desc">Sacred prasad sent to your home after the ritual.</div>
+      </div>
+    </div>
+
+    <div class="sacred-location">
+      <div class="sacred-image" aria-hidden="true">
+        <!-- IMAGE-SLOT: temple photograph -->
+        <svg width="40" height="40" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M12 2l2 4h-4l2-4zM5 22V10l7-4 7 4v12M5 22h14M9 22v-6h6v6M9 14h6"/></svg>
+      </div>
+      <div class="sacred-text">
+        <div class="sacred-title">Performed at Kashi Vishwanath, Varanasi</div>
+        <div class="sacred-desc">The most spiritually charged seat for Jupiter rituals, on the banks of the sacred Ganga.</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════ FINAL CTA ═══════════════ -->
+  <section class="section final-section">
+    <div class="divider-ornament" style="margin-bottom: 24px;">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor"><path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4-6.2-4.5-6.2 4.5 2.4-7.4L2 9.4h7.6z"/></svg>
+    </div>
+    <h2 class="final-headline">Don't let this <em>once-in-12-years</em> window pass.</h2>
+    <p class="final-sub">The next exalted Jupiter transit is in 2038.</p>
+  </section>
+
+</div>
+
+<!-- Sticky bottom CTA -->
+<div class="sticky-cta" id="stickyCta" onclick="document.getElementById('concernsSection').scrollIntoView({behavior:'smooth'})">
+  <div class="sticky-cta-inner">
+    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 2l1.5 4.5L18 8l-4.5 1.5L12 14l-1.5-4.5L6 8l4.5-1.5L12 2z"/></svg>
+    Find My Puja
+  </div>
+</div>
+
+<script>
+/* ═════════════════════════════════════════════════
+   DATA: 6 CONCERNS
+   ═════════════════════════════════════════════════ */
+const CONCERNS = [
+  { id: 'career',     title: 'Career Growth',         sub: 'Job, business, leadership growth',
+    icon: '<path d="M3 7h18M5 7v13a1 1 0 001 1h12a1 1 0 001-1V7M9 7V5a2 2 0 012-2h2a2 2 0 012 2v2"/>' },
+  { id: 'financial',  title: 'Financial Stability',   sub: 'Wealth, income, prosperity',
+    icon: '<circle cx="12" cy="12" r="9"/><path d="M14.5 9.5a3 3 0 00-3-2.5h-.5a3 3 0 00-3 3v0a3 3 0 003 3h1a3 3 0 013 3v0a3 3 0 01-3 3h-.5a3 3 0 01-3-2.5M12 5v14"/>' },
+  { id: 'marriage',   title: 'Marriage & Family',     sub: 'Relationships, children, harmony',
+    icon: '<path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>' },
+  { id: 'mental',     title: 'Mental Peace',          sub: 'Clarity, balance, calm',
+    icon: '<path d="M9 5a4 4 0 00-4 4v6a4 4 0 004 4h6a4 4 0 004-4V9a4 4 0 00-4-4H9zM12 9v6M9 12h6"/>' },
+  { id: 'protection', title: 'Protection',            sub: 'From obstacles & negativity',
+    icon: '<path d="M12 22s8-4 8-12V4l-8-2-8 2v6c0 8 8 12 8 12z"/>' },
+  { id: 'knowledge',  title: 'Knowledge & Wisdom',    sub: 'Learning, confidence, growth',
+    icon: '<path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2zM22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/>' },
+];
+
+/* ═════════════════════════════════════════════════
+   DATA: 12 RASHIS — effects of Jupiter in Cancer
+   ═════════════════════════════════════════════════ */
+// SVG paths for the 12 zodiac glyphs — all sized in 24x24 viewBox, stroke-based for consistency
+const ZODIAC_SVG = {
+  aries:       '<path d="M5 8c1-3 3-4 5-4 2.5 0 4 1.5 4 3M19 8c-1-3-3-4-5-4M9 8v12M15 8v12" stroke-linecap="round" stroke-linejoin="round"/>',
+  taurus:      '<circle cx="12" cy="15" r="5"/><path d="M5 5c1.5 2.5 4 4 7 4s5.5-1.5 7-4" stroke-linecap="round"/>',
+  gemini:      '<path d="M7 4v16M17 4v16M5 5h14M5 19h14" stroke-linecap="round"/>',
+  cancer:      '<path d="M4 9a5 5 0 015-5 5 5 0 015 5M20 15a5 5 0 01-5 5 5 5 0 01-5-5" stroke-linecap="round"/><circle cx="7" cy="9" r="2" fill="currentColor" stroke="none"/><circle cx="17" cy="15" r="2" fill="currentColor" stroke="none"/>',
+  leo:         '<circle cx="9" cy="9" r="4"/><path d="M9 13c0 5 3 7 6 7 2 0 3-1 3-3" stroke-linecap="round" fill="none"/>',
+  virgo:       '<path d="M4 5v15M8 5v15M12 5v15M4 5c0 4 4 4 4 4M8 5c0 4 4 4 4 4M12 5c0 4 4 4 4 4 0 5-2 7-4 7M16 9c2 0 4 1 4 4 0 2-1 4-3 4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>',
+  libra:       '<path d="M3 18h18M3 14h7M14 14h7M10 14c0-3 1-6 2-6s2 3 2 6" stroke-linecap="round" fill="none"/>',
+  scorpio:     '<path d="M4 5v12c0 1.5 1 3 3 3s3-1.5 3-3V8c0-1.5 1-3 3-3s3 1.5 3 3v9M17 17l3-3M17 17l3 3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>',
+  sagittarius: '<path d="M5 19L19 5M14 5h5v5M10 10l4 4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>',
+  capricorn:   '<path d="M4 6v8c0 2 1 4 3 4s3-2 3-4V8M10 8c2-3 4-4 5-4s2 1 2 2-1 2-2 2c-3 0-3 4 0 4s5-2 5-5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>',
+  aquarius:    '<path d="M3 9l3 3 3-3 3 3 3-3 3 3 3-3M3 15l3 3 3-3 3 3 3-3 3 3 3-3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>',
+  pisces:      '<path d="M5 5c2 4 2 10 0 14M19 5c-2 4-2 10 0 14M5 12h14" stroke-linecap="round" fill="none"/>',
+};
+
+const RASHIS = [
+  { en: 'Aries',       sa: 'Mesh',       house: 4,  glyph: 'aries',
+    summary: 'A 4th house transit — home, family, and inner foundations come into focus.',
+    opp: 'Time for inward reflection and repairing family bonds. Spiritual deepening flows naturally during this period.',
+    challenge: 'Avoid major property investment and risky travel; mother\'s well-being may need care; manage expenses with caution.' },
+  { en: 'Taurus',      sa: 'Vrishabh',   house: 3,  glyph: 'taurus',
+    summary: 'A 3rd house transit — a testing period demanding patience with work, siblings, and health.',
+    opp: 'Time for inward growth and spiritual practice; short religious journeys yield real insight; recommit to discipline.',
+    challenge: 'Business may slow; tensions with employer or siblings possible; pay attention to health and protect your peace.' },
+  { en: 'Gemini',      sa: 'Mithun',     house: 2,  glyph: 'gemini',
+    summary: 'A 2nd house transit — wealth, family harmony, and truth-filled speech flow generously.',
+    opp: 'Income gains and recognition from society. Family relations improve, health uplifts, and what you say tends to come true.',
+    challenge: 'Stay grounded amid prosperity — gratitude protects abundance better than attachment.' },
+  { en: 'Cancer',      sa: 'Kark',       house: 1,  glyph: 'cancer',
+    summary: 'Jupiter sits on your moon — forming the auspicious <em>Gaj Kesari yoga</em>, a once-in-12-years awakening.',
+    opp: 'Profound spiritual enlightenment, meditation breakthroughs, a turn toward dharma — virtuous deeds bear long-lasting fruit.',
+    challenge: 'Inner restlessness or lack of contentment may surface; mind your health; channel the energy into sadhana.' },
+  { en: 'Leo',         sa: 'Simha',      house: 12, glyph: 'leo',
+    summary: 'A 12th house transit — a spiritually rich period of expenses, longing, and distant horizons.',
+    opp: 'Deep spiritual deeds, pilgrimages, and foreign journeys open up. Solitude becomes a real path of growth.',
+    challenge: 'Expenses may rise sharply; obstacles in business; periods of separation from birthplace likely.' },
+  { en: 'Virgo',       sa: 'Kanya',      house: 11, glyph: 'virgo',
+    summary: 'An 11th house transit — respect, prosperity, and the love of dear ones rise dramatically.',
+    opp: 'Position and pride, supportive children, success across endeavours, income surge, profits in business, jewellery and vehicle gains.',
+    challenge: 'Stay grateful and grounded — humility is what protects abundance through future cycles.' },
+  { en: 'Libra',       sa: 'Tula',       house: 10, glyph: 'libra',
+    summary: 'A 10th house transit — career dissatisfaction and mental distress ask for patience and spiritual remedy.',
+    opp: 'Reset the career path, deepen spiritual practice. Pilgrimages and temple visits bring real relief.',
+    challenge: 'Discontent at work; possible conflict with seniors or family; real estate losses; mental unrest needs remedy.' },
+  { en: 'Scorpio',     sa: 'Vrishchik',  house: 9,  glyph: 'scorpio',
+    summary: 'A 9th house transit — Jupiter feels at home here. Prosperity, blessings, and exponential growth arrive.',
+    opp: 'Career growth, income increment or promotion, foreign travel, marriage prospects, and bhagya (fortune) activation.',
+    challenge: 'Stay humble — gratitude amplifies what is already flowing your way.' },
+  { en: 'Sagittarius', sa: 'Dhanu',      house: 8,  glyph: 'sagittarius',
+    summary: 'An 8th house transit — a demanding period of hard work, hidden challenges, and necessary transformation.',
+    opp: 'Inner transformation, occult and deep wisdom, lessons in patience that shape lifetimes.',
+    challenge: 'Excessive spending; sudden business issues; health needs vigilance; avoid disputes and litigation.' },
+  { en: 'Capricorn',   sa: 'Makar',      house: 7,  glyph: 'capricorn',
+    summary: 'A 7th house transit — relief, harmony, and the blossoming of partnership reach you in many forms.',
+    opp: 'New business partnerships, better ties with bosses, harmonious spouse and children, fruitful journeys, marriage possible.',
+    challenge: 'Nurture partnerships actively — what is gained needs care to be kept.' },
+  { en: 'Aquarius',    sa: 'Kumbha',     house: 6,  glyph: 'aquarius',
+    summary: 'A 6th house transit — demanding patience with expenses, health, and workplace friction.',
+    opp: 'With discipline, debts can be cleared; remedies are powerfully effective; victory over enemies is possible.',
+    challenge: 'Increased expenses and debt risk; health needs vigilance; co-worker friction; avoid legal disputes and arguments.' },
+  { en: 'Pisces',      sa: 'Meen',       house: 5,  glyph: 'pisces',
+    summary: 'A 5th house transit — highly favorable. Romance, children, learning, and reputation all flourish.',
+    opp: 'Improvement across all areas; supportive children; well-wishers; reputation rises; success in studies and speculation; singles may find love.',
+    challenge: 'With energy abundant across many fronts, manage your time wisely and prioritize.' },
+];
+
+/* ═════════════════════════════════════════════════
+   DATA: PUJAS (master list with full content)
+   ═════════════════════════════════════════════════ */
+const PUJAS = {
+  'panch-guru': {
+    name: 'Panch Guru Pujan & Hawan',
+    fullName: 'Jupiter Transit Panch Guru Pujan — Brahma, Vishnu, Shankar, Dattatreya, Brihaspati',
+    tagline: 'The ultimate remedy — five divine guru energies invoked together',
+    deeplink: 'srimandir://puja/panch-guru-pujan',
+    deities: [
+      { name: 'Brahma',     role: 'Creator of new beginnings and wisdom' },
+      { name: 'Vishnu',     role: 'Preserver, protector of dharma' },
+      { name: 'Shankar',    role: 'Destroyer of negativity and obstacles' },
+      { name: 'Dattatreya', role: 'Combined energy of the trinity' },
+      { name: 'Brihaspati', role: 'Guru of wisdom, wealth, and growth' },
+    ],
+    steps: [
+      { title: 'Sankalp',       desc: 'Sacred resolution taken in your name and gotra.' },
+      { title: 'Kalash Sthapana', desc: 'Sacred vessel established invoking five guru energies.' },
+      { title: 'Panch Guru Pujan', desc: 'Detailed worship of each of the five divine forms.' },
+      { title: 'Mantra Jaap',   desc: 'Chanting of guru beej mantras and protective stotras.' },
+      { title: 'Havan',         desc: 'Sacred fire ritual with offerings to all five energies.' },
+      { title: 'Aarti & Prasad',desc: 'Concluding aarti; consecrated prasad sent to your home.' },
+    ],
+    outcomes: [
+      'Comprehensive blessings across all areas of life',
+      'Protection from negative energies and karmic blocks',
+      'Wisdom to navigate complex life decisions',
+      'Material prosperity combined with spiritual growth',
+    ],
+  },
+
+  'brihaspati-kripa': {
+    name: 'Brihaspati Kripa Prapti',
+    fullName: '8,00,000 Brihaspati Mantra Jaap & Dashansh Mahayagya',
+    tagline: 'Eight lakh mantras to awaken Jupiter\'s fullest grace',
+    deeplink: 'srimandir://puja/brihaspati-kripa-prapti',
+    deities: [
+      { name: 'Brihaspati', role: 'Jupiter — planet of wealth, wisdom, dharma' },
+      { name: 'Ganesha',    role: 'Remover of all obstacles to prosperity' },
+      { name: 'Lakshmi',    role: 'Goddess of abundance and grace' },
+    ],
+    steps: [
+      { title: 'Sankalp',          desc: 'Resolution in your name for prosperity and wisdom.' },
+      { title: 'Ganesh Pujan',     desc: 'Invocation of Ganesha for unobstructed ritual.' },
+      { title: '8 Lakh Mantra Jaap', desc: 'Brihaspati mantras chanted across days by senior pandits.' },
+      { title: 'Dashansh Havan',   desc: '80,000 offerings (10% of jaap) into the sacred fire.' },
+      { title: 'Purnahuti',        desc: 'Final offering sealing the puja\'s effect.' },
+      { title: 'Aarti & Prasad',   desc: 'Aarti performed; prasad and protected thread delivered.' },
+    ],
+    outcomes: [
+      'Strengthening of weak Jupiter in birth chart',
+      'Material prosperity and removal of financial blockages',
+      'Wisdom for clear decision-making in career',
+      'Blessings for higher learning and growth',
+    ],
+  },
+
+  'gaj-kesari': {
+    name: 'Gaj Kesari Rajyog Fal Prapti',
+    fullName: 'Gaj Kesari Rajyog — 64,000 Brihaspati + 44,000 Chandra Mantra Jaap',
+    tagline: 'Jupiter-Moon union that creates kings and leaders',
+    deeplink: 'srimandir://puja/gaj-kesari-rajyog',
+    deities: [
+      { name: 'Brihaspati', role: 'Jupiter — wisdom, wealth, expansion' },
+      { name: 'Chandra',    role: 'Moon — emotional stability and grace' },
+      { name: 'Lakshmi',    role: 'Goddess of fame, fortune, and abundance' },
+    ],
+    steps: [
+      { title: 'Sankalp',         desc: 'Resolution invoking the king-making yoga.' },
+      { title: 'Brihaspati Jaap', desc: '64,000 Jupiter mantras for wisdom and wealth.' },
+      { title: 'Chandra Jaap',    desc: '44,000 Moon mantras for emotional power.' },
+      { title: 'Havan',           desc: 'Dual offerings unifying Guru and Chandra energies.' },
+      { title: 'Lakshmi Archana', desc: 'Floral worship of the goddess of fortune.' },
+      { title: 'Aarti & Prasad',  desc: 'Sacred aarti; prasad shipped to your home.' },
+    ],
+    outcomes: [
+      'Activation of leadership and recognition energies',
+      'Wealth amplification with emotional harmony',
+      'Fame and respect in social/professional circles',
+      'Overall fortune amplification',
+    ],
+  },
+
+  'tri-grah': {
+    name: 'Tri Grah Shakti Maha Yagya',
+    fullName: '4,00,000 Rahu + 3,00,000 Brihaspati + 2,00,000 Chandra Mantra Jaap',
+    tagline: 'Three planetary forces balanced for inner peace',
+    deeplink: 'srimandir://puja/tri-grah-shakti-yagya',
+    deities: [
+      { name: 'Rahu',       role: 'Planet of desires, confusion, transformation' },
+      { name: 'Brihaspati', role: 'Wisdom to navigate mental turbulence' },
+      { name: 'Chandra',    role: 'Moon — emotional balance and calm' },
+    ],
+    steps: [
+      { title: 'Sankalp',         desc: 'Resolution for mental clarity and peace.' },
+      { title: 'Rahu Mantra Jaap',desc: '4 lakh Rahu mantras to settle inner unrest.' },
+      { title: 'Brihaspati Jaap', desc: '3 lakh Jupiter mantras for wisdom.' },
+      { title: 'Chandra Jaap',    desc: '2 lakh Moon mantras for emotional calm.' },
+      { title: 'Maha Havan',      desc: 'Three-planet havan unifying all energies.' },
+      { title: 'Aarti & Prasad',  desc: 'Aarti and sacred prasad delivered home.' },
+    ],
+    outcomes: [
+      'Reduction of mental confusion and anxiety',
+      'Emotional balance during life transitions',
+      'Better decision-making under pressure',
+      'Karmic clearing of Rahu disturbances',
+    ],
+  },
+
+  'guru-chandal': {
+    name: 'Brihaspati-Rahu Guru Chandal Dosha Nivaran',
+    fullName: 'Brihaspati-Rahu Dosha Shanti — 4,00,000 Rahu + 3,00,000 Brihaspati + Havan',
+    tagline: 'Lift the recurring karmic blockages binding your progress',
+    deeplink: 'srimandir://puja/brihaspati-rahu-guru-chandal-nivaran',
+    deities: [
+      { name: 'Brihaspati', role: 'Guru — restoring dharmic flow' },
+      { name: 'Rahu',       role: 'Planet to be appeased for stability' },
+      { name: 'Ganesha',    role: 'Remover of recurring obstacles' },
+    ],
+    steps: [
+      { title: 'Sankalp',         desc: 'Resolution to remove guru-chandal disturbances.' },
+      { title: 'Ganesh Pujan',    desc: 'Invocation to dissolve obstacles.' },
+      { title: 'Rahu Shanti Jaap',desc: '4 lakh mantras pacifying Rahu\'s effects.' },
+      { title: 'Brihaspati Jaap', desc: '3 lakh Jupiter mantras restoring guru\'s grace.' },
+      { title: 'Dosha Nivaran Havan', desc: 'Fire ritual specifically for guru chandal dosha shanti.' },
+      { title: 'Protective Kavach', desc: 'Sacred thread and prasad delivered to your home.' },
+    ],
+    outcomes: [
+      'Removal of recurring obstacles and karmic blocks',
+      'Stability in career and personal life',
+      'Protection from Rahu\'s confusion and Guru\'s reversals',
+      'Clearer dharmic path forward',
+    ],
+  },
+
+  'maa-tara': {
+    name: 'Maa Tara & Brihaspati Beej Mantra',
+    fullName: 'Maa Tara 108 Neel Pushp Archana & Brihaspati 1,25,000 Beej Mantra Jaap & Homam',
+    tagline: 'Wisdom goddess and Jupiter united for protection and knowledge',
+    deeplink: 'srimandir://puja/maa-tara-neel-pushp',
+    deities: [
+      { name: 'Maa Tara',   role: 'Goddess of wisdom, protection, liberation' },
+      { name: 'Brihaspati', role: 'Jupiter — higher knowledge and growth' },
+      { name: 'Saraswati',  role: 'Goddess of learning and clarity' },
+    ],
+    steps: [
+      { title: 'Sankalp',          desc: 'Resolution for wisdom and protection.' },
+      { title: '108 Neel Pushp Archana', desc: '108 blue lotus offerings to Maa Tara.' },
+      { title: 'Brihaspati Beej Jaap', desc: '1,25,000 seed mantras of Jupiter.' },
+      { title: 'Saraswati Vandana',desc: 'Hymns for clarity and knowledge.' },
+      { title: 'Homam',            desc: 'Sacred fire offering combining both deities.' },
+      { title: 'Aarti & Prasad',   desc: 'Aarti and prasad shipped home.' },
+    ],
+    outcomes: [
+      'Protection from negativity and evil eye',
+      'Wisdom and clarity for life decisions',
+      'Knowledge growth and learning success',
+      'Career guidance through divine wisdom',
+    ],
+  },
+
+  '11-brahmin-vivah': {
+    name: '11 Brahmin Vivah Kamna & Santan Prapti',
+    fullName: '11 Brahmin Jupiter Transit Vivah Kamna Purti & Santan Prapti — 51,000 Aahuti Mahayagya',
+    tagline: 'Eleven Vedic pandits invoke blessings for marriage and progeny',
+    deeplink: 'srimandir://puja/11-brahmin-vivah-kamna',
+    deities: [
+      { name: 'Brihaspati',  role: 'Karaka for marriage and children' },
+      { name: 'Parvati',     role: 'Goddess of marital harmony' },
+      { name: 'Shiva',       role: 'Lord of divine union' },
+      { name: 'Santan Gopal',role: 'Form of Krishna for progeny' },
+    ],
+    steps: [
+      { title: 'Sankalp',          desc: 'Resolution for marriage or santan blessings.' },
+      { title: 'Shiv-Parvati Pujan', desc: 'Worship of the divine couple.' },
+      { title: 'Santan Gopal Mantra Jaap', desc: 'Krishna form mantras for progeny.' },
+      { title: '51,000 Aahuti Mahayagya', desc: '51,000 fire offerings by 11 pandits together.' },
+      { title: 'Vivah Yog Pujan',  desc: 'Specific rites to activate marriage yog.' },
+      { title: 'Aarti & Prasad',   desc: 'Aarti and consecrated prasad to your home.' },
+    ],
+    outcomes: [
+      'Removal of marriage delays and manglik dosha',
+      'Blessings for santan prapti (progeny)',
+      'Harmony in existing marriages',
+      'Family prosperity and continuity',
+    ],
+  },
+
+  '108-mangal-brihaspati': {
+    name: '108 Brihaspati & Mangal Kawach Path',
+    fullName: '108 Brihaspati Kawach Path, 108 Mangal Kawach Path & Homam',
+    tagline: 'Jupiter\'s wisdom united with Mars\' courage for marriage and career',
+    deeplink: 'srimandir://puja/108-brihaspati-mangal-kawach',
+    deities: [
+      { name: 'Brihaspati', role: 'Jupiter — marriage, growth, wisdom' },
+      { name: 'Mangal',     role: 'Mars — courage, marriage karaka for men' },
+      { name: 'Hanuman',    role: 'Protector and remover of mangal dosha' },
+    ],
+    steps: [
+      { title: 'Sankalp',           desc: 'Resolution unifying Guru and Mangal energies.' },
+      { title: '108 Brihaspati Kawach', desc: '108 protective recitations of Jupiter\'s shield.' },
+      { title: '108 Mangal Kawach', desc: '108 recitations of Mars protective armor.' },
+      { title: 'Hanuman Chalisa',   desc: 'Multiple Chalisa paths for protection.' },
+      { title: 'Homam',             desc: 'Combined fire ritual unifying both energies.' },
+      { title: 'Aarti & Prasad',    desc: 'Aarti, prasad and rakshasutra delivered.' },
+    ],
+    outcomes: [
+      'Manglik dosha relief and marriage blessings',
+      'Career growth through Mars-Jupiter synergy',
+      'Protection from family disputes',
+      'Auspicious beginnings (mangal karya)',
+    ],
+  },
+
+  'guru-gochar-vrishchik': {
+    name: 'Vrishchik Bhagya Growth Puja',
+    fullName: 'Guru Gochar Vrishchik (Scorpio) Rashi Bhagya Growth Puja',
+    tagline: 'Specially designed to amplify fortune and career advancement',
+    deeplink: 'srimandir://puja/guru-gochar-vrishchik',
+    deities: [
+      { name: 'Brihaspati', role: 'Jupiter — bhagya (fortune) activator' },
+      { name: 'Mangal',     role: 'Mars — ruler of Scorpio, career drive' },
+      { name: 'Hanuman',    role: 'Lord of strength and breakthroughs' },
+    ],
+    steps: [
+      { title: 'Sankalp',        desc: 'Resolution for career and fortune growth.' },
+      { title: 'Mangal Pujan',   desc: 'Worship of the rashi lord Mars.' },
+      { title: 'Brihaspati Jaap',desc: 'Jupiter mantras for bhagya activation.' },
+      { title: 'Hanuman Stotra', desc: 'Recitations for breakthrough and courage.' },
+      { title: 'Havan',          desc: 'Fire offering for fortune amplification.' },
+      { title: 'Aarti & Prasad', desc: 'Aarti and prasad delivered home.' },
+    ],
+    outcomes: [
+      'Career breakthroughs and promotions',
+      'Foreign travel and new opportunities',
+      'Bhagya (luck) activation in life',
+      'Recognition for hard work',
+    ],
+  },
+
+  'guru-gochar-meen': {
+    name: 'Meen Success & Recognition Puja',
+    fullName: 'Guru Gochar Meen (Pisces) Rashi Success & Recognition Puja',
+    tagline: 'Creative power and intellectual brilliance unlocked',
+    deeplink: 'srimandir://puja/guru-gochar-meen',
+    deities: [
+      { name: 'Brihaspati', role: 'Jupiter — ruler of Pisces, the karaka here' },
+      { name: 'Saraswati',  role: 'Goddess of wisdom and creativity' },
+      { name: 'Ganesha',    role: 'Remover of intellectual blocks' },
+    ],
+    steps: [
+      { title: 'Sankalp',        desc: 'Resolution for success and recognition.' },
+      { title: 'Ganesh Pujan',   desc: 'Invocation for unobstructed growth.' },
+      { title: 'Saraswati Vandana', desc: 'Hymns for wisdom and creativity.' },
+      { title: 'Brihaspati Jaap',desc: 'Jupiter mantras for ruler-of-rashi blessings.' },
+      { title: 'Havan',          desc: 'Fire ritual for success activation.' },
+      { title: 'Aarti & Prasad', desc: 'Aarti and prasad to your home.' },
+    ],
+    outcomes: [
+      'Academic and exam success',
+      'Creative breakthroughs and innovation',
+      'Public recognition and career opportunities',
+      'Mental clarity and decision-making power',
+    ],
+  },
+
+  'guru-gochar-kanya': {
+    name: 'Kanya Financial Growth Puja',
+    fullName: 'Guru Gochar Kanya (Virgo) Rashi Financial Growth Guru Panchamrit Snan Puja',
+    tagline: '11th house activation for income and wealth flow',
+    deeplink: 'srimandir://puja/guru-gochar-kanya',
+    deities: [
+      { name: 'Brihaspati', role: 'Jupiter activating gains in 11th house' },
+      { name: 'Lakshmi',    role: 'Goddess of wealth and abundance' },
+      { name: 'Kuber',      role: 'Treasurer of the gods' },
+    ],
+    steps: [
+      { title: 'Sankalp',           desc: 'Resolution for financial growth.' },
+      { title: 'Lakshmi Pujan',     desc: 'Worship of the goddess of wealth.' },
+      { title: 'Panchamrit Snan',   desc: 'Sacred bath of Brihaspati with five nectars.' },
+      { title: 'Brihaspati Jaap',   desc: 'Jupiter mantras for income expansion.' },
+      { title: 'Kuber Yantra Pujan',desc: 'Activation of wealth yantra.' },
+      { title: 'Aarti & Prasad',    desc: 'Aarti, prasad and protected coin delivered.' },
+    ],
+    outcomes: [
+      'Salary increases and business profits',
+      'New income sources opening up',
+      'Financial stability and goal fulfillment',
+      'Family wealth growth',
+    ],
+  },
+
+  'brihaspati-haldi': {
+    name: 'Brihaspati Dev Gochar & Haldi Abhishek',
+    fullName: 'Brihaspati Dev Gochar Puja & Haldi Abhishek (Number 3 Energy Activation)',
+    tagline: 'Yellow turmeric — the sacred medium for Jupiter\'s grace',
+    deeplink: 'srimandir://puja/brihaspati-dev-gochar-haldi',
+    deities: [
+      { name: 'Brihaspati', role: 'Jupiter — the planet being worshipped' },
+      { name: 'Ganesha',    role: 'Lord of removal of obstacles' },
+      { name: 'Vishnu',     role: 'Preserver and protector' },
+    ],
+    steps: [
+      { title: 'Sankalp',          desc: 'Resolution invoking number 3 / yellow energies.' },
+      { title: 'Ganesh Pujan',     desc: 'Removal of any ritual obstacles.' },
+      { title: 'Haldi Abhishek',   desc: 'Sacred turmeric bath of Brihaspati idol.' },
+      { title: 'Brihaspati Stotra',desc: 'Recitation of Jupiter\'s sacred hymns.' },
+      { title: 'Havan',            desc: 'Yellow-flower fire ritual.' },
+      { title: 'Aarti & Prasad',   desc: 'Aarti, prasad and haldi tilak sent home.' },
+    ],
+    outcomes: [
+      'Luck activation and obstacle removal',
+      'Confidence and knowledge growth',
+      'Financial flow improvement',
+      'Success aligned with Number 3 bhagyank',
+    ],
+  },
+
+  'mangal-karya': {
+    name: 'Mangal Karya Blessing Puja',
+    fullName: 'Jupiter Transit Mangal Karya Blessing — Kesar Chandan Abhishek & Mangal Dev Pujan',
+    tagline: 'For auspicious beginnings — marriage, family, new chapters',
+    deeplink: 'srimandir://puja/mangal-karya-blessing',
+    deities: [
+      { name: 'Mangal Dev', role: 'Lord of auspicious occasions' },
+      { name: 'Brihaspati', role: 'Jupiter blessing the union' },
+      { name: 'Parvati',    role: 'Goddess of marital harmony' },
+    ],
+    steps: [
+      { title: 'Sankalp',          desc: 'Resolution for auspicious family beginnings.' },
+      { title: 'Kesar Chandan Abhishek', desc: 'Saffron-sandalwood sacred bath ritual.' },
+      { title: 'Mangal Dev Pujan', desc: 'Worship of the lord of auspicious karya.' },
+      { title: 'Brihaspati Jaap',  desc: 'Jupiter mantras for blessing the occasion.' },
+      { title: 'Parvati Stotra',   desc: 'Recitations for marital and family harmony.' },
+      { title: 'Aarti & Prasad',   desc: 'Aarti and prasad delivered to your home.' },
+    ],
+    outcomes: [
+      'Marriage harmony and emotional stability',
+      'Auspicious family beginnings',
+      'Removal of family discord',
+      'Blessings on new ventures',
+    ],
+  },
+};
+
+/* ═════════════════════════════════════════════════
+   63-COMBINATION MAPPING (from product doc)
+   Keys = alphabetically sorted concern ids joined with ','
+   ═════════════════════════════════════════════════ */
+const RECO_MAP = {
+  // Single
+  'career': 'guru-gochar-vrishchik',
+  'financial': 'brihaspati-kripa',
+  'marriage': '11-brahmin-vivah',
+  'mental': 'tri-grah',
+  'protection': 'guru-chandal',
+  'knowledge': 'maa-tara',
+
+  // Dual (15)
+  'career,financial': 'brihaspati-kripa',
+  'career,marriage': '108-mangal-brihaspati',
+  'career,mental': 'guru-gochar-meen',
+  'career,protection': 'maa-tara',
+  'career,knowledge': 'guru-gochar-meen',
+  'financial,marriage': 'guru-gochar-kanya',
+  'financial,mental': 'gaj-kesari',
+  'financial,protection': 'brihaspati-haldi',
+  'financial,knowledge': 'brihaspati-kripa',
+  'marriage,mental': 'mangal-karya',
+  'marriage,protection': '11-brahmin-vivah',
+  'knowledge,marriage': 'tri-grah',
+  'mental,protection': 'tri-grah',
+  'knowledge,mental': 'panch-guru',
+  'knowledge,protection': 'maa-tara',
+
+  // Triple (20)
+  'career,financial,marriage': 'gaj-kesari',
+  'career,financial,mental': 'brihaspati-kripa',
+  'career,financial,protection': 'guru-chandal',
+  'career,financial,knowledge': 'brihaspati-kripa',
+  'career,marriage,mental': 'guru-gochar-vrishchik',
+  'career,marriage,protection': '108-mangal-brihaspati',
+  'career,knowledge,marriage': 'guru-gochar-meen',
+  'career,mental,protection': 'guru-chandal',
+  'career,knowledge,mental': 'guru-gochar-meen',
+  'career,knowledge,protection': 'maa-tara',
+  'financial,marriage,mental': 'gaj-kesari',
+  'financial,marriage,protection': '11-brahmin-vivah',
+  'financial,knowledge,marriage': 'guru-gochar-kanya',
+  'financial,mental,protection': 'guru-chandal',
+  'financial,knowledge,mental': 'brihaspati-kripa',
+  'financial,knowledge,protection': 'brihaspati-haldi',
+  'marriage,mental,protection': 'mangal-karya',
+  'knowledge,marriage,mental': 'panch-guru',
+  'knowledge,marriage,protection': '11-brahmin-vivah',
+  'knowledge,mental,protection': 'panch-guru',
+
+  // Quadruple (15)
+  'career,financial,marriage,mental': 'gaj-kesari',
+  'career,financial,marriage,protection': 'guru-chandal',
+  'career,financial,knowledge,marriage': 'guru-gochar-kanya',
+  'career,financial,mental,protection': 'brihaspati-kripa',
+  'career,financial,knowledge,mental': 'brihaspati-kripa',
+  'career,financial,knowledge,protection': 'guru-chandal',
+  'career,marriage,mental,protection': 'guru-gochar-vrishchik',
+  'career,knowledge,marriage,mental': 'guru-gochar-meen',
+  'career,knowledge,marriage,protection': '108-mangal-brihaspati',
+  'career,knowledge,mental,protection': 'panch-guru',
+  'financial,marriage,mental,protection': 'gaj-kesari',
+  'financial,knowledge,marriage,mental': 'gaj-kesari',
+  'financial,knowledge,marriage,protection': '11-brahmin-vivah',
+  'financial,knowledge,mental,protection': 'brihaspati-kripa',
+  'knowledge,marriage,mental,protection': 'panch-guru',
+
+  // Quintuple (6)
+  'career,financial,marriage,mental,protection': 'guru-chandal',
+  'career,financial,knowledge,marriage,mental': 'gaj-kesari',
+  'career,financial,knowledge,marriage,protection': '11-brahmin-vivah',
+  'career,financial,knowledge,mental,protection': 'panch-guru',
+  'career,knowledge,marriage,mental,protection': 'panch-guru',
+  'financial,knowledge,marriage,mental,protection': 'panch-guru',
+
+  // All 6
+  'career,financial,knowledge,marriage,mental,protection': 'panch-guru',
+};
+
+/* ═════════════════════════════════════════════════
+   RENDER: Concerns grid
+   ═════════════════════════════════════════════════ */
+const selectedConcerns = new Set();
+
+function renderConcerns() {
+  const grid = document.getElementById('concernsGrid');
+  grid.innerHTML = CONCERNS.map(c => `
+    <div class="concern-card" data-id="${c.id}" onclick="toggleConcern('${c.id}', this)">
+      <div class="concern-check">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
+      <div class="concern-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${c.icon}</svg>
+      </div>
+      <div class="concern-title">${c.title}</div>
+      <div class="concern-sub">${c.sub}</div>
+    </div>
+  `).join('');
+}
+
+function toggleConcern(id, el) {
+  if (selectedConcerns.has(id)) {
+    selectedConcerns.delete(id);
+    el.classList.remove('is-selected');
+  } else {
+    selectedConcerns.add(id);
+    el.classList.add('is-selected');
+  }
+  document.getElementById('selCount').textContent = selectedConcerns.size;
+  const btn = document.getElementById('revealBtn');
+  if (selectedConcerns.size > 0) btn.classList.add('is-ready');
+  else btn.classList.remove('is-ready');
+}
+
+/* ═════════════════════════════════════════════════
+   RENDER: Rashi carousel
+   ═════════════════════════════════════════════════ */
+function renderRashis() {
+  const car = document.getElementById('rashiCarousel');
+  car.innerHTML = RASHIS.map((r, i) => `
+    <div class="rashi-card" onclick="toggleRashi(this)">
+      <div class="rashi-symbol">
+        <svg width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6">${ZODIAC_SVG[r.glyph]}</svg>
+      </div>
+      <div class="rashi-name-en">${r.en}</div>
+      <div class="rashi-name-sa">${r.sa} Rashi</div>
+      <div class="rashi-summary">${r.summary}</div>
+      <div class="rashi-detail">
+        <div class="rashi-block">
+          <div class="rashi-block-label">✦ Opportunities</div>
+          <div class="rashi-block-text">${r.opp}</div>
+        </div>
+        <div class="rashi-block">
+          <div class="rashi-block-label">⚠ Watch For</div>
+          <div class="rashi-block-text">${r.challenge}</div>
+        </div>
+      </div>
+      <div class="rashi-hint">tap to expand →</div>
+    </div>
+  `).join('');
+}
+
+function toggleRashi(el) {
+  el.classList.toggle('is-expanded');
+}
+
+/* ═════════════════════════════════════════════════
+   REVEAL: Recommendation
+   ═════════════════════════════════════════════════ */
+function getConcernsKey() {
+  return [...selectedConcerns].sort().join(',');
+}
+
+function concernLabels() {
+  return [...selectedConcerns].map(id => CONCERNS.find(c => c.id === id).title.toLowerCase());
+}
+
+function concernSentence() {
+  const labels = concernLabels();
+  if (labels.length === 1) return labels[0];
+  if (labels.length === 2) return labels.join(' and ');
+  return labels.slice(0, -1).join(', ') + ', and ' + labels[labels.length - 1];
+}
+
+function revealRecommendation() {
+  if (selectedConcerns.size === 0) return;
+  const key = getConcernsKey();
+  const pujaId = RECO_MAP[key] || 'panch-guru';
+  const p = PUJAS[pujaId];
+
+  document.getElementById('recoName').textContent = p.fullName;
+  document.getElementById('recoTagline').textContent = p.tagline;
+  document.getElementById('recoWhy').innerHTML =
+    `Because you seek growth in <strong>${concernSentence()}</strong>, this puja invokes the specific divine energies that address each of your concerns simultaneously.`;
+
+  // Deities
+  document.getElementById('recoDeities').innerHTML = p.deities.map(d => `
+    <div class="deity-card">
+      <div class="deity-image"></div>
+      <div class="deity-name">${d.name}</div>
+      <div class="deity-role">${d.role}</div>
+    </div>
+  `).join('');
+
+  // Steps
+  document.getElementById('recoSteps').innerHTML = p.steps.map((s, i) => `
+    <div class="ritual-step">
+      <div class="ritual-step-num">${i + 1}</div>
+      <div class="ritual-step-text">
+        <div class="ritual-step-title">${s.title}</div>
+        <div class="ritual-step-desc">${s.desc}</div>
+      </div>
+    </div>
+  `).join('');
+
+  // Outcomes
+  document.getElementById('recoOutcomes').innerHTML = p.outcomes.map(o => `
+    <li><span class="outcome-mark"></span>${o}</li>
+  `).join('');
+
+  document.getElementById('primaryCta').href = p.deeplink;
+
+  // Reveal & scroll
+  const sec = document.getElementById('recoSection');
+  sec.classList.add('is-visible');
+  setTimeout(() => sec.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
+}
+
+/* ═════════════════════════════════════════════════
+   COUNTDOWN
+   ═════════════════════════════════════════════════ */
+function updateCountdown() {
+  const target = new Date('2026-06-02T05:30:00+05:30');
+  const now = new Date();
+  const diff = target - now;
+  if (diff <= 0) {
+    document.getElementById('cdDays').textContent = '00';
+    document.getElementById('cdHrs').textContent = '00';
+    document.getElementById('cdMins').textContent = '00';
+    return;
+  }
+  const days = Math.floor(diff / (1000 * 60 * 60 * 24));
+  const hrs = Math.floor((diff / (1000 * 60 * 60)) % 24);
+  const mins = Math.floor((diff / (1000 * 60)) % 60);
+  document.getElementById('cdDays').textContent = String(days).padStart(2, '0');
+  document.getElementById('cdHrs').textContent = String(hrs).padStart(2, '0');
+  document.getElementById('cdMins').textContent = String(mins).padStart(2, '0');
+}
+
+/* ═════════════════════════════════════════════════
+   EDU CARD TOGGLE
+   ═════════════════════════════════════════════════ */
+function toggleEdu(el) {
+  el.classList.toggle('is-open');
+}
+
+/* ═════════════════════════════════════════════════
+   PERSONALIZATION via URL params
+   ═════════════════════════════════════════════════ */
+function applyPersonalization() {
+  const params = new URLSearchParams(window.location.search);
+  const name = params.get('name');
+  const rashi = params.get('rashi');
+  if (name || rashi) {
+    document.getElementById('personalGreeting').classList.add('is-visible');
+    if (name) document.getElementById('greetName').textContent = name;
+    if (rashi) document.getElementById('greetRashi').textContent = rashi;
+  }
+}
+
+/* ═════════════════════════════════════════════════
+   STICKY CTA — show after user scrolls past hero
+   ═════════════════════════════════════════════════ */
+function handleScroll() {
+  const heroHeight = document.querySelector('.hero').offsetHeight;
+  const concernsTop = document.getElementById('concernsSection').offsetTop;
+  const sticky = document.getElementById('stickyCta');
+  const scrolledPastHero = window.scrollY > heroHeight * 0.6;
+  const inConcernsOrBelow = window.scrollY + window.innerHeight * 0.6 > concernsTop;
+  if (scrolledPastHero && !inConcernsOrBelow) {
+    sticky.classList.add('is-visible');
+  } else {
+    sticky.classList.remove('is-visible');
+  }
+}
+
+/* INIT */
+window.addEventListener('load', () => {
+  renderConcerns();
+  renderRashis();
+  applyPersonalization();
+  updateCountdown();
+  setInterval(updateCountdown, 60000);
+  window.addEventListener('scroll', handleScroll, { passive: true });
+  handleScroll();
+});
+</script>
+
+</body>
+</html>

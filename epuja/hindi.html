@@ -1697,9 +1697,15 @@
 
   <!-- Mixpanel Snippet -->
   <script type="text/javascript">
-    (function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable_time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
-    for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===f.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
-    
+    (function (f, b) {
+      if (!b.__SV) {
+        var a, e, i, g; window.mixpanel = b; b._i = []; b.init = function (a, e, d) {
+          function f(b, h) { var a = h.split("."); 2 == a.length && (b = b[a[0]], h = a[1]); b[h] = function () { b.push([h].concat(Array.prototype.slice.call(arguments, 0))) } } var c = b; "undefined" !== typeof d ? c = b[d] = [] : d = "mixpanel"; c.people = c.people || []; c.toString = function (b) { var a = "mixpanel"; "mixpanel" !== d && (a += "." + d); b || (a += " (stub)"); return a }; c.people.toString = function () { return c.toString(1) + ".people (stub)" }; i = "disable_time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+          for (g = 0; g < i.length; g++)f(c, i[g]); b._i.push([a, e, d])
+        }; b.__SV = 1.2; a = f.createElement("script"); a.type = "text/javascript"; a.async = !0; a.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ? MIXPANEL_CUSTOM_LIB_URL : "file:" === f.location.protocol && "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js"; e = f.getElementsByTagName("script")[0]; e.parentNode.insertBefore(a, e)
+      }
+    })(document, window.mixpanel || []);
+
     // Initialize Mixpanel
     mixpanel.init("YOUR_MIXPANEL_PROJECT_TOKEN", { batch_requests: true });
   </script>
@@ -1743,7 +1749,7 @@
           style="text-align: left; max-width: 380px; margin: 0 auto; display: flex; flex-direction: column; gap: 14px; font-family: 'Inter', sans-serif; font-size: 15px; line-height: 1.6; color: #4A3C31;">
           <p style="margin: 0;">
             प्रत्येक 12 वर्षों में एक बार, देवगुरु बृहस्पति कर्क राशि में प्रवेश करते हैं। यह वह राशि है जहाँ गुरु सबसे
-            अधिक बलवान होते हैं। वैदिक परंपरा में इसे उनका "उच्च गृह" कहा जाता है।
+            अधिक बलवान होते हैं। वैदिक परंपरा में इसे उनकी "उच्च राशि" कहा जाता है।
           </p>
           <p style="margin: 0;">
             देवगुरु बृहस्पति देवताओं के परम गुरु हैं। श्रद्धालु जीवन में बुद्धि, पारिवारिक शांति, विवाह, संतान, धन और
@@ -1751,7 +1757,7 @@
             भारी कष्टों और चिंताओं को दूर कर देती है।
           </p>
           <p style="margin: 0;">
-            जब गुरु अपनी स्वयं की विशेष राशि में विराजमान होते हैं, तो इस काल में की जाने वाली प्रार्थनाएँ और पवित्र
+            जब गुरु अपनी विशेष राशि में विराजमान होते हैं, तो इस काल में की जाने वाली प्रार्थनाएँ और पवित्र
             अनुष्ठान अत्यधिक फलदायी होते हैं। यही कारण है कि देश भर के मंदिरों में विशेष दीप प्रज्ज्वलित किए जाते हैं,
             और श्रद्धालु आने वाले वर्ष के लिए उनका आशीर्वाद लेने आते हैं।
           </p>
@@ -1848,7 +1854,7 @@
             <!-- Section title above Rashi grid -->
             <h4
               style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 13px; font-weight: 800; letter-spacing: 1.5px; color: #8D6852; text-transform: uppercase; margin-bottom: 18px; text-align: center;">
-              अपनी चंद्र राशि (RASHI) चुनें
+              अपनी चंद्र राशि चुनें
             </h4>
 
             <div class="rashi-pills-grid" id="heroRashiPills">
@@ -1969,7 +1975,7 @@
       </div>
 
       <div class="concerns-footer">
-        <div class="concerns-counter"><strong id="selCount">0</strong> में से 6 क्षेत्र चुने गए</div>
+        <div class="concerns-counter">6 में से <strong id="selCount">0</strong> क्षेत्र चुने गए</div>
         <button class="btn-reveal" id="revealBtn" onclick="revealRecommendation()">
           <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
             stroke-linecap="round">
@@ -2072,7 +2078,7 @@
             पूजे जाने वाले देवी-देवता</h3>
           <p class="reco-block-subtitle"
             style="font-size: 12.5px; color: var(--brown-3); margin-bottom: 14px; font-style: italic;">परम सुरक्षा और
-            दैवीय संरेखण के लिए प्रत्येक दिव्य ऊर्जा का आह्वान किया जाता है।</p>
+            दिव्य सामंजस्य के लिए प्रत्येक दिव्य ऊर्जा का आह्वान किया जाता है।</p>
           <div class="deities-grid" id="recoDeities"></div>
         </div>
 
@@ -2093,7 +2099,7 @@
               </div>
             </div>
             <span style="font-size: 13.5px; font-weight: 600; color: var(--brown-2);"><strong
-                id="proofCount">2,847</strong> से अधिक श्रद्धालु संकल्प ले चुके हैं</span>
+                id="proofCount">2,847</strong> से अधिक श्रद्धालु पूजन में सम्मिलित हो चुके हैं</span>
           </div>
           <p class="proof-quote"
             style="font-family: var(--font-serif); font-size: 14.5px; font-style: italic; color: var(--brown-3); line-height: 1.6; max-width: 400px; margin: 0 auto 30px; text-align: center;">
@@ -2121,7 +2127,7 @@
 
     <!-- ═══════════════ SECTION 7: Trust ═══════════════ -->
     <section class="section trust-section" data-track-section="trust_factors">
-      <div class="section-eyebrow">श्री मंदिर क्यों</div>
+      <div class="section-eyebrow">श्री मंदिर को क्यों चुनें?</div>
       <h2 class="section-title">लाखों श्रद्धालुओं का अटूट विश्वास</h2>
 
       <div class="trust-grid">
@@ -2266,7 +2272,7 @@
         lifeAreas: [
           { icon: '💰', label: 'धन-संपत्ति', text: 'आपकी बचत और बैंक बैलेंस में धीरे-धीरे सुधार होने की संभावना है।' },
           { icon: '🗣️', label: 'वाणी प्रभाव', text: 'आपकी बातों को गंभीरता से लिया जाएगा। लोग आपकी सलाह ध्यान से सुनेंगे।' },
-          { icon: '👨', label: 'पारिवारिक सुख', text: 'घर में प्रेम बढ़ेगा। परिवार के सभी सदस्य एकजुट होकर खड़े रहेंगे।' },
+          { icon: '🏠', label: 'पारिवारिक सुख', text: 'घर में प्रेम बढ़ेगा। परिवार के सभी सदस्य एकजुट होकर खड़े रहेंगे।' },
           { icon: '💼', label: 'कार्यक्षेत्र', text: 'नौकरीपेशा जातकों को वेतन वृद्धि के संकेत मिल सकते हैं। पैतृक व्यवसाय में भी प्रगति होगी।' },
           { icon: '🎉', label: 'शुभ समाचार', text: 'परिवार में विवाह या संतान जन्म जैसे मांगलिक कार्य संपन्न हो सकते हैं।' }
         ],
@@ -2292,7 +2298,7 @@
         lifeAreas: [
           { icon: '💸', label: 'व्यय', text: 'खर्चों में वृद्धि हो सकती है - विशेष रूप से पूजा-पाठ, दान, और पारिवारिक सुख-सुविधाओं पर।' },
           { icon: '✈️', label: 'विदेश / दूरस्थ स्थान', text: 'विदेशों में या बड़ी कंपनियों में काम करने वाले लोगों को अच्छा लाभ मिल सकता है।' },
-          { icon: '🙏', label: 'आध्यात्मकता', text: 'पूजा, ध्यान और तीर्थयात्रा की ओर गहरा खिंचाव महसूस होगा।' },
+          { icon: '🙏', label: 'आध्यात्मिकता', text: 'पूजा, ध्यान और तीर्थयात्रा की ओर गहरा खिंचाव महसूस होगा।' },
           { icon: '🏠', label: 'परिवार', text: 'ससुराल पक्ष और परिवार के अन्य सदस्यों के साथ संबंध अधिक सौहार्दपूर्ण होंगे।' },
           { icon: '📚', label: 'शिक्षा', text: 'विद्यार्थियों को अपने घर से दूर जाकर शिक्षा प्राप्त करने के अच्छे अवसर मिल सकते हैं।' }
         ],
@@ -2349,7 +2355,7 @@
           { icon: '👴', label: 'पैतृक दायित्व', text: 'पैतृक संपत्ति या पारिवारिक जिम्मेदारियां आपके कंधों पर आ सकती हैं।' }
         ],
         opp: 'आंतरिक साधना, गुरु से ज्ञान प्राप्त करने और मौन रहकर आध्यात्मिक उन्नति करने का यह सुंदर समय है।',
-        challenge: 'पारिवारिक विवादों से पूरी तरह दूर रहें। सेहत और बिना सोचे-सामझे की जाने वाली यात्राओं से बचें।'
+        challenge: 'पारिवारिक विवादों से पूरी तरह दूर रहें। सेहत और बिना सोचे-समझे की जाने वाली यात्राओं से बचें।'
       },
       {
         en: 'Capricorn', sa: 'Makar', sa_hi: 'मकर', house: 7, glyph: 'capricorn',
@@ -2884,7 +2890,7 @@
         el.classList.add('is-selected');
       }
       document.getElementById('selCount').textContent = selectedConcerns.size;
-      
+
       // Analytics click track
       if (typeof SriMandirAnalytics !== 'undefined') {
         SriMandirAnalytics.trackEvent('concern_toggled', {
@@ -3047,10 +3053,6 @@
           rashi_name: rashiEn.toLowerCase(),
           sanskrit_name: rashiSa.toLowerCase()
         });
-      }
-      } else {
-        const pill = document.getElementById(`pill-${rashiEn.toLowerCase()}`);
-        if (pill) pill.classList.add('is-selected');
       }
 
       const target = document.getElementById(`rashi-${rashiEn}`);
@@ -3379,10 +3381,10 @@
         primaryCta.addEventListener('click', (e) => {
           e.preventDefault();
           const deeplink = primaryCta.getAttribute('data-deeplink') || primaryCta.href || "srimandir://open?screen=chadhava&action=add_to_cart&action_id=ae29526-bc7c-4585-a82d-8711724524da&store_type=pooja&utm_campaign=Jupiter_transition_recommendation";
-          
+
           // Check if click was programmatic (e.g. from sticky CTA) to avoid double tracking
           const isStickyTriggered = e.isTrusted === false;
-          
+
           if (typeof SriMandirAnalytics !== 'undefined' && !isStickyTriggered) {
             const key = getConcernsKey();
             const pujaId = RECO_MAP[key] || 'panch-guru';
@@ -3409,7 +3411,7 @@
       renderHeroRashiPills();
       applyPersonalization();
       setupBridgeCTA();
-      
+
       // Initialize analytics scroll tracking
       if (typeof SriMandirAnalytics !== 'undefined') {
         SriMandirAnalytics.trackEvent('page_view');
@@ -3420,7 +3422,7 @@
       handleScroll();
     });
   </script>
-  
+
   <!-- Sri Mandir Analytics Engine -->
   <script src="analytics.js"></script>
 

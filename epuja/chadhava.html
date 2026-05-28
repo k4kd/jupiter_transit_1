@@ -1,0 +1,3135 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+  <meta name="theme-color" content="#020e0b">
+  <title>Jupiter Enters Cancer — Sri Mandir</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800;900&family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
+
+  <style>
+    :root {
+      /* Brand dark palette — Cosmic Deep */
+      --cream-1: #FAF6ED;
+      /* Light cream bg */
+      --cream-2: #F2E9D8;
+      /* Slightly darker cream */
+      --cream-3: #E8DCC2;
+      /* Muted card border */
+      --ivory: rgba(255, 255, 255, 0.6);
+      /* Frosted glass card fill */
+      --gold-1: #D4AF37;
+      /* Gold text */
+      --gold-2: #B8860B;
+      /* Rich gold */
+      --gold-3: #996515;
+      /* Metallic gold */
+      --gold-deep: #8D6A53;
+      /* Bronze/brown for headings */
+      --brown-1: #2B1D15;
+      /* Dark brown for titles */
+      --brown-2: #2D231E;
+      /* Dark brown for body text */
+      --brown-3: #4A3C31;
+      /* Muted paragraph brown */
+      --maroon: #D32F2F;
+      /* Keep red/maroon for buttons */
+      --maroon-deep: #B71C1C;
+
+      --soft-shadow: 0 8px 32px rgba(0, 0, 0, 0.4);
+      --warm-shadow: 0 12px 40px rgba(0, 0, 0, 0.55);
+      --glow-gold: 0 0 0 1px rgba(242, 201, 76, 0.3), 0 8px 28px rgba(242, 201, 76, 0.15);
+
+      --font-display: 'Cinzel', serif;
+      --font-serif: 'Plus Jakarta Sans', -apple-system, sans-serif;
+      --font-body: 'Inter', -apple-system, sans-serif;
+
+      --radius-sm: 12px;
+      --radius-md: 18px;
+      --radius-lg: 24px;
+      --radius-xl: 32px;
+      --radius-pill: 999px;
+    }
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      -webkit-tap-highlight-color: transparent;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: var(--font-body);
+      background: var(--cream-1);
+      color: var(--brown-1);
+      font-size: 18px;
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+      overflow-x: hidden;
+    }
+
+    p {
+      max-width: 380px;
+      margin-left: auto;
+      margin-right: auto;
+    }
+
+
+    /* Layout container — mobile-first webview */
+    .page {
+      max-width: 480px;
+      margin: 0 auto;
+      background: var(--cream-1);
+      position: relative;
+      overflow-x: hidden;
+      padding-bottom: 100px;
+    }
+
+    /* ============ HERO ============ */
+    .hero {
+      position: relative;
+      padding: 32px 24px 56px;
+      background: radial-gradient(circle at 50% -20%, #FFFDF8 0%, #F5EAD4 60%, #EAE0C7 100%);
+      overflow: hidden;
+      min-height: 95vh;
+      text-align: center;
+    }
+
+    .hero::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      z-index: 0;
+      pointer-events: none;
+      background-image:
+        radial-gradient(1px 1px at 12% 15%, rgba(255, 255, 255, 0.7) 0%, transparent 100%),
+        radial-gradient(1.5px 1.5px at 28% 8%, rgba(255, 230, 150, 0.8) 0%, transparent 100%),
+        radial-gradient(1px 1px at 45% 22%, rgba(255, 255, 255, 0.5) 0%, transparent 100%),
+        radial-gradient(1px 1px at 62% 5%, rgba(255, 255, 255, 0.65) 0%, transparent 100%),
+        radial-gradient(1.5px 1.5px at 78% 18%, rgba(255, 230, 150, 0.6) 0%, transparent 100%),
+        radial-gradient(1px 1px at 90% 10%, rgba(255, 255, 255, 0.5) 0%, transparent 100%),
+        radial-gradient(1px 1px at 8% 35%, rgba(255, 255, 255, 0.4) 0%, transparent 100%),
+        radial-gradient(1.5px 1.5px at 35% 42%, rgba(255, 230, 150, 0.5) 0%, transparent 100%),
+        radial-gradient(1px 1px at 55% 30%, rgba(255, 255, 255, 0.55) 0%, transparent 100%),
+        radial-gradient(1px 1px at 72% 38%, rgba(255, 255, 255, 0.4) 0%, transparent 100%),
+        radial-gradient(2px 2px at 88% 28%, rgba(255, 230, 150, 0.7) 0%, transparent 100%),
+        radial-gradient(1px 1px at 20% 55%, rgba(255, 255, 255, 0.35) 0%, transparent 100%),
+        radial-gradient(1px 1px at 42% 60%, rgba(255, 230, 150, 0.4) 0%, transparent 100%),
+        radial-gradient(1.5px 1.5px at 65% 52%, rgba(255, 255, 255, 0.5) 0%, transparent 100%),
+        radial-gradient(1px 1px at 82% 65%, rgba(255, 255, 255, 0.35) 0%, transparent 100%),
+        radial-gradient(1px 1px at 5% 72%, rgba(255, 230, 150, 0.45) 0%, transparent 100%),
+        radial-gradient(1.5px 1.5px at 95% 48%, rgba(255, 255, 255, 0.55) 0%, transparent 100%);
+    }
+
+    /* Jupiter planet — CSS art with image-slot styling */
+    .jupiter-orb {
+      position: absolute;
+      width: 480px;
+      height: 480px;
+      left: 50%;
+      top: 38%;
+      transform: translateX(-50%);
+      border-radius: 50%;
+      background:
+        radial-gradient(circle at 35% 30%, rgba(255, 240, 200, 0.9) 0%, rgba(232, 181, 71, 0.8) 20%, rgba(184, 132, 44, 0.7) 45%, rgba(139, 100, 24, 0.6) 70%, rgba(91, 58, 35, 0.5) 100%);
+      box-shadow:
+        inset -40px -30px 80px rgba(91, 58, 35, 0.5),
+        inset 20px 20px 50px rgba(255, 240, 200, 0.3),
+        0 0 80px rgba(232, 181, 71, 0.5),
+        0 0 160px rgba(232, 181, 71, 0.3);
+      opacity: 0.55;
+      z-index: 1;
+      animation: jupiter-drift 30s ease-in-out infinite;
+    }
+
+    .jupiter-orb::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      border-radius: 50%;
+      background:
+        repeating-linear-gradient(0deg,
+          transparent 0px,
+          rgba(91, 58, 35, 0.1) 18px,
+          transparent 36px,
+          rgba(255, 240, 200, 0.1) 54px,
+          transparent 72px,
+          rgba(91, 58, 35, 0.15) 90px);
+      mix-blend-mode: overlay;
+    }
+
+    .jupiter-orb::after {
+      content: '';
+      position: absolute;
+      inset: -40px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(255, 235, 170, 0.25) 30%, rgba(212, 175, 55, 0.1) 60%, transparent 80%);
+      filter: blur(12px);
+      z-index: -1;
+      pointer-events: none;
+      animation: jupiter-halo-glow 8s ease-in-out infinite alternate;
+    }
+
+    @keyframes jupiter-drift {
+
+      0%,
+      100% {
+        transform: translateX(-50%) translateY(0);
+      }
+
+      50% {
+        transform: translateX(-50%) translateY(-8px);
+      }
+    }
+
+    @keyframes jupiter-halo-glow {
+      0% {
+        transform: scale(0.96);
+        opacity: 0.8;
+      }
+
+      100% {
+        transform: scale(1.04);
+        opacity: 1;
+      }
+    }
+
+    /* Constellation arc */
+    .constellation {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      height: 200px;
+      z-index: 2;
+      pointer-events: none;
+      opacity: 0.6;
+    }
+
+    .hero-content {
+      position: relative;
+      z-index: 3;
+    }
+
+    .badge-pill {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      color: var(--brown-1);
+      font-size: 15px;
+      font-weight: 800;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+      margin: 16px auto 0;
+      position: relative;
+      background: var(--ivory);
+      padding: 10px 18px;
+      border-radius: var(--radius-pill);
+      border: 1px solid rgba(242, 201, 76, 0.3);
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    }
+
+    .badge-pill svg {
+      flex-shrink: 0;
+      display: none;
+    }
+
+    .hero-headline {
+      font-family: var(--font-display);
+      text-align: center;
+      color: var(--brown-1);
+      text-shadow: 0 0 15px rgba(242, 201, 76, 0.35);
+      text-transform: uppercase;
+      margin-top: 24px;
+    }
+
+    .hero-headline .sub-row {
+      display: block;
+      font-size: 20px;
+      font-weight: 500;
+      letter-spacing: 3px;
+      margin-bottom: 6px;
+    }
+
+    .hero-headline .main-row {
+      display: block;
+      font-size: 38px;
+      font-weight: 900;
+      line-height: 1.05;
+      letter-spacing: 1px;
+    }
+
+    .hero-headline .accent {
+      display: block;
+      font-family: var(--font-body);
+      font-size: 15px;
+      font-weight: 600;
+      font-style: normal;
+      color: var(--brown-2);
+      background: var(--ivory);
+      border: 1px solid rgba(242, 201, 76, 0.22);
+      padding: 10px 16px;
+      border-radius: 12px;
+      margin: 16px auto 0;
+      max-width: 380px;
+      letter-spacing: 0.2px;
+      text-transform: none;
+      opacity: 1;
+    }
+
+    /* Rashi Pills Section */
+    .rashi-pills-container {
+      margin-top: 36px;
+      position: relative;
+      z-index: 5;
+    }
+
+    .rashi-pills-title {
+      font-family: var(--font-display);
+      font-size: 15px;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--brown-1);
+      margin-bottom: 4px;
+      text-align: left;
+      opacity: 1;
+    }
+
+    .rashi-pills-subtitle {
+      font-family: var(--font-body);
+      font-size: 12px;
+      font-weight: 400;
+      color: var(--brown-3);
+      margin-bottom: 14px;
+      text-align: left;
+      opacity: 0.9;
+      font-style: italic;
+    }
+
+    .rashi-pills-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 12px;
+    }
+
+    .rashi-pill-new {
+      display: flex;
+      align-items: center;
+      background: #ffffff;
+      border: 1px solid rgba(184, 132, 44, 0.2);
+      border-radius: 12px;
+      padding: 14px 16px;
+      cursor: pointer;
+      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      position: relative;
+      overflow: hidden;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    }
+
+    .rashi-pill-new:hover {
+      border-color: #D4AF37;
+      background: #FFFDF5;
+      transform: translateY(-1px);
+      box-shadow: 0 6px 18px rgba(212, 175, 55, 0.2);
+    }
+
+    .rashi-pill-new.is-selected {
+      border: 2px solid #D4AF37;
+      background: #FFF9E6 !important;
+      box-shadow: 0 8px 20px rgba(212, 175, 55, 0.25) !important;
+    }
+
+    .rashi-pill-left-icon {
+      color: #D4AF37;
+      background: rgba(255, 255, 255, 0.5);
+      border-radius: 50%;
+      padding: 4px;
+      display: flex;
+      align-items: center;
+    }
+
+    .rashi-pill-text-stack {
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      margin-left: 7px;
+      text-align: left;
+      line-height: 1.2;
+    }
+
+    .rashi-pill-sa-bold {
+      font-size: 13px;
+      font-weight: 700;
+      color: #4A3C31;
+      line-height: 1.2;
+    }
+
+    .rashi-pill-en-small {
+      font-size: 10px;
+      color: #5D4037;
+      line-height: 1.1;
+    }
+
+    .rashi-pill-right-glyph {
+      color: rgba(212, 175, 55, 0.2);
+      font-size: 32px;
+      line-height: 1;
+      position: absolute;
+      right: 2px;
+      bottom: 0px;
+      pointer-events: none;
+      font-family: serif;
+      letter-spacing: 0;
+    }
+
+    /* Rashi card flash animation */
+    @keyframes card-glow-flash {
+      0% {
+        box-shadow: 0 0 0 rgba(232, 181, 71, 0);
+        border-color: rgba(232, 181, 71, 0.2);
+      }
+
+      30% {
+        box-shadow: 0 0 24px rgba(232, 181, 71, 0.7);
+        border-color: var(--gold-1);
+        background: rgba(255, 254, 245, 1);
+      }
+
+      100% {
+        box-shadow: var(--soft-shadow);
+        border-color: rgba(232, 181, 71, 0.2);
+      }
+    }
+
+    .rashi-card.highlight-flash {
+      animation: card-glow-flash 2.5s ease-out;
+    }
+
+    .hero-sub {
+      font-size: 15px;
+      line-height: 1.7;
+      color: var(--brown-2);
+      margin-top: 24px;
+      max-width: 420px;
+      font-weight: 400;
+      background: var(--ivory);
+      border: 1px solid rgba(242, 201, 76, 0.22);
+      border-radius: 16px;
+      padding: 18px 18px 14px;
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+      text-align: left;
+    }
+
+    .hero-sub strong {
+      color: var(--brown-1);
+      font-weight: 700;
+    }
+
+    .hero-sub-bullets li {
+      font-size: 15px;
+      line-height: 1.65;
+      color: var(--brown-2);
+      margin-bottom: 10px !important;
+    }
+
+    .hero-sub-select-text {
+      margin-top: 14px;
+      padding-top: 14px;
+      border-top: 1px solid rgba(242, 201, 76, 0.2);
+      font-size: 13px;
+      font-weight: 800;
+      color: var(--brown-1);
+      letter-spacing: 0.5px;
+      text-align: left;
+    }
+
+
+
+
+
+    /* Personalized greeting (only renders if URL has ?name=) */
+    .personal-greeting {
+      position: relative;
+      z-index: 4;
+      margin-top: 24px;
+      padding: 14px 18px;
+      background: var(--ivory);
+      backdrop-filter: blur(6px);
+      border-radius: var(--radius-md);
+      border-left: 3px solid var(--gold-1);
+      font-family: var(--font-serif);
+      font-size: 15px;
+      font-style: italic;
+      color: var(--brown-2);
+      display: none;
+    }
+
+    .personal-greeting.is-visible {
+      display: block;
+    }
+
+    .personal-greeting strong {
+      color: var(--brown-1);
+      font-style: normal;
+      font-family: var(--font-body);
+      font-weight: 600;
+    }
+
+    /* ============ SECTION HEADERS ============ */
+    .section {
+      padding: 64px 24px;
+      position: relative;
+    }
+
+    .section-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      font-size: 11px;
+      text-transform: uppercase;
+      letter-spacing: 2.5px;
+      font-weight: 600;
+      color: var(--gold-2);
+      margin-bottom: 16px;
+    }
+
+    .section-eyebrow::before {
+      content: '';
+      display: inline-block;
+      width: 28px;
+      height: 1px;
+      background: var(--gold-2);
+    }
+
+    .section-title {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 32px;
+      line-height: 1.1;
+      letter-spacing: -0.01em;
+      color: var(--brown-1);
+      margin-bottom: 16px;
+      font-variation-settings: "opsz" 144;
+    }
+
+    .section-title em {
+      font-style: italic;
+      color: var(--gold-3);
+      font-weight: 500;
+    }
+
+    .section-intro {
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--brown-3);
+      margin-bottom: 32px;
+      max-width: 380px;
+    }
+
+    /* Ornamental divider */
+    .divider-ornament {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin: 0 auto;
+      gap: 12px;
+      color: var(--gold-2);
+      opacity: 0.7;
+    }
+
+    .divider-ornament::before,
+    .divider-ornament::after {
+      content: '';
+      height: 1px;
+      flex: 1;
+      max-width: 60px;
+      background: linear-gradient(90deg, transparent, var(--gold-2), transparent);
+    }
+
+    /* ============ SECTION 2: What is this transit ============ */
+    .what-section {
+      background: var(--cream-1);
+    }
+
+    .edu-card {
+      background: var(--ivory);
+      border-radius: var(--radius-lg);
+      padding: 24px;
+      margin-bottom: 14px;
+      border: 1px solid rgba(232, 181, 71, 0.15);
+      box-shadow: var(--soft-shadow);
+      transition: all 0.3s ease;
+    }
+
+    .edu-card-head {
+      display: flex;
+      align-items: flex-start;
+      gap: 16px;
+    }
+
+    .edu-icon {
+      width: 48px;
+      height: 48px;
+      flex-shrink: 0;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--cream-2), var(--cream-3));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold-deep);
+    }
+
+    .edu-text {
+      flex: 1;
+    }
+
+    .edu-title {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 20px;
+      color: var(--brown-1);
+      margin-bottom: 4px;
+      font-variation-settings: "opsz" 144;
+    }
+
+    .edu-desc {
+      font-size: 14.5px;
+      line-height: 1.6;
+      color: var(--brown-3);
+    }
+
+
+
+    /* ============ SECTION 3: Cosmic Window timeline ============ */
+    .cosmic-section {
+      background: linear-gradient(180deg, var(--cream-1) 0%, var(--cream-2) 100%);
+      padding: 48px 24px;
+    }
+
+    .timeline {
+      position: relative;
+      margin-top: 32px;
+      padding: 0 12px;
+    }
+
+    .timeline-track {
+      position: absolute;
+      top: 22px;
+      left: 32px;
+      right: 32px;
+      height: 2px;
+      background: linear-gradient(90deg, var(--gold-3), var(--gold-1), var(--gold-3));
+    }
+
+    .timeline-points {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      position: relative;
+    }
+
+    .tl-point {
+      text-align: center;
+      position: relative;
+    }
+
+    .tl-dot {
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: var(--ivory);
+      border: 2px solid var(--gold-2);
+      margin: 0 auto;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold-deep);
+      position: relative;
+      z-index: 2;
+      box-shadow: 0 4px 12px rgba(184, 132, 44, 0.2);
+    }
+
+    .tl-point.is-active .tl-dot {
+      background: linear-gradient(135deg, var(--gold-1), var(--gold-3));
+      color: var(--ivory);
+      box-shadow: 0 0 0 6px rgba(232, 181, 71, 0.25), 0 6px 20px rgba(184, 132, 44, 0.35);
+      animation: pulse 2.5s ease-in-out infinite;
+    }
+
+    @keyframes pulse {
+
+      0%,
+      100% {
+        box-shadow: 0 0 0 6px rgba(232, 181, 71, 0.25), 0 6px 20px rgba(184, 132, 44, 0.35);
+      }
+
+      50% {
+        box-shadow: 0 0 0 12px rgba(232, 181, 71, 0.08), 0 6px 24px rgba(184, 132, 44, 0.4);
+      }
+    }
+
+    .tl-label {
+      font-family: var(--font-display);
+      font-size: 14px;
+      font-weight: 600;
+      color: var(--brown-1);
+      margin-top: 12px;
+      font-variation-settings: "opsz" 144;
+    }
+
+    .tl-date {
+      font-size: 11px;
+      color: var(--brown-3);
+      margin-top: 2px;
+      letter-spacing: 0.3px;
+    }
+
+    .cosmic-tagline {
+      text-align: center;
+      margin-top: 28px;
+      padding: 20px;
+      background: var(--ivory);
+      border-radius: var(--radius-md);
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: 16px;
+      color: var(--brown-2);
+      line-height: 1.5;
+      border: 1px solid rgba(232, 181, 71, 0.2);
+    }
+
+    .cosmic-tagline .quote-mark {
+      display: block;
+      font-size: 32px;
+      color: var(--gold-2);
+      line-height: 0.5;
+      margin-bottom: 8px;
+      font-family: var(--font-display);
+    }
+
+    /* ============ SECTION 4: Rashi Carousel ============ */
+    .rashi-section {
+      background: var(--cream-1);
+      padding-right: 0;
+      padding-left: 0;
+    }
+
+    .rashi-section .section-head {
+      padding: 0 24px;
+    }
+
+    .rashi-stack {
+      display: flex;
+      flex-direction: column;
+      gap: 16px;
+      padding: 8px 24px 24px;
+    }
+
+    .rashi-card {
+      background: var(--ivory);
+      border-radius: var(--radius-lg);
+      padding: 22px 20px;
+      border: 1px solid rgba(242, 201, 76, 0.22);
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: 0 12px 40px rgba(0, 0, 0, 0.45);
+      position: relative;
+      width: 100%;
+    }
+
+    .rashi-card::before {
+      content: '🪷';
+      position: absolute;
+      top: 12px;
+      right: 14px;
+      font-size: 18px;
+      opacity: 0.25;
+      pointer-events: none;
+    }
+
+    .rashi-life-areas {
+      margin-top: 14px;
+      padding: 14px;
+      background: rgba(255, 253, 240, 0.6);
+      border-radius: 12px;
+      border: 1px solid rgba(212, 175, 55, 0.15);
+      text-align: left;
+    }
+
+    .life-areas-list {
+      list-style: none;
+      padding: 0;
+      margin: 8px 0 0;
+    }
+
+    .life-areas-list li {
+      display: flex;
+      gap: 10px;
+      padding: 6px 0;
+      font-size: 14px;
+      line-height: 1.5;
+      color: var(--brown-2);
+      text-align: left;
+    }
+
+    .area-icon {
+      flex-shrink: 0;
+      font-size: 18px;
+      line-height: 1.3;
+    }
+
+    .rashi-card-header {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+
+    .rashi-symbol {
+      width: 44px;
+      height: 44px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background: linear-gradient(135deg, var(--cream-2), var(--cream-3));
+      border-radius: 50%;
+      color: var(--gold-deep);
+      border: 1px solid rgba(184, 132, 44, 0.15);
+      flex-shrink: 0;
+    }
+
+    .rashi-name-row {
+      font-family: var(--font-display);
+      font-size: 20px;
+      font-weight: 700;
+      color: var(--brown-1);
+      margin: 0;
+      line-height: 1.2;
+    }
+
+    .rashi-name-sa-inline {
+      font-family: var(--font-serif);
+      font-size: 14px;
+      font-style: italic;
+      font-weight: 500;
+      color: var(--gold-3);
+      margin-left: 4px;
+    }
+
+    .rashi-summary {
+      font-size: 13.5px;
+      line-height: 1.5;
+      color: var(--brown-3);
+      margin-top: 8px;
+    }
+
+    .rashi-detail {
+      margin-top: 14px;
+      padding-top: 14px;
+      border-top: 1px dashed rgba(184, 132, 44, 0.3);
+    }
+
+    .rashi-block {
+      margin-bottom: 10px;
+    }
+
+    .rashi-block-label {
+      font-size: 10px;
+      text-transform: uppercase;
+      letter-spacing: 1.2px;
+      font-weight: 700;
+      color: var(--gold-2);
+      margin-bottom: 4px;
+    }
+
+    .rashi-block-text {
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--brown-2);
+    }
+
+    /* Find Remedies Button */
+    .btn-find-remedies {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 6px;
+      width: 100%;
+      padding: 12px 20px;
+      background: linear-gradient(135deg, var(--maroon) 0%, var(--maroon-deep) 100%);
+      color: #ffffff;
+      border: none;
+      border-radius: var(--radius-pill);
+      font-family: var(--font-body);
+      font-weight: 600;
+      font-size: 14px;
+      cursor: pointer;
+      margin-top: 16px;
+      transition: all 0.2s ease;
+      box-shadow: 0 4px 12px rgba(139, 44, 38, 0.15);
+    }
+
+    .btn-find-remedies:hover {
+      transform: translateY(-1.1px);
+      box-shadow: 0 6px 16px rgba(139, 44, 38, 0.25);
+    }
+
+    /* Opportunities (Green) */
+    .rashi-block.opp-block .rashi-block-label {
+      color: #2E7D32;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 800;
+    }
+
+    .rashi-block.opp-block .green-icon {
+      color: #4CAF50;
+      fill: rgba(76, 175, 80, 0.12);
+      flex-shrink: 0;
+    }
+
+    /* Watch For (Red) */
+    .rashi-block.watch-block .rashi-block-label {
+      color: #C62828;
+      display: flex;
+      align-items: center;
+      gap: 6px;
+      font-weight: 800;
+    }
+
+    .rashi-block.watch-block .red-icon {
+      color: #E53935;
+      fill: rgba(229, 57, 53, 0.08);
+      flex-shrink: 0;
+    }
+
+    .scroll-hint {
+      text-align: center;
+      font-size: 11px;
+      color: var(--brown-3);
+      letter-spacing: 1.5px;
+      text-transform: uppercase;
+      margin-bottom: 8px;
+      opacity: 0.6;
+    }
+
+    /* ============ SECTION 5: Concerns selector ============ */
+    .concerns-section {
+      background: linear-gradient(180deg, var(--cream-2) 0%, var(--cream-1) 100%);
+      padding: 48px 24px 32px;
+    }
+
+    .concerns-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 8px;
+    }
+
+    .concern-card {
+      background: var(--ivory);
+      border: 1px solid rgba(242, 201, 76, 0.22);
+      border-radius: var(--radius-md);
+      padding: 18px 14px;
+      cursor: pointer;
+      transition: all 0.25s ease;
+      position: relative;
+      text-align: left;
+      min-height: 140px;
+      display: flex;
+      flex-direction: column;
+      backdrop-filter: blur(12px);
+      -webkit-backdrop-filter: blur(12px);
+      box-shadow: 0 8px 32px rgba(0, 0, 0, 0.35);
+    }
+
+    .concern-card:hover {
+      border-color: rgba(232, 181, 71, 0.4);
+    }
+
+    .concern-card.is-selected {
+      border-color: var(--brown-1);
+      background: var(--ivory);
+      box-shadow: 0 0 15px rgba(242, 201, 76, 0.25);
+      transform: translateY(-2px);
+    }
+
+    .concern-check {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      width: 22px;
+      height: 22px;
+      border-radius: 50%;
+      background: var(--ivory);
+      border: 1.5px solid rgba(184, 132, 44, 0.3);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s ease;
+    }
+
+    .concern-card.is-selected .concern-check {
+      background: linear-gradient(135deg, var(--gold-1), var(--gold-3));
+      border-color: var(--gold-3);
+      color: var(--ivory);
+    }
+
+    .concern-check svg {
+      opacity: 0;
+      transition: opacity 0.2s ease;
+    }
+
+    .concern-card.is-selected .concern-check svg {
+      opacity: 1;
+    }
+
+    .concern-icon {
+      width: 40px;
+      height: 40px;
+      border-radius: 12px;
+      background: linear-gradient(135deg, var(--cream-2), var(--cream-3));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold-deep);
+      margin-bottom: 12px;
+    }
+
+    .concern-card.is-selected .concern-icon {
+      background: linear-gradient(135deg, var(--gold-1), var(--gold-2));
+      color: var(--ivory);
+    }
+
+    .concern-title {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 15px;
+      line-height: 1.2;
+      color: var(--brown-1);
+      font-variation-settings: "opsz" 144;
+    }
+
+    .concern-sub {
+      font-size: 12px;
+      color: var(--brown-3);
+      line-height: 1.4;
+      margin-top: 6px;
+    }
+
+    .concerns-footer {
+      margin-top: 28px;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 14px;
+    }
+
+    .concerns-counter {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: 14px;
+      color: var(--brown-3);
+    }
+
+    .concerns-counter strong {
+      font-style: normal;
+      font-family: var(--font-display);
+      color: var(--gold-3);
+      font-weight: 700;
+    }
+
+    .btn-reveal {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      padding: 16px 32px;
+      border: none;
+      border-radius: var(--radius-pill);
+      background: linear-gradient(135deg, var(--gold-1) 0%, var(--gold-3) 100%);
+      color: var(--brown-1);
+      font-family: var(--font-body);
+      font-weight: 700;
+      font-size: 15px;
+      letter-spacing: 0.3px;
+      cursor: pointer;
+      box-shadow: 0 8px 24px rgba(184, 132, 44, 0.35);
+      transition: all 0.2s ease;
+      opacity: 0.4;
+      pointer-events: none;
+    }
+
+    .btn-reveal.is-ready {
+      opacity: 1;
+      pointer-events: auto;
+    }
+
+    .btn-reveal.is-ready:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 32px rgba(184, 132, 44, 0.45);
+    }
+
+    .btn-reveal:active {
+      transform: translateY(0);
+    }
+
+    /* ============ SECTION 6: Recommendation reveal ============ */
+    .reco-section {
+      padding: 48px 24px;
+      background: var(--cream-1);
+      display: none;
+    }
+
+    .reco-section.is-visible {
+      display: block;
+      animation: reveal-in 0.7s ease;
+    }
+
+    @keyframes reveal-in {
+      0% {
+        opacity: 0;
+        transform: translateY(24px);
+      }
+
+      100% {
+        opacity: 1;
+        transform: translateY(0);
+      }
+    }
+
+    .reco-card {
+      background: var(--ivory);
+      border-radius: var(--radius-xl);
+      padding: 32px 24px;
+      border: 1px solid rgba(242, 201, 76, 0.22);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      box-shadow: 0 16px 48px rgba(0, 0, 0, 0.5);
+      position: relative;
+      overflow: hidden;
+    }
+
+    .reco-card::before {
+      content: '';
+      position: absolute;
+      top: -80px;
+      right: -80px;
+      width: 200px;
+      height: 200px;
+      border-radius: 50%;
+      background: radial-gradient(circle, rgba(232, 181, 71, 0.2), transparent 70%);
+      pointer-events: none;
+    }
+
+    .reco-eyebrow {
+      display: inline-flex;
+      align-items: center;
+      gap: 8px;
+      padding: 6px 14px;
+      background: var(--ivory);
+      border-radius: var(--radius-pill);
+      color: var(--gold-deep);
+      font-size: 11px;
+      font-weight: 700;
+      letter-spacing: 1.2px;
+      text-transform: uppercase;
+    }
+
+    .reco-puja-name {
+      font-family: var(--font-display);
+      font-weight: 700;
+      font-size: 30px;
+      line-height: 1.1;
+      letter-spacing: -0.01em;
+      color: var(--brown-1);
+      margin-top: 16px;
+      font-variation-settings: "opsz" 144;
+    }
+
+    .reco-tagline {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: 16px;
+      color: var(--gold-3);
+      margin-top: 10px;
+      line-height: 1.4;
+    }
+
+    .reco-why {
+      margin-top: 22px;
+      padding: 16px 18px;
+      background: var(--ivory);
+      border-left: 3px solid var(--gold-1);
+      border-radius: 0 12px 12px 0;
+      font-size: 16px;
+      line-height: 1.7;
+      color: var(--brown-2);
+    }
+
+    .reco-why strong {
+      color: var(--brown-1);
+      font-weight: 600;
+    }
+
+    /* Deities */
+    .reco-block {
+      margin-top: 32px;
+    }
+
+    .reco-block-title {
+      font-family: var(--font-display);
+      font-size: 18px;
+      font-weight: 600;
+      color: var(--brown-1);
+      margin-bottom: 4px;
+      font-variation-settings: "opsz" 144;
+    }
+
+    .reco-block-subtitle {
+      font-size: 13px;
+      color: var(--brown-3);
+      margin-bottom: 16px;
+    }
+
+    .deities-grid {
+      display: flex;
+      gap: 12px;
+      overflow-x: auto;
+      scrollbar-width: none;
+      padding-bottom: 8px;
+      margin: 0 -24px;
+      padding-left: 24px;
+      padding-right: 24px;
+    }
+
+    .deities-grid::-webkit-scrollbar {
+      display: none;
+    }
+
+    .deity-card {
+      flex: 0 0 160px;
+      background: var(--ivory);
+      border-radius: var(--radius-md);
+      padding: 14px;
+      border: 1px solid rgba(242, 201, 76, 0.22);
+      scroll-snap-align: start;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+
+    .deity-image {
+      width: 100%;
+      aspect-ratio: 1;
+      border-radius: var(--radius-sm);
+      background:
+        radial-gradient(circle at 50% 40%, rgba(232, 181, 71, 0.3), transparent 60%),
+        linear-gradient(180deg, var(--cream-2), var(--cream-3));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      margin-bottom: 12px;
+      border: 1px solid rgba(184, 132, 44, 0.2);
+      position: relative;
+      overflow: hidden;
+      /* IMAGE-SLOT: deity portrait — replace background with actual image */
+    }
+
+    .deity-image::before {
+      content: 'ॐ';
+      font-family: var(--font-display);
+      font-size: 36px;
+      color: var(--gold-deep);
+      opacity: 0.5;
+    }
+
+    .deity-image.has-img::before {
+      display: none !important;
+    }
+
+    .deity-name {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 15px;
+      color: var(--brown-1);
+      margin-bottom: 4px;
+      font-variation-settings: "opsz" 144;
+    }
+
+    .deity-role {
+      font-size: 12px;
+      line-height: 1.4;
+      color: var(--brown-3);
+    }
+
+
+
+    /* Logistics row */
+    .logistics-row {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 12px;
+    }
+
+    .logistics-chip {
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      padding: 8px 12px;
+      background: var(--cream-2);
+      border-radius: var(--radius-pill);
+      font-size: 12px;
+      color: var(--brown-2);
+      font-weight: 500;
+    }
+
+    .logistics-chip svg {
+      color: var(--gold-3);
+    }
+
+    /* Outcomes */
+    .outcomes-list {
+      list-style: none;
+      margin-top: 8px;
+    }
+
+    .outcomes-list li {
+      display: flex;
+      align-items: flex-start;
+      gap: 10px;
+      padding: 8px 0;
+      font-size: 14px;
+      line-height: 1.5;
+      color: var(--brown-2);
+    }
+
+    .outcome-mark {
+      flex-shrink: 0;
+      margin-top: 4px;
+      width: 6px;
+      height: 6px;
+      border-radius: 50%;
+      background: var(--gold-2);
+    }
+
+    /* Social proof */
+    .social-proof {
+      margin-top: 28px;
+      padding: 18px;
+      background: var(--ivory);
+      border-radius: var(--radius-md);
+      border: 1px solid rgba(242, 201, 76, 0.18);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+
+    .proof-count {
+      display: flex;
+      align-items: center;
+      gap: 10px;
+      font-size: 14px;
+      color: var(--brown-2);
+      font-weight: 500;
+    }
+
+    .proof-count strong {
+      font-family: var(--font-display);
+      font-size: 18px;
+      color: var(--gold-3);
+    }
+
+    .proof-avatars {
+      display: flex;
+      margin-right: 4px;
+    }
+
+    .proof-avatar {
+      width: 26px;
+      height: 26px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--cream-3), var(--gold-2));
+      border: 2px solid var(--ivory);
+      margin-left: -8px;
+    }
+
+    .proof-avatar:first-child {
+      margin-left: 0;
+    }
+
+    .proof-quote {
+      margin-top: 14px;
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: 14px;
+      line-height: 1.5;
+      color: var(--brown-2);
+      padding-left: 14px;
+      border-left: 2px solid var(--gold-1);
+    }
+
+    .proof-quote-author {
+      font-style: normal;
+      font-family: var(--font-body);
+      font-size: 12px;
+      color: var(--brown-3);
+      margin-top: 6px;
+      display: block;
+    }
+
+    /* CTA buttons */
+    .cta-stack {
+      margin-top: 28px;
+      display: flex;
+      flex-direction: column;
+      gap: 12px;
+    }
+
+    .btn-primary {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 18px 24px;
+      border: none;
+      border-radius: var(--radius-pill);
+      background: linear-gradient(135deg, var(--maroon) 0%, var(--maroon-deep) 100%);
+      color: var(--ivory);
+      font-family: var(--font-body);
+      font-weight: 700;
+      font-size: 16px;
+      letter-spacing: 0.3px;
+      cursor: pointer;
+      box-shadow: 0 8px 24px rgba(139, 44, 38, 0.3);
+      transition: all 0.2s ease;
+      text-decoration: none;
+    }
+
+    .btn-primary:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 12px 32px rgba(139, 44, 38, 0.4);
+    }
+
+    .btn-secondary {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 8px;
+      padding: 14px 24px;
+      background: transparent;
+      border: 1.5px solid var(--gold-2);
+      border-radius: var(--radius-pill);
+      color: var(--brown-2);
+      font-family: var(--font-body);
+      font-weight: 600;
+      font-size: 14px;
+      cursor: pointer;
+      transition: all 0.2s ease;
+      text-decoration: none;
+    }
+
+    .btn-secondary:hover {
+      background: var(--ivory);
+    }
+
+    /* ============ SECTION 7: Trust ============ */
+    .trust-section {
+      background: linear-gradient(180deg, var(--cream-1) 0%, var(--cream-2) 100%);
+      padding: 56px 24px;
+    }
+
+    .trust-grid {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 12px;
+      margin-top: 24px;
+    }
+
+    .trust-card {
+      background: var(--ivory);
+      border-radius: var(--radius-md);
+      padding: 20px 16px;
+      text-align: center;
+      border: 1px solid rgba(242, 201, 76, 0.22);
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+
+    .trust-icon {
+      width: 44px;
+      height: 44px;
+      margin: 0 auto 10px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--gold-3);
+      background: var(--ivory);
+      border-radius: 50%;
+      border: 1px solid rgba(242, 201, 76, 0.2);
+    }
+
+    .trust-title {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 16px;
+      color: var(--brown-1);
+      margin-bottom: 4px;
+      font-variation-settings: "opsz" 144;
+    }
+
+    .trust-desc {
+      font-size: 16px;
+      color: var(--brown-3);
+      line-height: 1.7;
+    }
+
+    .sacred-location {
+      margin-top: 24px;
+      padding: 24px 20px;
+      background: var(--ivory);
+      border-radius: var(--radius-md);
+      border: 1px solid rgba(242, 201, 76, 0.22);
+      display: flex;
+      gap: 16px;
+      align-items: center;
+      backdrop-filter: blur(8px);
+      -webkit-backdrop-filter: blur(8px);
+    }
+
+    .sacred-image {
+      flex-shrink: 0;
+      width: 80px;
+      height: 80px;
+      border-radius: var(--radius-sm);
+      background:
+        linear-gradient(180deg, rgba(232, 181, 71, 0.3), rgba(184, 132, 44, 0.4)),
+        radial-gradient(circle at 50% 60%, var(--cream-3), var(--gold-2));
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--ivory);
+      /* IMAGE-SLOT: sacred location photo */
+    }
+
+    .sacred-text {
+      flex: 1;
+    }
+
+    .sacred-title {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 16px;
+      color: var(--brown-1);
+    }
+
+    .sacred-desc {
+      font-size: 13px;
+      color: var(--brown-3);
+      margin-top: 4px;
+      line-height: 1.5;
+    }
+
+    /* ============ Final closing section ============ */
+    .final-section {
+      background:
+        radial-gradient(ellipse at top, rgba(232, 181, 71, 0.3), transparent 70%),
+        var(--cream-1);
+      padding: 48px 24px 64px;
+      text-align: center;
+    }
+
+    .final-headline {
+      font-family: var(--font-display);
+      font-weight: 600;
+      font-size: 28px;
+      line-height: 1.15;
+      color: var(--brown-1);
+      font-variation-settings: "opsz" 144;
+      letter-spacing: -0.01em;
+    }
+
+    .final-headline em {
+      font-style: italic;
+      color: var(--gold-3);
+      font-weight: 500;
+    }
+
+    .final-sub {
+      font-family: var(--font-serif);
+      font-style: italic;
+      font-size: 16px;
+      color: var(--brown-3);
+      margin-top: 14px;
+      line-height: 1.5;
+    }
+
+    /* ============ Sticky CTA ============ */
+    .sticky-cta {
+      position: fixed;
+      bottom: 0;
+      left: 50%;
+      transform: translateX(-50%) translateY(120%);
+      width: 100%;
+      max-width: 480px;
+      padding: 16px 20px calc(20px + env(safe-area-inset-bottom));
+      background: linear-gradient(180deg, transparent, rgba(251, 246, 236, 0.96) 30%);
+      z-index: 100;
+      transition: transform 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+      pointer-events: none;
+    }
+
+    .sticky-cta.is-visible {
+      transform: translateX(-50%) translateY(-6px);
+      pointer-events: auto;
+    }
+
+    .sticky-cta-inner {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 10px;
+      padding: 16px 24px;
+      background: linear-gradient(135deg, var(--gold-1) 0%, var(--gold-3) 100%);
+      border-radius: var(--radius-pill);
+      color: var(--brown-1);
+      font-family: var(--font-body);
+      font-weight: 700;
+      font-size: 15px;
+      letter-spacing: 0.2px;
+      box-shadow: 0 16px 40px rgba(184, 132, 44, 0.5);
+      cursor: pointer;
+      transition: all 0.3s cubic-bezier(0.25, 0.8, 0.25, 1);
+    }
+
+    .sticky-cta-inner.is-reveal {
+      background: linear-gradient(135deg, var(--gold-1) 0%, var(--gold-3) 100%);
+      color: var(--brown-1);
+    }
+
+    .sticky-cta-inner.is-reveal.is-disabled {
+      opacity: 0.55;
+      cursor: not-allowed;
+      pointer-events: none;
+      box-shadow: none;
+    }
+
+    .sticky-cta-inner.is-book {
+      background: linear-gradient(135deg, var(--maroon) 0%, var(--maroon-deep) 100%);
+      color: #ffffff;
+      box-shadow: 0 16px 40px rgba(139, 44, 38, 0.5);
+    }
+
+    /* Util */
+    .is-hidden {
+      display: none !important;
+    }
+
+    /* Responsive bump for tablets */
+    @media (min-width: 600px) {
+      .hero-headline {
+        font-size: 38px;
+      }
+
+      .hero-headline .accent {
+        font-size: 20px;
+      }
+
+      .section-title {
+        font-size: 38px;
+      }
+
+      .concerns-grid {
+        gap: 14px;
+      }
+    }
+
+    /* Floating top navigation back button styling */
+    .top-nav {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      z-index: 100;
+      display: flex;
+      align-items: center;
+    }
+
+    .back-btn {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.75);
+      border: 1.5px solid rgba(141, 104, 82, 0.25);
+      color: var(--brown-1);
+      cursor: pointer;
+      box-shadow: 0 4px 16px rgba(43, 29, 21, 0.08);
+      transition: all 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+      backdrop-filter: blur(10px);
+      -webkit-backdrop-filter: blur(10px);
+    }
+
+    .back-btn:hover {
+      background: rgba(255, 255, 255, 0.95);
+      border-color: var(--gold-1);
+      transform: scale(1.05);
+      box-shadow: 0 6px 20px rgba(212, 175, 55, 0.15);
+    }
+
+    .back-btn:active {
+      transform: scale(0.95);
+    }
+
+    .back-btn svg {
+      width: 20px;
+      height: 20px;
+      stroke: var(--brown-1);
+      stroke-width: 2.5;
+    }
+  </style>
+</head>
+
+<body>
+
+  <div class="page">
+
+    <!-- Floating Navigation -->
+    <div class="top-nav">
+      <button class="back-btn" onclick="callBackPressed()" aria-label="Go Back">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="19" y1="12" x2="5" y2="12"></line>
+          <polyline points="12 19 5 12 12 5"></polyline>
+        </svg>
+      </button>
+    </div>
+
+    <!-- ═══════════════ HERO ═══════════════ -->
+    <header class="hero">
+      <div class="hero-content">
+        <div class="badge-pill"
+          style="background: transparent; border: none; box-shadow: none; color: #8D6852; font-weight: 600; font-size: 18px; letter-spacing: 1.5px;">
+          <span
+            style="color: #FFD700; text-shadow: 0 0 10px #FFD700; font-weight: bold; display: inline-block; margin-right: 4px;">🪔</span>
+          A ONCE IN A DECADE EVENT
+          <span
+            style="color: #FFD700; text-shadow: 0 0 10px #FFD700; font-weight: bold; display: inline-block; margin-left: 4px;">🪔</span>
+        </div>
+
+        <img src="jupiter-top.png" alt="Jupiter Enters Cancer"
+          style="width: 100%; max-width: 680px; border-radius: 18px; margin: 18px auto 0; display: block; box-shadow: 0 8px 40px rgba(0,0,0,0.18);">
+
+        <!-- BLOCK 1 — SACRED OPENING -->
+        <h2
+          style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 23px; font-weight: 800; color: #2B1D15; text-transform: uppercase; margin: 32px auto 16px; text-align: center; max-width: 380px; line-height: 1.3;">
+          WHAT IS GURU GOCHAR?
+        </h2>
+        <div
+          style="text-align: left; max-width: 380px; margin: 0 auto; display: flex; flex-direction: column; gap: 14px; font-family: 'Inter', sans-serif; font-size: 15px; line-height: 1.6; color: #4A3C31;">
+          <p style="margin: 0;">
+            Once in every 12 years, the planet Guru Brihaspati enters Kark Rashi (Cancer). This is the sign where Guru
+            becomes the strongest. Vedic tradition calls this his "exalted home."
+          </p>
+          <p style="margin: 0;">
+            Guru Brihaspati is the divine teacher of the gods. Devotees pray to him for wisdom, family peace, marriage,
+            children, money, and good decisions in life. His soft and kind gaze is believed to ease the heavy worries we
+            carry for years.
+          </p>
+          <p style="margin: 0;">
+            When Guru sits in his own special home, prayers and sacred rituals offered during this time are believed to
+            carry deeper grace. This is why temples across India light extra lamps, and devotees come together to seek
+            his blessings for the year ahead.
+          </p>
+        </div>
+        <!-- Wheel Heading -->
+        <h3
+          style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 13px; font-weight: 800; letter-spacing: 1.5px; color: #8D6852; text-transform: uppercase; margin-top: 36px; margin-bottom: 4px; text-align: center;">
+          WHAT DEVOTEES PRAY FOR DURING THIS TIME
+        </h3>
+
+        <!-- Blessings Wheel Graphic (Responsive Image) -->
+        <div class="blessings-graphic-container"
+          style="margin: 28px auto; max-width: 380px; width: 90%; border-radius: 20px; overflow: hidden; border: 1.5px solid rgba(212, 175, 55, 0.35); box-shadow: 0 12px 36px rgba(184, 132, 44, 0.12); background: var(--ivory);">
+          <img src="brihaspati_blessings.png" alt="Guru Brihaspati Blessings"
+            style="width: 100%; height: auto; display: block; object-fit: contain;">
+        </div>
+
+        <!-- BLOCK 2 — WHY THIS MOMENT IS CONSIDERED POWERFUL -->
+        <div class="why-significant-section"
+          style="margin: 36px auto 16px; max-width: 390px; text-align: left; padding: 0 16px;">
+          <h4
+            style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 18px; font-weight: 800; color: #2B1D15; text-transform: uppercase; margin-bottom: 18px; text-align: center; line-height: 1.3;">
+            Why This Transit Is Considered Spiritually Significant
+          </h4>
+
+          <div style="display: flex; flex-direction: column; gap: 12px; margin-bottom: 20px;">
+            <!-- Point 1 -->
+            <div
+              style="display: flex; align-items: center; gap: 14px; background: #f1e6cc; border: 1px solid rgba(212, 175, 55, 0.25); border-radius: 16px; padding: 14px 18px; box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
+              <span style="font-size: 24px; flex-shrink: 0; display: inline-block;">🌕</span>
+              <div
+                style="font-size: 14.5px; color: #4A3C31; font-family: 'Inter', sans-serif; line-height: 1.45; font-weight: 500;">
+                Guru returns to <strong>Kark Rashi</strong>, the sign where he is strongest
+              </div>
+            </div>
+
+            <!-- Point 2 -->
+            <div
+              style="display: flex; align-items: center; gap: 14px; background: #f1e6cc; border: 1px solid rgba(212, 175, 55, 0.25); border-radius: 16px; padding: 14px 18px; box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
+              <span style="font-size: 24px; flex-shrink: 0; display: inline-block;">✨</span>
+              <div
+                style="font-size: 14.5px; color: #4A3C31; font-family: 'Inter', sans-serif; line-height: 1.45; font-weight: 500;">
+                A sacred window that opens only <strong>once in 12 years</strong>
+              </div>
+            </div>
+
+            <!-- Point 3 -->
+            <div
+              style="display: flex; align-items: center; gap: 14px; background: #f1e6cc; border: 1px solid rgba(212, 175, 55, 0.25); border-radius: 16px; padding: 14px 18px; box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
+              <span style="font-size: 24px; flex-shrink: 0; display: inline-block;">🪔</span>
+              <div
+                style="font-size: 14.5px; color: #4A3C31; font-family: 'Inter', sans-serif; line-height: 1.45; font-weight: 500;">
+                A time when prayers for <strong>wisdom, peace, and prosperity</strong> are believed to be heard more
+                deeply
+              </div>
+            </div>
+
+            <!-- Point 4 -->
+            <div
+              style="display: flex; align-items: center; gap: 14px; background: #f1e6cc; border: 1px solid rgba(212, 175, 55, 0.25); border-radius: 16px; padding: 14px 18px; box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
+              <span style="font-size: 24px; flex-shrink: 0; display: inline-block;">🙏</span>
+              <div
+                style="font-size: 14.5px; color: #4A3C31; font-family: 'Inter', sans-serif; line-height: 1.45; font-weight: 500;">
+                Devotees offer <strong>chadhava and do havans</strong> during this time
+              </div>
+            </div>
+
+            <!-- Point 5 -->
+            <div
+              style="display: flex; align-items: center; gap: 14px; background: #f1e6cc; border: 1px solid rgba(212, 175, 55, 0.25); border-radius: 16px; padding: 14px 18px; box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
+              <span style="font-size: 24px; flex-shrink: 0; display: inline-block;">🌼</span>
+              <div
+                style="font-size: 14.5px; color: #4A3C31; font-family: 'Inter', sans-serif; line-height: 1.45; font-weight: 500;">
+                Many seek blessings for <strong>marriage, work, family harmony, and a calm mind</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Rashi Pills Section -->
+        <div class="rashi-pills-container" style="text-align: center; margin-top: 36px; padding: 0 16px;">
+          <h3 class="rashi-pills-title"
+            style="color: #2B1D15; font-family: 'Plus Jakarta Sans', sans-serif; font-weight: 800; font-size: 20px; letter-spacing: -0.5px; text-transform: uppercase; text-align: center; line-height: 1.3;">
+            HOW COULD THIS TRANSIT AFFECT YOUR LIFE?</h3>
+
+          <p class="rashi-pills-subtitle"
+            style="color: #4A3C31; font-weight: 500; margin-top: 10px; margin-bottom: 24px; font-size: 15px; text-align: center; line-height: 1.5; max-width: 380px; margin-left: auto; margin-right: auto; font-family: 'Inter', sans-serif;">
+            This rare Guru transit may affect your money, career, marriage, family life, peace of mind, and success —
+            depending on your Rashi.
+          </p>
+
+          <div id="rashiSelectionTarget" style="margin-top: 24px; scroll-margin-top: 100px;">
+
+            <!-- Section title above Rashi grid -->
+            <h4
+              style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 13px; font-weight: 800; letter-spacing: 1.5px; color: #8D6852; text-transform: uppercase; margin-bottom: 18px; text-align: center;">
+              SELECT YOUR MOON SIGN (RASHI)
+            </h4>
+
+            <div class="rashi-pills-grid" id="heroRashiPills">
+              <!-- Dynamically injected pills -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="divider-ornament" style="margin-top: 56px; margin-bottom: 24px;">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4-6.2-4.5-6.2 4.5 2.4-7.4L2 9.4h7.6z" />
+      </svg>
+    </div>
+
+    <!-- ═══════════════ SECTION 3: Cosmic Window timeline ═══════════════ -->
+    <section class="section cosmic-section">
+      <div class="section-eyebrow">The Sacred Window</div>
+      <h2 class="section-title">Important Dates Of This Sacred Transit</h2>
+
+      <div class="timeline">
+        <div class="timeline-track"></div>
+        <div class="timeline-points">
+          <div class="tl-point is-active">
+            <div class="tl-dot">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4-6.2-4.5-6.2 4.5 2.4-7.4L2 9.4h7.6z" fill="currentColor" />
+              </svg>
+            </div>
+            <div class="tl-label">Transit Begins</div>
+            <div class="tl-date">2 June 2026<br>6:30 AM</div>
+          </div>
+          <div class="tl-point">
+            <div class="tl-dot">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"
+                stroke-linecap="round" stroke-linejoin="round">
+                <rect x="14" y="4" width="4" height="16" rx="1" />
+                <rect x="6" y="4" width="4" height="16" rx="1" />
+              </svg>
+            </div>
+            <div class="tl-label">Combust Period</div>
+            <div class="tl-date">14 Jul – 12 Aug 2026<br><span
+                style="font-style: italic; color: #b71c1c; font-size: 9px; display: block; margin-top: 2px;">Remedies
+                paused</span></div>
+          </div>
+          <div class="tl-point">
+            <div class="tl-dot">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="4" fill="currentColor" />
+                <path d="M12 2v3M12 19v3M2 12h3M19 12h3M5 5l2 2M17 17l2 2M5 19l2-2M17 7l2-2" />
+              </svg>
+            </div>
+            <div class="tl-label">Peak Grace Returns</div>
+            <div class="tl-date">Sep 2026</div>
+          </div>
+          <div class="tl-point">
+            <div class="tl-dot">
+              <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <circle cx="12" cy="12" r="9" />
+                <path d="M8 12l3 3 5-6" />
+              </svg>
+            </div>
+            <div class="tl-label">Transit Ends</div>
+            <div class="tl-date">31 Oct 2026</div>
+          </div>
+        </div>
+      </div>
+
+      <div class="cosmic-tagline">
+        Prayers offered when Guru shines strongest are believed to carry his blessings further into the year ahead.
+      </div>
+    </section>
+
+    <div class="divider-ornament" style="margin-top: 56px; margin-bottom: 24px;">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4-6.2-4.5-6.2 4.5 2.4-7.4L2 9.4h7.6z" />
+      </svg>
+    </div>
+
+    <!-- ═══════════════ SECTION 4: Rashi Carousel ═══════════════ -->
+    <section class="section rashi-section">
+      <div class="section-head">
+        <div class="section-eyebrow">Effects On Each Rashi</div>
+        <h2 class="section-title">How Guru Transit May Affect Your Rashi</h2>
+
+      </div>
+
+      <div class="rashi-stack" id="rashiStack">
+        <!-- Rashi cards injected via JS -->
+      </div>
+    </section>
+
+    <div class="divider-ornament" style="margin-top: 56px; margin-bottom: 24px;">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4-6.2-4.5-6.2 4.5 2.4-7.4L2 9.4h7.6z" />
+      </svg>
+    </div>
+
+    <!-- ═══════════════ SECTION 5: Concerns Selector ═══════════════ -->
+    <section class="section concerns-section" id="concernsSection">
+      <div class="section-eyebrow">Blessings & Guidance</div>
+      <h2 class="section-title" style="font-size: 28px;">What Blessings Do You Seek From Guru?</h2>
+
+      <h3
+        style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 14.5px; font-weight: 800; letter-spacing: 1px; color: #2B1D15; text-transform: uppercase; margin-bottom: 16px; text-align: left; line-height: 1.4;">
+        Select the areas where you seek Guru Brihaspati’s blessings:
+      </h3>
+
+      <div class="concerns-grid" id="concernsGrid">
+        <!-- Concern cards injected via JS -->
+      </div>
+
+      <div class="concerns-footer">
+        <div class="concerns-counter"><strong id="selCount">0</strong> of 6 areas selected</div>
+        <button class="btn-reveal" id="revealBtn" onclick="revealRecommendation()">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+            stroke-linecap="round">
+            <path
+              d="M12 2l1.5 4.5L18 8l-4.5 1.5L12 14l-1.5-4.5L6 8l4.5-1.5L12 2zM18 14l.8 2.2L21 17l-2.2.8L18 20l-.8-2.2L15 17l2.2-.8L18 14z" />
+          </svg>
+          Find Your Recommended Chadhava
+        </button>
+      </div>
+    </section>
+
+    <!-- ═══════════════ SECTION 6: Recommendation Reveal ═══════════════ -->
+    <!-- ═══════════════ SECTION 6: Recommendation Reveal (Sacred Observance Details) ═══════════════ -->
+    <!-- ═══════════════ SECTION 6: Recommendation Reveal (Sacred Observance Details) ═══════════════ -->
+    <section class="section reco-section" id="recoSection"
+      style="background: linear-gradient(180deg, var(--cream-1) 0%, var(--cream-2) 100%);">
+      <div class="sacred-observance-details"
+        style="background: var(--ivory); border: 1.5px solid rgba(212, 175, 55, 0.35); border-radius: var(--radius-lg); padding: 28px 24px; box-shadow: 0 16px 48px rgba(0, 0, 0, 0.45); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); text-align: center; position: relative;">
+
+        <!-- Eyebrow badge -->
+        <div class="reco-eyebrow"
+          style="margin-bottom: 16px; display: inline-flex; align-items: center; gap: 6px; font-family: var(--font-body); font-size: 11px; text-transform: uppercase; letter-spacing: 2.5px; font-weight: 600; color: var(--gold-2);">
+          Chadhava Recommended For You
+        </div>
+
+        <!-- Puja Banner Visual -->
+        <div class="pooja-banner-container"
+          style="margin: 0 auto 20px; width: 40%; max-width: 160px; border-radius: var(--radius-md); overflow: hidden; border: 1.5px solid rgba(212, 175, 55, 0.3); box-shadow: 0 8px 24px rgba(184, 132, 44, 0.1);">
+          <img src="jupiter_banner.png" alt="Jupiter Sacred Chadhava"
+            style="width: 100%; height: auto; display: block; object-fit: contain;">
+        </div>
+
+        <!-- Puja Full Name & Tagline -->
+        <h2 class="reco-puja-name" id="recoName"
+          style="font-family: var(--font-display); font-size: 26px; font-weight: 900; line-height: 1.25; color: var(--brown-1); margin-bottom: 8px; text-transform: uppercase;">
+          —</h2>
+        <p class="reco-tagline" id="recoTagline"
+          style="font-family: var(--font-serif); font-size: 15px; font-style: italic; color: #8D6852; margin-bottom: 28px; line-height: 1.4; font-weight: 600;">
+          —</p>
+
+        <!-- Warm Opening Block (devotional) -->
+        <div id="recoEmotional"
+          style="font-family: var(--font-serif); font-size: 15.5px; font-style: italic; color: #2B1D15; background: #FFFDF0; border-left: 4px solid var(--gold-1); padding: 18px 20px; border-radius: 12px; margin-bottom: 28px; line-height: 1.65; text-align: left; box-shadow: 0 4px 15px rgba(0,0,0,0.03);">
+          —</div>
+
+        <!-- Primary CTA button (Shifted higher up) -->
+        <div class="cta-stack" style="margin: 0 auto 28px; max-width: 320px; text-align: center;">
+          <a href="#" class="btn-primary" id="primaryCta"
+            style="background: linear-gradient(135deg, var(--maroon) 0%, var(--maroon-deep) 100%); color: #ffffff; text-decoration: none; font-weight: 700; text-transform: uppercase; font-size: 15.5px; letter-spacing: 0.5px; display: flex; align-items: center; justify-content: center; gap: 8px; padding: 18px 24px; border-radius: var(--radius-pill); box-shadow: 0 8px 24px rgba(139, 44, 38, 0.35); transition: all 0.25s ease;">
+            🪔 Offer Chadhava
+            <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2"
+              stroke-linecap="round">
+              <path d="M5 12h14M13 6l6 6-6 6" />
+            </svg>
+          </a>
+        </div>
+
+        <!-- Why This Observance Matters -->
+        <div class="reco-block" style="margin-bottom: 28px; text-align: left;">
+          <h3
+            style="font-family: var(--font-display); font-size: 18px; font-weight: 600; color: var(--brown-1); margin-bottom: 8px; border-bottom: 1px dashed rgba(184,132,44,0.2); padding-bottom: 4px;">
+            ✨ Why This Chadhava Matters</h3>
+          <p id="recoSpiritual"
+            style="font-size: 15px; line-height: 1.65; color: var(--brown-2); font-family: var(--font-body);">—</p>
+        </div>
+
+        <!-- What Makes This Ritual Powerful -->
+        <div class="reco-block" style="margin-bottom: 28px; text-align: left;">
+          <h3
+            style="font-family: var(--font-display); font-size: 18px; font-weight: 600; color: var(--brown-1); margin-bottom: 8px; border-bottom: 1px dashed rgba(184,132,44,0.2); padding-bottom: 4px;">
+            🔱 What Makes This Offering Powerful</h3>
+          <p id="recoImportance"
+            style="font-size: 15px; line-height: 1.65; color: var(--brown-2); font-family: var(--font-body);">—</p>
+        </div>
+
+        <!-- What Happens During The Ritual -->
+        <div class="reco-block" style="margin-bottom: 28px; text-align: left;">
+          <h3
+            style="font-family: var(--font-display); font-size: 18px; font-weight: 600; color: var(--brown-1); margin-bottom: 12px; border-bottom: 1px dashed rgba(184,132,44,0.2); padding-bottom: 4px;">
+            🪔 What Happens During The Chadhava</h3>
+          <ul id="recoDetails"
+            style="list-style: none; padding-left: 0; display: flex; flex-direction: column; gap: 10px;">
+            <!-- Injected via JS -->
+          </ul>
+        </div>
+
+        <!-- Why Devotees Participate -->
+        <div class="reco-block" style="margin-bottom: 36px; text-align: left;">
+          <h3
+            style="font-family: var(--font-display); font-size: 18px; font-weight: 600; color: var(--brown-1); margin-bottom: 12px; border-bottom: 1px dashed rgba(184,132,44,0.2); padding-bottom: 4px;">
+            🌼 Why Devotees Offer Chadhava</h3>
+          <ul id="recoOutcomes"
+            style="list-style: none; padding-left: 0; display: flex; flex-direction: column; gap: 10px;">
+            <!-- Injected via JS -->
+          </ul>
+        </div>
+
+        <!-- Deities Carousel -->
+        <div class="reco-block" style="margin-bottom: 28px; text-align: left;">
+          <h3 class="reco-block-title"
+            style="font-family: 'Plus Jakarta Sans', sans-serif; font-size: 14px; font-weight: 800; color: #8D6A53; text-transform: uppercase; letter-spacing: 1.2px; margin-bottom: 6px; border-bottom: 1px dashed rgba(184,132,44,0.2); padding-bottom: 4px;">
+            Deities Worshipped</h3>
+          <p class="reco-block-subtitle"
+            style="font-size: 12.5px; color: var(--brown-3); margin-bottom: 14px; font-style: italic;">Each divine
+            energy is invoked for sacred protection and alignment.</p>
+          <div class="deities-grid" id="recoDeities"></div>
+        </div>
+
+
+
+        <!-- Social proof -->
+        <div class="social-proof"
+          style="margin-top: 36px; border-top: 1px solid rgba(184,132,44,0.15); padding-top: 24px;">
+          <div class="proof-count"
+            style="display: flex; align-items: center; justify-content: center; gap: 10px; margin-bottom: 12px;">
+            <div class="proof-avatars" style="display: flex;">
+              <div class="proof-avatar"
+                style="width: 28px; height: 28px; border-radius: 50%; background: #D4AF37; border: 2px solid #FAF6ED; margin-right: -8px; z-index: 3;">
+              </div>
+              <div class="proof-avatar"
+                style="width: 28px; height: 28px; border-radius: 50%; background: #8D6A53; border: 2px solid #FAF6ED; margin-right: -8px; z-index: 2;">
+              </div>
+              <div class="proof-avatar"
+                style="width: 28px; height: 28px; border-radius: 50%; background: #4A3C31; border: 2px solid #FAF6ED; z-index: 1;">
+              </div>
+            </div>
+            <span style="font-size: 13.5px; font-weight: 600; color: var(--brown-2);"><strong
+                id="proofCount">2,847</strong> devotees have already registered</span>
+          </div>
+          <p class="proof-quote"
+            style="font-family: var(--font-serif); font-size: 14.5px; font-style: italic; color: var(--brown-3); line-height: 1.6; max-width: 400px; margin: 0 auto 30px; text-align: center;">
+            "After participating in last year's Jupiter transit observance through Sri Mandir, the constant blockages in
+            my work began clearing up. The sankalp done in my name and gotra made it deeply personal and powerful."
+            <span class="proof-quote-author"
+              style="display: block; font-style: normal; font-weight: 700; color: var(--gold-3); margin-top: 6px; font-size: 12px; text-transform: uppercase; letter-spacing: 0.5px;">—
+              Priya R., Mumbai</span>
+          </p>
+
+          <!-- Signature Footer close -->
+          <div
+            style="font-family: var(--font-serif); font-size: 14px; font-style: italic; color: var(--brown-3); margin-top: 20px; border-top: 1px dashed rgba(184,132,44,0.15); padding-top: 16px;">
+            🌍 Wherever you are, stay connected to tradition with Sri Mandir.
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <div class="divider-ornament" style="margin-top: 56px; margin-bottom: 24px;">
+      <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4-6.2-4.5-6.2 4.5 2.4-7.4L2 9.4h7.6z" />
+      </svg>
+    </div>
+
+    <!-- ═══════════════ SECTION 7: Trust ═══════════════ -->
+    <section class="section trust-section">
+      <div class="section-eyebrow">Why Sri Mandir</div>
+      <h2 class="section-title">Walking Beside Lakhs Of Devotees</h2>
+
+      <div class="trust-grid">
+        <div class="trust-card">
+          <div class="trust-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <path d="M12 2l3 7h7l-5.5 4 2 7-6.5-4.5L5.5 20l2-7L2 9h7z" fill="currentColor" />
+            </svg>
+          </div>
+          <div class="trust-title">Learned Pandits</div>
+          <div class="trust-desc">Learned pandits perform each chadhava with deep devotion and care.</div>
+        </div>
+        <div class="trust-card">
+          <div class="trust-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">
+              <polygon points="23 7 16 12 23 17 23 7" fill="currentColor" />
+              <rect x="1" y="5" width="15" height="14" rx="2" ry="2" />
+            </svg>
+          </div>
+          <div class="trust-title">Chadhava Video Shared</div>
+          <div class="trust-desc">Receive a sacred video recording of your chadhava offering after the rituals are
+            completed.
+          </div>
+        </div>
+        <div class="trust-card">
+          <div class="trust-icon">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8"
+              stroke-linecap="round">
+              <path d="M12 2C8 2 5 5 5 9c0 5 7 13 7 13s7-8 7-13c0-4-3-7-7-7z" />
+              <circle cx="12" cy="9" r="2.5" fill="currentColor" />
+            </svg>
+          </div>
+          <div class="trust-title">Sankalp in Your Name</div>
+          <div class="trust-desc">Your name and gotra are chanted during the rituals.</div>
+        </div>
+
+      </div>
+
+    </section>
+
+    <!-- ═══════════════ NEW SECTION: Sacred Temples ═══════════════ -->
+
+    <!-- ═══════════════ FINAL CTA ═══════════════ -->
+    <section class="section final-section">
+      <div class="divider-ornament" style="margin-bottom: 24px;">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
+          <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4-6.2-4.5-6.2 4.5 2.4-7.4L2 9.4h7.6z" />
+        </svg>
+      </div>
+      <h2 class="final-headline">A Sacred Window That Opens Only Once In 12 Years</h2>
+      <p class="final-sub">May this rare moment of Guru's grace find you in prayer.</p>
+      <p class="final-mantra"
+        style="font-family: var(--font-serif); font-size: 16px; font-style: italic; color: var(--gold-3); margin-top: 16px; font-weight: 600; text-align: center;">
+        🙏 ॐ गुं गुरवे नमः 🙏</p>
+    </section>
+
+  </div>
+
+  <!-- Sticky bottom CTA -->
+  <div class="sticky-cta" id="stickyCta" onclick="handleStickyCtaClick()">
+    <div class="sticky-cta-inner" id="stickyCtaInner">
+      <span class="sticky-cta-icon" id="stickyCtaIcon">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+          stroke-linecap="round">
+          <path d="M12 2l1.5 4.5L18 8l-4.5 1.5L12 14l-1.5-4.5L6 8l4.5-1.5L12 2z" />
+        </svg>
+      </span>
+      <span id="stickyCtaText">Find My Remedies</span>
+    </div>
+  </div>
+
+  <script>
+    /* ═════════════════════════════════════════════════
+       DATA: 6 CONCERNS
+       ═════════════════════════════════════════════════ */
+    const CONCERNS = [
+      {
+        id: 'career', title: 'Career Growth', sub: 'Work, business, recognition',
+        icon: '<path d="M3 7h18M5 7v13a1 1 0 001 1h12a1 1 0 001-1V7M9 7V5a2 2 0 012-2h2a2 2 0 012 2v2"/>'
+      },
+      {
+        id: 'financial', title: 'Financial Stability', sub: 'Money flow and steady savings',
+        icon: '<circle cx="12" cy="12" r="9"/><path d="M14.5 9.5a3 3 0 00-3-2.5h-.5a3 3 0 00-3 3v0a3 3 0 003 3h1a3 3 0 013 3v0a3 3 0 01-3 3h-.5a3 3 0 01-3-2.5M12 5v14"/>'
+      },
+      {
+        id: 'marriage', title: 'Marriage & Family', sub: 'Spouse, children, peace at home',
+        icon: '<path d="M20.84 4.61a5.5 5.5 0 00-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 00-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 000-7.78z"/>'
+      },
+      {
+        id: 'mental', title: 'Mental Peace', sub: 'A calm and clear mind',
+        icon: '<path d="M9 5a4 4 0 00-4 4v6a4 4 0 004 4h6a4 4 0 004-4V9a4 4 0 00-4-4H9zM12 9v6M9 12h6"/>'
+      },
+      {
+        id: 'protection', title: 'Protection', sub: 'From troubles and bad influences',
+        icon: '<path d="M12 22s8-4 8-12V4l-8-2-8 2v6c0 8 8 12 8 12z"/>'
+      },
+      {
+        id: 'knowledge', title: 'Knowledge & Wisdom', sub: 'Studies, wisdom, inner growth',
+        icon: '<path d="M2 3h6a4 4 0 014 4v14a3 3 0 00-3-3H2zM22 3h-6a4 4 0 00-4 4v14a3 3 0 013-3h7z"/>'
+      },
+    ];
+
+    /* ═════════════════════════════════════════════════
+       DATA: 12 RASHIS — effects of Jupiter in Cancer
+       ═════════════════════════════════════════════════ */
+    // SVG paths for the 12 zodiac glyphs — all sized in 24x24 viewBox, stroke-based for consistency
+    const ZODIAC_SVG = {
+      aries: '<path d="M5 8c1-3 3-4 5-4 2.5 0 4 1.5 4 3M19 8c-1-3-3-4-5-4M9 8v12M15 8v12" stroke-linecap="round" stroke-linejoin="round"/>',
+      taurus: '<circle cx="12" cy="15" r="5"/><path d="M5 5c1.5 2.5 4 4 7 4s5.5-1.5 7-4" stroke-linecap="round"/>',
+      gemini: '<path d="M7 4v16M17 4v16M5 5h14M5 19h14" stroke-linecap="round"/>',
+      cancer: '<path d="M4 9a5 5 0 015-5 5 5 0 015 5M20 15a5 5 0 01-5 5 5 5 0 01-5-5" stroke-linecap="round"/><circle cx="7" cy="9" r="2" fill="currentColor" stroke="none"/><circle cx="17" cy="15" r="2" fill="currentColor" stroke="none"/>',
+      leo: '<circle cx="9" cy="9" r="4"/><path d="M9 13c0 5 3 7 6 7 2 0 3-1 3-3" stroke-linecap="round" fill="none"/>',
+      virgo: '<path d="M4 5v15M8 5v15M12 5v15M4 5c0 4 4 4 4 4M8 5c0 4 4 4 4 4M12 5c0 4 4 4 4 4 0 5-2 7-4 7M16 9c2 0 4 1 4 4 0 2-1 4-3 4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>',
+      libra: '<path d="M3 18h18M3 14h7M14 14h7M10 14c0-3 1-6 2-6s2 3 2 6" stroke-linecap="round" fill="none"/>',
+      scorpio: '<path d="M4 5v12c0 1.5 1 3 3 3s3-1.5 3-3V8c0-1.5 1-3 3-3s3 1.5 3 3v9M17 17l3-3M17 17l3 3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>',
+      sagittarius: '<path d="M5 19L19 5M14 5h5v5M10 10l4 4" stroke-linecap="round" stroke-linejoin="round" fill="none"/>',
+      capricorn: '<path d="M4 6v8c0 2 1 4 3 4s3-2 3-4V8M10 8c2-3 4-4 5-4s2 1 2 2-1 2-2 2c-3 0-3 4 0 4s5-2 5-5" stroke-linecap="round" stroke-linejoin="round" fill="none"/>',
+      aquarius: '<path d="M3 9l3 3 3-3 3 3 3-3 3 3 3-3M3 15l3 3 3-3 3 3 3-3 3 3 3-3" stroke-linecap="round" stroke-linejoin="round" fill="none"/>',
+      pisces: '<path d="M5 5c2 4 2 10 0 14M19 5c-2 4-2 10 0 14M5 12h14" stroke-linecap="round" fill="none"/>',
+    };
+
+    const ZODIAC_UNICODE = {
+      aries: '♈', taurus: '♉', gemini: '♊', cancer: '♋',
+      leo: '♌', virgo: '♍', libra: '♎', scorpio: '♏',
+      sagittarius: '♐', capricorn: '♑', aquarius: '♒', pisces: '♓',
+    };
+
+    const RASHIS = [
+      {
+        en: 'Aries', sa: 'Mesh', house: 4, glyph: 'aries',
+        summary: 'Home, family, and inner peace may become softer this year.',
+        lifeAreas: [
+          { icon: '🏠', label: 'Home & Family', text: 'Bonds at home may grow sweeter. Time with mother and elders may feel warm.' },
+          { icon: '💰', label: 'Money', text: 'Old investments or distant sources may bring good news. Some expenses may rise too.' },
+          { icon: '💼', label: 'Work', text: 'Your steady mind may help you stand firm at the workplace.' },
+          { icon: '👶', label: 'Children', text: 'A few homes may hear the happy news of a new baby.' },
+          { icon: '🙏', label: 'Inner Life', text: 'Prayers and small religious events at home may feel meaningful.' }
+        ],
+        opp: 'A gentle time for family gatherings, religious functions at home, and reconnecting with old roots.',
+        challenge: 'Avoid feeling "above" family. Live in harmony — that is how blessings stay.'
+      },
+      {
+        en: 'Taurus', sa: 'Vrishabh', house: 3, glyph: 'taurus',
+        summary: 'A year for siblings, short journeys, and a sweeter way of speaking.',
+        lifeAreas: [
+          { icon: '👫', label: 'Siblings', text: 'Bonds with brothers and sisters may grow warm. You may support each other.' },
+          { icon: '🗣️', label: 'Voice & Knowledge', text: 'Devotees of this sign may inspire others through speech and learning.' },
+          { icon: '✈️', label: 'Short Trips', text: 'Small pilgrimages or local journeys may feel uplifting.' },
+          { icon: '💑', label: 'Marriage', text: 'Old bitterness in marriage is believed to soften under Guru\'s grace.' },
+          { icon: '💼', label: 'Work', text: 'Income may grow, and a second source of earning may open up.' }
+        ],
+        opp: 'A good time for learning, religious study, and short trips with family.',
+        challenge: 'Watch for laziness. Stay active. Take care of health and small body matters.'
+      },
+      {
+        en: 'Gemini', sa: 'Mithun', house: 2, glyph: 'gemini',
+        summary: 'Wealth, family, and sweet speech may grow softly this year.',
+        lifeAreas: [
+          { icon: '💰', label: 'Money', text: 'Savings and bank balance may slowly improve.' },
+          { icon: '🗣️', label: 'Voice', text: 'Your words may carry weight. Others may listen with care.' },
+          { icon: '👨', label: 'Family', text: 'Love at home may grow. Family may stand together.' },
+          { icon: '💼', label: 'Work', text: 'Job-holders may see signs of a salary rise. Ancestral business may flourish.' },
+          { icon: '🎉', label: 'Happy News', text: 'A wedding or new baby may bless the family.' }
+        ],
+        opp: 'A favorable time for joint family decisions, savings plans, and ancestral work.',
+        challenge: 'Don\'t take family love for granted. Small acts of care keep blessings flowing.'
+      },
+      {
+        en: 'Cancer', sa: 'Kark', house: 1, glyph: 'cancer',
+        summary: 'A once-in-12-years moment of grace touches your own sign.',
+        lifeAreas: [
+          { icon: '✨', label: 'Self & Personality', text: 'Your face may glow. Confidence may grow.' },
+          { icon: '💼', label: 'Work & Business', text: 'Business — alone or in partnership — may see new opportunities.' },
+          { icon: '💑', label: 'Marriage', text: 'Old differences may melt. Love may return.' },
+          { icon: '📚', label: 'Studies', text: 'Students of this sign are believed to gain wisdom and good results.' },
+          { icon: '👶', label: 'Children', text: 'Blessings of children and family joy are believed to grow.' }
+        ],
+        opp: 'The most sacred window for prayer, charity, and spiritual practice. Chadhava offerings made now are believed to carry far-reaching grace.',
+        challenge: 'Such strong energy can stir inner restlessness. Channel it into prayer and good deeds.'
+      },
+      {
+        en: 'Leo', sa: 'Simha', house: 12, glyph: 'leo',
+        summary: 'A year of giving, journeys, and spiritual deepening.',
+        lifeAreas: [
+          { icon: '💸', label: 'Expenses', text: 'Spending may rise — mostly on good things like chadhava, family health, comforts.' },
+          { icon: '✈️', label: 'Foreign / Distance', text: 'Those working abroad or in big companies may see good earnings.' },
+          { icon: '🙏', label: 'Spirituality', text: 'A strong pull toward worship, meditation, and pilgrimage.' },
+          { icon: '🏠', label: 'Family', text: 'Bonds with family and in-laws may grow warm.' },
+          { icon: '📚', label: 'Education', text: 'Students may find chances to study far from home.' }
+        ],
+        opp: 'A blessed time for pilgrimage, donation, and spiritual learning.',
+        challenge: 'Watch health and food habits. Save a little, even when spending feels right.'
+      },
+      {
+        en: 'Virgo', sa: 'Kanya', house: 11, glyph: 'virgo',
+        summary: 'Income, wishes, and circles of support may grow this year.',
+        lifeAreas: [
+          { icon: '💰', label: 'Money', text: 'Sources of income may grow. Old plans may come together.' },
+          { icon: '🤝', label: 'Social Circle', text: 'Respected people may enter your life. New friendships may bloom.' },
+          { icon: '📚', label: 'Studies', text: 'Students may shine. Recognition may come.' },
+          { icon: '💑', label: 'Love & Marriage', text: 'Love marriage hopes may strengthen. Married couples may hear good news of a baby.' },
+          { icon: '👫', label: 'Siblings', text: 'Siblings may rise and bring joy to the family.' }
+        ],
+        opp: 'A favorable time to launch ideas, build relationships, and ask elders for blessings.',
+        challenge: 'Laziness may slow you down. Move while the door is open.'
+      },
+      {
+        en: 'Libra', sa: 'Tula', house: 10, glyph: 'libra',
+        summary: 'Work, name, and reputation may shine — with humility.',
+        lifeAreas: [
+          { icon: '💼', label: 'Career', text: 'Promotion or a new job may come. Colleagues may stand with you.' },
+          { icon: '👨👩👧', label: 'Family', text: 'Bonds with parents may grow warm. Old health worries may ease.' },
+          { icon: '🧘', label: 'Mind', text: 'Mental stress may reduce. A calmer mind may return.' },
+          { icon: '👫', label: 'Siblings', text: 'Brothers and sisters may support your work.' },
+          { icon: '💪', label: 'Opponents', text: 'Those who oppose you may quieten down.' }
+        ],
+        opp: 'A good time to push gently in career. Short work trips may help.',
+        challenge: 'Pride and overconfidence at work may invite trouble. Stay humble.'
+      },
+      {
+        en: 'Scorpio', sa: 'Vrishchik', house: 9, glyph: 'scorpio',
+        summary: 'Fortune, faith, and far journeys may unfold this year.',
+        lifeAreas: [
+          { icon: '🙏', label: 'Faith', text: 'Heart may turn deeply toward religion and elders.' },
+          { icon: '🌟', label: 'Fame', text: 'Respect in society may grow.' },
+          { icon: '✈️', label: 'Travel', text: 'Pilgrimages and foreign trips may open up.' },
+          { icon: '👶', label: 'Children', text: 'Good news from children — studies, achievements — may bring joy.' },
+          { icon: '📚', label: 'Higher Studies', text: 'Students may rise and even study abroad.' }
+        ],
+        opp: 'A blessed window for spiritual journeys, mentorship, and big life decisions.',
+        challenge: 'Small disputes with siblings may surface. Speak gently. A favorable transfer may need patience.'
+      },
+      {
+        en: 'Sagittarius', sa: 'Dhanu', house: 8, glyph: 'sagittarius',
+        summary: 'A year of deep inner change — handled with care and faith.',
+        lifeAreas: [
+          { icon: '🧘', label: 'Spiritual Depth', text: 'Inner wisdom may grow. Devotion may deepen.' },
+          { icon: '💰', label: 'Money', text: 'Sudden gains are possible — but expenses may rise too.' },
+          { icon: '🏠', label: 'Family Property', text: 'Old property matters may surface; handle gently.' },
+          { icon: '🏥', label: 'Health', text: 'Stay watchful. Small body matters need attention.' },
+          { icon: '👴', label: 'Ancestral', text: 'Ancestral property or family responsibilities may come your way.' }
+        ],
+        opp: 'A time for inner work, learning from a guru, and quiet spiritual growth.',
+        challenge: 'Avoid family disputes. Watch health and unplanned travel.'
+      },
+      {
+        en: 'Capricorn', sa: 'Makar', house: 7, glyph: 'capricorn',
+        summary: 'Marriage, partners, and shared work may all soften this year.',
+        lifeAreas: [
+          { icon: '💑', label: 'Marriage', text: 'Mutual love and trust may grow. Old misunderstandings may melt.' },
+          { icon: '🤝', label: 'Partnerships', text: 'Business partnerships may bring growth.' },
+          { icon: '💼', label: 'Career', text: 'Promotion or new ventures may unfold steadily.' },
+          { icon: '💰', label: 'Money', text: 'Spouse may bring financial good news.' },
+          { icon: '👫', label: 'Siblings', text: 'Bonds may grow sweet. Small journeys may help work.' }
+        ],
+        opp: 'A favorable time to deepen marriage, start partnership ventures, and consider foreign opportunities.',
+        challenge: 'Don\'t take partners — in marriage or business — for granted. Keep effort steady.'
+      },
+      {
+        en: 'Aquarius', sa: 'Kumbha', house: 6, glyph: 'aquarius',
+        summary: 'A year to walk carefully with health, work, and money.',
+        lifeAreas: [
+          { icon: '🏥', label: 'Health', text: 'Stay watchful. A simple routine and yoga may help.' },
+          { icon: '💸', label: 'Expenses', text: 'Spending may rise. Save where possible.' },
+          { icon: '💼', label: 'Work', text: 'Hard effort may be needed. Opponents may stir at times.' },
+          { icon: '⚖️', label: 'Court Cases', text: 'Old cases may move in your favor.' },
+          { icon: '✈️', label: 'Foreign', text: 'Foreign opportunities may quietly open.' }
+        ],
+        opp: 'A favorable time to settle disputes and apply for loans or foreign options.',
+        challenge: 'Avoid heated family debates over money. Stay calm in work disagreements.'
+      },
+      {
+        en: 'Pisces', sa: 'Meen', house: 5, glyph: 'pisces',
+        summary: 'A year for children, love, and long-stuck plans to finally move.',
+        lifeAreas: [
+          { icon: '💼', label: 'Career', text: 'An old job may end — but a better one is believed to follow. Salary may rise.' },
+          { icon: '📋', label: 'Long-Term Plans', text: 'Pending plans may finally complete.' },
+          { icon: '💕', label: 'Love', text: 'Love relationships may grow deeper and more mature.' },
+          { icon: '📚', label: 'Studies', text: 'A natural pull toward learning may help students shine.' },
+          { icon: '👶', label: 'Children', text: 'Couples praying for a child may feel hopeful.' }
+        ],
+        opp: 'A favorable time to take long journeys, complete pending dreams, and grow in love.',
+        challenge: 'If old work ends, don\'t panic — Vedic tradition holds that endings here often hide better beginnings.'
+      },
+    ];
+
+    const PUJAS = {
+      'hansraj-mahaseva': {
+        name: 'Guru Gochar Hansraj Yog Special Rashi Specific Mahaseva',
+        fullName: 'Guru Gochar Hansraj Yog Special Rashi Specific Mahaseva',
+        tagline: 'Once in 12 Years – Jupiter Rises to His Throne and Rajyog Awakens!',
+        deeplink: 'srimandir://open?screen=chadhava&action=add_to_cart&action_id=dc61f950-5fbe-40db-a6fc-d70aaa8ae2e1&utm_campaign=Jupiter_chadhava_recommendations',
+        deities: [
+          { name: 'Brihaspati', role: 'Devguru — planet of wisdom and expansion' },
+          { name: 'Ganesha', role: 'Obstacle remover and lord of beginnings' },
+          { name: 'Vishnu', role: 'Preserver of dharma and auspicious growth' }
+        ],
+        emotionalOpening: 'Once in 12 Years – Jupiter Rises to His Throne and Rajyog Awakens! Hans Mahapurush Rajyog activation for Karka, Mesh, Tula, or Makar rashis. Rashi-specific ritual for personal magnetism, health, social authority, and life-transforming success in career and professional recognition.',
+        spiritualExplanation: 'When Devguru Brihaspati enters his exalted home in Cancer, it triggers the highly auspicious Hans Mahapurush Rajyog. Performing this Rashi-specific Mahaseva aligns your birth stars with this royal configuration to trigger growth.',
+        ritualImportance: 'This personalized offering unifies traditional planetary invocations with your specific rashi energies to activate authority and attract a high-paying career path.',
+        ritualDetails: [
+          '🌸 **Rashi Abhishek** — special herbs and yellow sandal paste bath for rashi lord alignment',
+          '🌸 **Hansraj Yog Havan** — sacred offerings to invoke wisdom, leadership, and power',
+          '🌸 **Guru Aarti** — concluding prayers to invoke the supreme master\'s blessings for your family'
+        ],
+        blessingsSought: [
+          '🪷 Life-transforming success in career and professional recognition',
+          '🪷 Enhanced personal magnetism, physical health, and social authority',
+          '🪷 Auspicious opportunities and rapid growth in business/work'
+        ]
+      },
+
+      'panchguru-chadhava': {
+        name: 'Guru Gochar - Panchguru Panchtattva Chadhava',
+        fullName: 'Guru Gochar - Panchguru Panchtattva Chadhava',
+        tagline: 'Once in 12 Years - When Dev Guru Brihaspati Enters His Highest State of Power!',
+        deeplink: 'srimandir://open?screen=chadhava&action=add_to_cart&action_id=aa382e68-8455-46fa-b9ea-19c809fcb585&utm_campaign=Jupiter_chadhava_recommendations',
+        deities: [
+          { name: 'Brahma', role: 'Creator of wisdom and fresh pathways' },
+          { name: 'Vishnu', role: 'Preserver of prosperity and dharma' },
+          { name: 'Shankar', role: 'Destroyer of negativity and fear' },
+          { name: 'Dattatreya', role: 'Synthesized trinity of all master energies' },
+          { name: 'Brihaspati', role: 'Guru of the gods and bestower of wisdom' }
+        ],
+        emotionalOpening: 'Once in 12 Years - When Dev Guru Brihaspati Enters His Highest State of Power! Honours five divine Guru forms at five Siddha temples simultaneously - one offering per element (Akash, Vayu, Agni, Jal, Prithvi). When all five are covered at once, no door in your life remains closed. Complete Guru Kripa Kavach across all dimensions.',
+        spiritualExplanation: 'By honoring all five forms of the Divine Guru across five distinct Siddha temples, this offering harmonizes the five essential elements within your life, unlocking blockages across all spheres of existence.',
+        ritualImportance: 'This supreme element-aligned offering acts as an absolute life remedy, grounding your efforts and generating an multi-dimensional shield of grace.',
+        ritualDetails: [
+          '🌸 **Five Element Abhishek** — five unique offerings corresponding to the five cosmic elements',
+          '🌸 **Panchguru Archana** — holy flowers and sandalwood offered at five Siddha temples',
+          '🌸 **Maha Havan** — integrated fire offerings to balance Vayu, Jal, Agni, Akash, and Prithvi'
+        ],
+        blessingsSought: [
+          '🪷 Opening of new paths and removal of long-term obstacles',
+          '🪷 Complete cosmic protection (Kavach) across all life dimensions',
+          '🪷 Enhanced knowledge, wisdom, and spiritual progress for the family'
+        ]
+      },
+
+      'swarna-guru-abhishek': {
+        name: 'Guru Gochar Swarna Guru Prapti 3 Brihaspati Dham Yellow Sandalwood Maha Abhishek',
+        fullName: 'Guru Gochar Swarna Guru Prapti 3 Brihaspati Dham Yellow Sandalwood Maha Abhishek',
+        tagline: 'Once in 12 Years - When Jupiter Rises to His Throne of Exaltation!',
+        deeplink: 'srimandir://open?screen=chadhava&action=add_to_cart&action_id=c68ab5fc-5820-4bf0-b669-e7e4739c6dac&utm_campaign=Jupiter_chadhava_recommendations',
+        deities: [
+          { name: 'Brihaspati', role: 'Devguru and the celestial wealth-bestower' },
+          { name: 'Lakshmi', role: 'Goddess of absolute wealth and fortune' },
+          { name: 'Kuber', role: 'Treasurer of the gods and stable assets' }
+        ],
+        emotionalOpening: 'Once in 12 Years - When Jupiter Rises to His Throne of Exaltation! Devguru Brihaspati is the \'Dhanadaata\' - the bestower of wealth and remover of financial obstacles. Yellow Sandalwood Abhishek at 3 Brihaspati Dhams creates \'Tri-Guru Shakti Kavach\' to clear financial blockages, dissolve debt-karma, and open the path to true abundance.',
+        spiritualExplanation: 'Turmeric and yellow sandalwood are deeply linked to Guru\'s financial frequency. Performing this abhishek at three premier Brihaspati Dhams activates a massive flow of material stability.',
+        ritualImportance: 'This sandalwood-focused offering clears the debt-energy blocks in your horoscopic chart, ensuring a peaceful and stable stream of domestic prosperity.',
+        ritualDetails: [
+          '🌸 **Yellow Sandalwood Abhishek** — pure, aromatic yellow sandalwood paste bath of the deity',
+          '🌸 **Lakshmi-Kuber Archana** — 108 flower offerings to invite stable domestic prosperity',
+          '🌸 **Homam** — fire offering with sacred yellow mustard and pure ghee'
+        ],
+        blessingsSought: [
+          '🪷 Dissolving of long-standing debts and financial karmic blockages',
+          '🪷 Stable growth of savings, assets, and business earnings',
+          '🪷 Activation of new opportunities to build wealth and abundance'
+        ]
+      },
+
+      'chandal-dosh-havan': {
+        name: 'Guru Gochar Guru Chandal Dosh Nivaran 21 Kg Yellow Mustard Seeds Havan Ahuti',
+        fullName: 'Guru Gochar Guru Chandal Dosh Nivaran 21 Kg Yellow Mustard Seeds Havan Ahuti',
+        tagline: 'Once in 12 Years - Jupiter Transits Its Exaltation Sign Within Adhik Maas!',
+        deeplink: 'srimandir://open?screen=chadhava&action=add_to_cart&action_id=9b73fe82-9681-48a9-a70c-0a9b6d2c0c2f&utm_campaign=Jupiter_chadhava_recommendations',
+        deities: [
+          { name: 'Brihaspati', role: 'Devguru and the source of pure intellect' },
+          { name: 'Rahu', role: 'Planet of confusion, illusion, and fear' },
+          { name: 'Ganesha', role: 'Remover of obstacles and karmic delays' }
+        ],
+        emotionalOpening: 'Once in 12 Years - Jupiter Transits Its Exaltation Sign Within Adhik Maas! When Guru and Rahu form Guru Chandal Dosha, wisdom is clouded and decisions go wrong repeatedly. Yellow mustard into the sacred fire burns away Rahu\'s veil of illusion and reawakens Jupiter\'s clarity, wisdom, and protection from karmic obstacles.',
+        spiritualExplanation: 'When Rahu casts a shadow over Jupiter, it leads to clouded judgment and sudden delays. The massive 21 kg yellow mustard seed offering clears this planetary friction.',
+        ritualImportance: 'This intense havan acts as a divine filter, cutting through mental confusion, restoring focus, and ensuring you are safe from hidden opponents and poor choices.',
+        ritualDetails: [
+          '🌸 **Ganesh Pujan** — initial invocation to remove obstacles and clear your path',
+          '🌸 **21 Kg Mustard Seeds Havan** — massive offering to burn away planetary heat and illusions',
+          '🌸 **Chandal Dosh Nivaran Chants** — Vedic mantras for peace and mental clarity'
+        ],
+        blessingsSought: [
+          '🪷 Reawakening of Jupiter\'s clarity, wisdom, and intuitive strength',
+          '🪷 Deep protection from karmic obstacles, bad advice, and sudden business losses',
+          '🪷 Inner calm, emotional peace, and relief from overthinking'
+        ]
+      },
+
+      'maha-bhojan-seva': {
+        name: 'Guru Gochar Maha-Bhojan Seva',
+        fullName: 'Guru Gochar Maha-Bhojan Seva',
+        tagline: 'Once Every 12 Years - When Devguru Brihaspati Enters His Exaltation Sign!',
+        deeplink: 'srimandir://open?screen=chadhava&action=add_to_cart&action_id=1e542bfd-715b-45ce-9279-82fc98e2a712&utm_campaign=Jupiter_chadhava_recommendations',
+        deities: [
+          { name: 'Brihaspati', role: 'Devguru — pleased by pure, selfless giving' },
+          { name: 'Shiva', role: 'Lord of Assi Ghat and supreme guru' },
+          { name: 'Lakshmi', role: 'Goddess of domestic peace and nourishment' }
+        ],
+        emotionalOpening: 'Once Every 12 Years - When Devguru Brihaspati Enters His Exaltation Sign! Devguru Brihaspati is most pleased by those who give. Feeding the hungry during this sacred transit is the most precise mirror of abundance energy. Performed at Assi Ghat where Brihaspati himself received the boon to become Devaguru of all gods.',
+        spiritualExplanation: 'Annadaan (food charity) during Jupiter\'s transit represents the absolute flow of selfless love. Giving to others directly mirrors the prosperity frequency, removing friction inside your family.',
+        ritualImportance: 'Performed at the holy Assi Ghat where Devguru completed his penance, this seva acts as a powerful cleanser of domestic disharmony.',
+        ritualDetails: [
+          '🌸 **Maha-Bhojan Seva** — wholesome meals distributed to the needy at Assi Ghat in your name',
+          '🌸 **Assi Ghat Prayers** — special lamps lit on the banks of the sacred Ganges',
+          '🌸 **Mantra Jaap** — invoking Devguru\'s kind gaze upon your spouse and children'
+        ],
+        blessingsSought: [
+          '🪷 Sweet harmony, mutual love, and understanding in marriage and family',
+          '🪷 Dissolving of domestic friction, arguments, and coldness',
+          '🪷 Relationship protection, healthy progeny, and long-term family bonds'
+        ]
+      },
+
+      'sarva-kalyan-chadhava': {
+        name: 'Adhik Bada Mangal-Guru Gochar Mahasanyog Sarva Kalyan Chadhava',
+        fullName: 'Adhik Bada Mangal-Guru Gochar Mahasanyog Sarva Kalyan Chadhava',
+        tagline: 'Rare Mahasanyog Alignment - Once in Many Years!',
+        deeplink: 'srimandir://open?screen=chadhava&action=add_to_cart&action_id=40953642-bd2e-4984-9a48-e277d6507acd&utm_campaign=Jupiter_chadhava_recommendations',
+        deities: [
+          { name: 'Hanuman', role: 'Lord of absolute strength and protection' },
+          { name: 'Brihaspati', role: 'Planet of wisdom, fortune, and guidance' },
+          { name: 'Shiva', role: 'Lord of transformation and cosmic well-being' },
+          { name: 'Lakshmi', role: 'Goddess of complete prosperity and success' }
+        ],
+        emotionalOpening: 'Rare Mahasanyog brings complete well-being - career success, wealth, family harmony, and mental peace. Once in many years alignment bringing complete transformation across all dimensions of life: success, prosperity, relationships, peace, protection, and supreme wisdom.',
+        spiritualExplanation: 'The unification of Adhik Bada Mangal and exalted Jupiter is an incredibly rare cosmic alignment. Offering this Chadhava combines the protective, obstacle-shattering force of Hanuman with the expansive, fortune-granting energy of Jupiter.',
+        ritualImportance: 'This is the ultimate, most comprehensive offering. It addresses all aspects of earthly life, generating a protective shield that secures health, wealth, and lineage.',
+        ritualDetails: [
+          '🌸 **Adhik Bada Mangal Abhishek** — saffron-sandalwood bath of Hanuman and Brihaspati',
+          '🌸 **Sarva Kalyan Havan** — sacred homam using special protective herbs',
+          '🌸 **Lineage Protection Prayers** — chanting of protective kavachs for children and grandchildren'
+        ],
+        blessingsSought: [
+          '🪷 Comprehensive well-being across career, finance, health, and relationships',
+          '🪷 Absolute protection from legal worries, enemies, and bad times',
+          '🪷 Spiritual wisdom, inner peace, and divine grace of Lord Hanuman and Devguru'
+        ]
+      }
+    };
+
+    /* ═════════════════════════════════════════════════
+       63-COMBINATION MAPPING (from product doc)
+       Keys = alphabetically sorted concern ids joined with ','
+       ═════════════════════════════════════════════════ */
+    const RECO_MAP = {
+      // Single
+      'career': 'hansraj-mahaseva',
+      'financial': 'swarna-guru-abhishek',
+      'marriage': 'maha-bhojan-seva',
+      'mental': 'chandal-dosh-havan',
+      'protection': 'chandal-dosh-havan',
+      'knowledge': 'panchguru-chadhava',
+
+      // Dual (15)
+      'career,financial': 'swarna-guru-abhishek',
+      'career,marriage': 'hansraj-mahaseva',
+      'career,mental': 'chandal-dosh-havan',
+      'career,protection': 'hansraj-mahaseva',
+      'career,knowledge': 'panchguru-chadhava',
+      'financial,marriage': 'maha-bhojan-seva',
+      'financial,mental': 'swarna-guru-abhishek',
+      'financial,protection': 'swarna-guru-abhishek',
+      'financial,knowledge': 'swarna-guru-abhishek',
+      'marriage,mental': 'maha-bhojan-seva',
+      'marriage,protection': 'maha-bhojan-seva',
+      'knowledge,marriage': 'maha-bhojan-seva',
+      'mental,protection': 'chandal-dosh-havan',
+      'knowledge,mental': 'panchguru-chadhava',
+      'knowledge,protection': 'chandal-dosh-havan',
+
+      // Triple (20)
+      'career,financial,marriage': 'hansraj-mahaseva',
+      'career,financial,mental': 'swarna-guru-abhishek',
+      'career,financial,protection': 'swarna-guru-abhishek',
+      'career,financial,knowledge': 'panchguru-chadhava',
+      'career,marriage,mental': 'hansraj-mahaseva',
+      'career,marriage,protection': 'hansraj-mahaseva',
+      'career,knowledge,marriage': 'panchguru-chadhava',
+      'career,mental,protection': 'chandal-dosh-havan',
+      'career,knowledge,mental': 'panchguru-chadhava',
+      'career,knowledge,protection': 'chandal-dosh-havan',
+      'financial,marriage,mental': 'maha-bhojan-seva',
+      'financial,marriage,protection': 'swarna-guru-abhishek',
+      'financial,knowledge,marriage': 'maha-bhojan-seva',
+      'financial,mental,protection': 'swarna-guru-abhishek',
+      'financial,knowledge,mental': 'swarna-guru-abhishek',
+      'financial,knowledge,protection': 'swarna-guru-abhishek',
+      'marriage,mental,protection': 'maha-bhojan-seva',
+      'knowledge,marriage,mental': 'maha-bhojan-seva',
+      'knowledge,marriage,protection': 'maha-bhojan-seva',
+      'knowledge,mental,protection': 'chandal-dosh-havan',
+
+      // Quadruple (15)
+      'career,financial,marriage,mental': 'sarva-kalyan-chadhava',
+      'career,financial,marriage,protection': 'hansraj-mahaseva',
+      'career,financial,knowledge,marriage': 'panchguru-chadhava',
+      'career,financial,mental,protection': 'swarna-guru-abhishek',
+      'career,financial,knowledge,mental': 'panchguru-chadhava',
+      'career,financial,knowledge,protection': 'chandal-dosh-havan',
+      'career,marriage,mental,protection': 'hansraj-mahaseva',
+      'career,knowledge,marriage,mental': 'panchguru-chadhava',
+      'career,knowledge,marriage,protection': 'panchguru-chadhava',
+      'career,knowledge,mental,protection': 'panchguru-chadhava',
+      'financial,marriage,mental,protection': 'sarva-kalyan-chadhava',
+      'financial,knowledge,marriage,mental': 'maha-bhojan-seva',
+      'financial,knowledge,marriage,protection': 'maha-bhojan-seva',
+      'financial,knowledge,mental,protection': 'swarna-guru-abhishek',
+      'knowledge,marriage,mental,protection': 'maha-bhojan-seva',
+
+      // Quintuple (6)
+      'career,financial,marriage,mental,protection': 'sarva-kalyan-chadhava',
+      'career,financial,knowledge,marriage,mental': 'panchguru-chadhava',
+      'career,financial,knowledge,marriage,protection': 'panchguru-chadhava',
+      'career,financial,knowledge,mental,protection': 'panchguru-chadhava',
+      'career,knowledge,marriage,mental,protection': 'panchguru-chadhava',
+      'financial,knowledge,marriage,mental,protection': 'sarva-kalyan-chadhava',
+
+      // All 6
+      'career,financial,knowledge,marriage,mental,protection': 'sarva-kalyan-chadhava',
+    };
+
+    /* ═════════════════════════════════════════════════
+       RENDER: Concerns grid
+       ═════════════════════════════════════════════════ */
+    const selectedConcerns = new Set();
+
+    function renderConcerns() {
+      const grid = document.getElementById('concernsGrid');
+      grid.innerHTML = CONCERNS.map(c => `
+    <div class="concern-card" data-id="${c.id}" onclick="toggleConcern('${c.id}', this)">
+      <div class="concern-check">
+        <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+      </div>
+      <div class="concern-icon">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round">${c.icon}</svg>
+      </div>
+      <div class="concern-title">${c.title}</div>
+      <div class="concern-sub">${c.sub}</div>
+    </div>
+  `).join('');
+    }
+
+    function toggleConcern(id, el) {
+      if (selectedConcerns.has(id)) {
+        selectedConcerns.delete(id);
+        el.classList.remove('is-selected');
+      } else {
+        selectedConcerns.add(id);
+        el.classList.add('is-selected');
+      }
+      document.getElementById('selCount').textContent = selectedConcerns.size;
+      const btn = document.getElementById('revealBtn');
+      if (selectedConcerns.size > 0) btn.classList.add('is-ready');
+      else btn.classList.remove('is-ready');
+      handleScroll();
+    }
+
+    /* ═════════════════════════════════════════════════
+       RENDER: Rashi carousel & pills
+       ═════════════════════════════════════════════════ */
+    const RASHI_CONCERNS = {
+      aries: ['marriage', 'financial'],
+      taurus: ['career', 'mental', 'protection'],
+      gemini: ['financial', 'knowledge'],
+      cancer: ['mental', 'knowledge'],
+      leo: ['financial', 'career'],
+      virgo: ['financial'],
+      libra: ['career', 'marriage', 'financial', 'mental'],
+      scorpio: ['financial', 'knowledge'],
+      sagittarius: ['financial', 'career', 'protection'],
+      capricorn: ['marriage', 'career'],
+      aquarius: ['financial', 'mental', 'protection'],
+      pisces: ['knowledge', 'career']
+    };
+
+    function selectConcernsForRashi(rashiEn) {
+      selectedConcerns.clear();
+      const ids = RASHI_CONCERNS[rashiEn.toLowerCase()] || [];
+      ids.forEach(id => selectedConcerns.add(id));
+
+      // Synchronize Concern Selector cards in the DOM
+      document.querySelectorAll('.concern-card').forEach(card => {
+        const id = card.getAttribute('data-id');
+        if (selectedConcerns.has(id)) {
+          card.classList.add('is-selected');
+        } else {
+          card.classList.remove('is-selected');
+        }
+      });
+
+      // Update Selection Counter
+      document.getElementById('selCount').textContent = selectedConcerns.size;
+
+      // Prepare Reveal CTA
+      const btn = document.getElementById('revealBtn');
+      if (selectedConcerns.size > 0) {
+        btn.classList.add('is-ready');
+      } else {
+        btn.classList.remove('is-ready');
+      }
+
+      if (typeof handleScroll === 'function') handleScroll();
+
+      // Scroll to Concerns
+      const target = document.getElementById('concernsSection');
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+
+    function renderRashis() {
+      const stack = document.getElementById('rashiStack');
+      stack.innerHTML = RASHIS.map((r, i) => `
+    <div class="rashi-card" id="rashi-${r.en.toLowerCase()}">
+      <div class="rashi-card-header">
+        <div class="rashi-symbol">
+          <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">${ZODIAC_SVG[r.glyph]}</svg>
+        </div>
+        <div>
+          <div class="rashi-name-row">${r.en}</div>
+          <div class="rashi-name-sa-inline">${r.sa} Rashi</div>
+        </div>
+      </div>
+      <div class="rashi-summary">${r.summary}</div>
+      
+      <!-- NEW: Life Areas block -->
+      <div class="rashi-life-areas">
+        <div class="rashi-block-label">How Guru's Grace May Touch Your Life</div>
+        <ul class="life-areas-list">
+          ${r.lifeAreas.map(area => `
+            <li>
+              <span class="area-icon">${area.icon}</span>
+              <span><strong>${area.label}:</strong> ${area.text}</span>
+            </li>
+          `).join('')}
+        </ul>
+      </div>
+
+      <div class="rashi-detail">
+        <div class="rashi-block opp-block">
+          <div class="rashi-block-label">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="green-icon"><path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/></svg>
+            Opportunities
+          </div>
+          <div class="rashi-block-text">${r.opp}</div>
+        </div>
+        <div class="rashi-block watch-block">
+          <div class="rashi-block-label">
+            <svg width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" class="red-icon"><path d="M10.29 3.86L1.82 18a2 2 0 001.71 3h16.94a2 2 0 001.71-3L13.71 3.86a2 2 0 00-3.42 0zM12 9v4M12 17h.01"/></svg>
+            Watch Out For
+          </div>
+          <div class="rashi-block-text">${r.challenge}</div>
+        </div>
+      </div>
+      <button class="btn-find-remedies" onclick="selectConcernsForRashi('${r.en.toLowerCase()}')">
+        Find My Remedies →
+      </button>
+    </div>
+  `).join('');
+    }
+
+    function renderHeroRashiPills() {
+      const container = document.getElementById('heroRashiPills');
+      if (!container) return;
+      container.innerHTML = RASHIS.map(r => `
+    <div class="rashi-pill-new" id="pill-${r.en.toLowerCase()}" onclick="scrollToRashi('${r.en.toLowerCase()}', this)">
+      <div class="rashi-pill-left-icon">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8">${ZODIAC_SVG[r.glyph]}</svg>
+      </div>
+      <div class="rashi-pill-text-stack">
+        <span class="rashi-pill-sa-bold">${r.sa}</span>
+        <span class="rashi-pill-en-small">${r.en}</span>
+      </div>
+      <div class="rashi-pill-right-glyph">${ZODIAC_UNICODE[r.glyph]}</div>
+    </div>
+  `).join('');
+    }
+
+    function scrollToRashi(rashiEn, element) {
+      // Reset selection on all pills
+      document.querySelectorAll('.rashi-pill-new').forEach(p => p.classList.remove('is-selected'));
+
+      // Highlight the selected pill
+      if (element) {
+        element.classList.add('is-selected');
+      } else {
+        const pill = document.getElementById(`pill-${rashiEn.toLowerCase()}`);
+        if (pill) pill.classList.add('is-selected');
+      }
+
+      const target = document.getElementById(`rashi-${rashiEn}`);
+      if (target) {
+        target.scrollIntoView({ behavior: 'smooth', block: 'center' });
+        target.classList.add('highlight-flash');
+        setTimeout(() => {
+          target.classList.remove('highlight-flash');
+        }, 2000);
+      }
+    }
+
+    function scrollToGrid() {
+      const grid = document.getElementById('rashiSelectionTarget');
+      if (grid) {
+        grid.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }
+
+    /* ═════════════════════════════════════════════════
+       REVEAL: Recommendation
+       ═════════════════════════════════════════════════ */
+    function getConcernsKey() {
+      return [...selectedConcerns].sort().join(',');
+    }
+
+    function concernLabels() {
+      return [...selectedConcerns].map(id => CONCERNS.find(c => c.id === id).title.toLowerCase());
+    }
+
+    function concernSentence() {
+      const labels = concernLabels();
+      if (labels.length === 1) return labels[0];
+      if (labels.length === 2) return labels.join(' and ');
+      return labels.slice(0, -1).join(', ') + ', and ' + labels[labels.length - 1];
+    }
+
+    const DEITY_IMAGES = {
+      'Kuber': 'kuber.jpg',
+      'Hanuman': 'hanuman.jpg',
+      'Mangal': 'mangal.jpg',
+      'Mangal Dev': 'mangal.jpg',
+      'Santan Gopal': 'krishna.jpg',
+      'Krishna': 'krishna.jpg',
+      'Lakshmi': 'lakshmi.jpg',
+      'Parvati': 'parvati.jpg',
+      'Maa Tara': 'tara.jpg',
+      'Saraswati': 'saraswati.jpg',
+      'Rahu': 'rahu.jpg',
+      'Chandra': 'chandra.jpg',
+      'Ganesha': 'ganesha.jpg',
+      'Dattatreya': 'dattatreya.jpg',
+      'Shankar': 'shankar.jpg',
+      'Shiva': 'shankar.jpg',
+      'Brahma': 'brahma.jpg',
+      'Vishnu': 'vishnu.jpg',
+      'Brihaspati': 'brihaspati.jpg'
+    };
+
+    function formatMarkdown(text) {
+      return text.replace(/\*\*(.*?)\*\*/g, '<strong>$1</strong>');
+    }
+
+    function extractEmoji(str) {
+      const spaceIdx = str.indexOf(' ');
+      if (spaceIdx === -1) return { emoji: '', text: str };
+      const emoji = str.substring(0, spaceIdx);
+      const text = str.substring(spaceIdx + 1);
+      return { emoji, text };
+    }
+
+    function revealRecommendation() {
+      if (selectedConcerns.size === 0) return;
+      const key = getConcernsKey();
+      const pujaId = RECO_MAP[key] || 'panchguru-chadhava';
+      const p = PUJAS[pujaId];
+
+      document.getElementById('recoName').textContent = p.fullName;
+      document.getElementById('recoTagline').textContent = p.tagline;
+      document.getElementById('recoEmotional').innerHTML = p.emotionalOpening;
+      document.getElementById('recoSpiritual').innerHTML = p.spiritualExplanation;
+      document.getElementById('recoImportance').innerHTML = p.ritualImportance;
+
+      // Deities
+      document.getElementById('recoDeities').innerHTML = p.deities.map(d => {
+        const imgFile = DEITY_IMAGES[d.name];
+        const imageHtml = imgFile
+          ? `<img src="${imgFile}" alt="${d.name}" style="width: 100%; height: 100%; object-fit: cover; display: block;">`
+          : ``;
+        const imageClass = imgFile ? 'deity-image has-img' : 'deity-image';
+        return `
+      <div class="deity-card">
+        <div class="${imageClass}">${imageHtml}</div>
+        <div class="deity-name">${d.name}</div>
+        <div class="deity-role">${d.role}</div>
+      </div>
+    `;
+      }).join('');
+
+      // Ritual Details Bullets
+      document.getElementById('recoDetails').innerHTML = p.ritualDetails.map(d => {
+        const { emoji, text } = extractEmoji(d);
+        const formattedText = formatMarkdown(text);
+        return `
+      <li style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; font-size: 14.5px; line-height: 1.55; color: var(--brown-2);">
+        <span style="font-size: 18px; line-height: 1; flex-shrink: 0;">${emoji}</span>
+        <span>${formattedText}</span>
+      </li>
+    `;
+      }).join('');
+
+      // Outcomes / Blessings Sought
+      document.getElementById('recoOutcomes').innerHTML = p.blessingsSought.map(o => {
+        const { emoji, text } = extractEmoji(o);
+        const formattedText = formatMarkdown(text);
+        return `
+      <li style="display: flex; align-items: flex-start; gap: 10px; margin-bottom: 8px; font-size: 14.5px; line-height: 1.55; color: var(--brown-2);">
+        <span style="font-size: 18px; line-height: 1; flex-shrink: 0;">${emoji}</span>
+        <span>${formattedText}</span>
+      </li>
+    `;
+      }).join('');
+
+      const primaryCta = document.getElementById('primaryCta');
+      primaryCta.href = p.deeplink;
+      primaryCta.setAttribute('data-deeplink', p.deeplink);
+
+      // Reveal & scroll
+      const sec = document.getElementById('recoSection');
+      sec.classList.add('is-visible');
+
+      isRecommendationRevealed = true;
+      handleScroll();
+
+      setTimeout(() => sec.scrollIntoView({ behavior: 'smooth', block: 'start' }), 100);
+    }
+
+
+
+
+    /* ═════════════════════════════════════════════════
+       PERSONALIZATION via URL params
+       ═════════════════════════════════════════════════ */
+    function applyPersonalization() {
+      const params = new URLSearchParams(window.location.search);
+      const name = params.get('name');
+      const rashi = params.get('rashi');
+      if (name || rashi) {
+        document.getElementById('personalGreeting').classList.add('is-visible');
+        if (name) document.getElementById('greetName').textContent = name;
+        if (rashi) document.getElementById('greetRashi').textContent = rashi;
+      }
+    }
+
+    /* ═════════════════════════════════════════════════
+       STICKY CTA — State configuration and visibility
+       ═════════════════════════════════════════════════ */
+    const STICKY_STATES = {
+      FIND: {
+        text: "Find My Remedies",
+        icon: `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 2l1.5 4.5L18 8l-4.5 1.5L12 14l-1.5-4.5L6 8l4.5-1.5L12 2z"/></svg>`,
+        className: ""
+      },
+      BOOK: {
+        text: "Participate",
+        icon: `<svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round"><path d="M12 2l1.5 4.5L18 8l-4.5 1.5L12 14l-1.5-4.5L6 8l4.5-1.5L12 2z"/></svg>`,
+        className: "is-book"
+      }
+    };
+
+    let currentStickyState = null;
+    let isRecommendationRevealed = false;
+
+    function updateStickyState(stateKey) {
+      const sticky = document.getElementById('stickyCta');
+      const inner = document.getElementById('stickyCtaInner');
+      const iconSpan = document.getElementById('stickyCtaIcon');
+      const textSpan = document.getElementById('stickyCtaText');
+
+      if (!stateKey) {
+        currentStickyState = null;
+        sticky.classList.remove('is-visible');
+        return;
+      }
+
+      if (currentStickyState === stateKey && stateKey !== 'REVEAL') return;
+      currentStickyState = stateKey;
+
+      const state = STICKY_STATES[stateKey];
+      inner.className = 'sticky-cta-inner ' + state.className;
+      iconSpan.innerHTML = state.icon;
+      textSpan.textContent = state.text;
+
+      if (stateKey === 'REVEAL') {
+        if (selectedConcerns.size === 0) {
+          inner.classList.add('is-disabled');
+        } else {
+          inner.classList.remove('is-disabled');
+        }
+      } else {
+        inner.classList.remove('is-disabled');
+      }
+
+      sticky.classList.add('is-visible');
+    }
+
+    function handleScroll() {
+      const heroHeight = document.querySelector('.hero').offsetHeight;
+      const concernsSection = document.getElementById('concernsSection');
+      const concernsTop = concernsSection ? concernsSection.offsetTop : 9999;
+      const concernsHeight = concernsSection ? concernsSection.offsetHeight : 0;
+      const recoSection = document.getElementById('recoSection');
+      const scrollY = window.scrollY;
+      const viewportHeight = window.innerHeight;
+
+      if (scrollY > heroHeight * 0.5) {
+        if (isRecommendationRevealed) {
+          // After recommendation is revealed
+          const primaryCta = document.getElementById('primaryCta');
+          if (primaryCta) {
+            const rect = primaryCta.getBoundingClientRect();
+            const isCtaInViewport = rect.top < viewportHeight && rect.bottom > 0;
+            if (isCtaInViewport) {
+              updateStickyState(null);
+            } else {
+              updateStickyState('BOOK');
+            }
+          } else {
+            updateStickyState('BOOK');
+          }
+        } else {
+          // Before recommendation is revealed:
+          // Show "See My Sacred Observance" if we are between past-hero-half and end-of-concerns
+          if (scrollY > concernsTop + concernsHeight) {
+            updateStickyState(null);
+          } else {
+            updateStickyState('FIND');
+          }
+        }
+      } else {
+        updateStickyState(null);
+      }
+    }
+
+    function handleStickyCtaClick() {
+      if (!currentStickyState) return;
+
+      if (currentStickyState === 'FIND') {
+        const concernsSec = document.getElementById('concernsSection');
+        if (window.scrollY + window.innerHeight * 0.8 >= (concernsSec ? concernsSec.offsetTop : 9999) && selectedConcerns.size > 0) {
+          revealRecommendation();
+        } else if (concernsSec) {
+          concernsSec.scrollIntoView({ behavior: 'smooth' });
+        }
+      } else if (currentStickyState === 'BOOK') {
+        const primaryCta = document.getElementById('primaryCta');
+        if (primaryCta) {
+          primaryCta.click();
+        }
+      }
+    }
+
+    function callBackPressed() {
+      triggerNavigation('callBackPressed');
+    }
+
+    function triggerNavigation(deeplink) {
+      console.log("[Bridge] Triggering navigation for:", deeplink);
+
+      // iOS WebKit Message Handlers
+      if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.navigate) {
+        window.webkit.messageHandlers.navigate.postMessage(deeplink);
+      }
+      // Android Web Interfaces
+      else if (window.Android && typeof window.Android.navigate === 'function') {
+        window.Android.navigate(deeplink);
+      }
+      else if (window.AndroidInterface && typeof window.AndroidInterface.navigate === 'function') {
+        window.AndroidInterface.navigate(deeplink);
+      }
+      // JSBridge Interface
+      else if (window.JSBridge && typeof window.JSBridge.navigate === 'function') {
+        window.JSBridge.navigate(deeplink);
+      }
+      // Browser Fallback
+      else {
+        console.log("[Bridge Fallback] Calling 'navigate' with value:", deeplink);
+        if (deeplink === 'callBackPressed') {
+          if (window.history.length > 1) {
+            window.history.back();
+          } else {
+            console.log("[Bridge Fallback] No history stack. Action logged: callBackPressed.");
+          }
+        } else {
+          window.location.href = deeplink;
+        }
+      }
+    }
+
+    function setupBridgeCTA() {
+      const primaryCta = document.getElementById('primaryCta');
+      if (primaryCta) {
+        primaryCta.addEventListener('click', (e) => {
+          e.preventDefault();
+          const deeplink = primaryCta.getAttribute('data-deeplink') || primaryCta.href || "srimandir://open?screen=chadhava&action=add_to_cart&action_id=aa382e68-8455-46fa-b9ea-19c809fcb585&utm_campaign=Jupiter_chadhava_recommendations";
+          triggerNavigation(deeplink);
+        });
+      }
+    }
+
+    /* INIT */
+    if ('scrollRestoration' in history) history.scrollRestoration = 'manual';
+
+    window.addEventListener('load', () => {
+      window.scrollTo(0, 0);
+      renderConcerns();
+      renderRashis();
+      renderHeroRashiPills();
+      applyPersonalization();
+      setupBridgeCTA();
+      window.addEventListener('scroll', handleScroll, { passive: true });
+      handleScroll();
+    });
+  </script>
+
+</body>
+
+</html>

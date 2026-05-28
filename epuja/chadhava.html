@@ -3125,9 +3125,16 @@
         SriMandirAnalytics.trackEvent('back_clicked', { page: 'chadhava' });
       }
       console.log("[Bridge] Triggering callBackPressed");
-      if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.callBackPressed) {
-        window.webkit.messageHandlers.callBackPressed.postMessage('callBackPressed');
-      } else if (window.Android && typeof window.Android.callBackPressed === 'function') {
+      // iOS WebKit Message Handlers
+      if (window.webkit && window.webkit.messageHandlers) {
+        if (window.webkit.messageHandlers.callBackPressed) {
+          window.webkit.messageHandlers.callBackPressed.postMessage('callBackPressed');
+        } else if (window.webkit.messageHandlers.navigate) {
+          window.webkit.messageHandlers.navigate.postMessage('callBackPressed');
+        }
+      }
+      // Android Web Interfaces
+      else if (window.Android && typeof window.Android.callBackPressed === 'function') {
         window.Android.callBackPressed();
       } else if (window.AndroidInterface && typeof window.AndroidInterface.callBackPressed === 'function') {
         window.AndroidInterface.callBackPressed();

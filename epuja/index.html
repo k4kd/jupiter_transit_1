@@ -1699,6 +1699,15 @@
       stroke-width: 2.5;
     }
   </style>
+
+  <!-- Mixpanel Snippet -->
+  <script type="text/javascript">
+    (function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable_time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+    for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===f.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
+    
+    // Initialize Mixpanel
+    mixpanel.init("YOUR_MIXPANEL_PROJECT_TOKEN", { batch_requests: true });
+  </script>
 </head>
 
 <body>
@@ -1716,7 +1725,7 @@
     </div>
 
     <!-- ═══════════════ HERO ═══════════════ -->
-    <header class="hero">
+    <header class="hero" data-track-section="hero">
       <div class="hero-content">
         <div class="badge-pill"
           style="background: transparent; border: none; box-shadow: none; color: #8D6852; font-weight: 600; font-size: 18px; letter-spacing: 1.5px;">
@@ -1861,7 +1870,7 @@
     </div>
 
     <!-- ═══════════════ SECTION 3: Cosmic Window timeline ═══════════════ -->
-    <section class="section cosmic-section">
+    <section class="section cosmic-section" data-track-section="sacred_timeline">
       <div class="section-eyebrow">The Sacred Window</div>
       <h2 class="section-title">Important Dates Of This Sacred Transit</h2>
 
@@ -1925,7 +1934,7 @@
     </div>
 
     <!-- ═══════════════ SECTION 4: Rashi Carousel ═══════════════ -->
-    <section class="section rashi-section">
+    <section class="section rashi-section" data-track-section="rashi_effects">
       <div class="section-head">
         <div class="section-eyebrow">Effects On Each Rashi</div>
         <h2 class="section-title">How Guru Transit May Affect Your Rashi</h2>
@@ -1944,7 +1953,7 @@
     </div>
 
     <!-- ═══════════════ SECTION 5: Concerns Selector ═══════════════ -->
-    <section class="section concerns-section" id="concernsSection">
+    <section class="section concerns-section" id="concernsSection" data-track-section="concern_selector">
       <div class="section-eyebrow">Blessings & Guidance</div>
       <h2 class="section-title" style="font-size: 28px;">What Blessings Do You Seek From Guru?</h2>
 
@@ -1973,7 +1982,7 @@
     <!-- ═══════════════ SECTION 6: Recommendation Reveal ═══════════════ -->
     <!-- ═══════════════ SECTION 6: Recommendation Reveal (Sacred Observance Details) ═══════════════ -->
     <!-- ═══════════════ SECTION 6: Recommendation Reveal (Sacred Observance Details) ═══════════════ -->
-    <section class="section reco-section" id="recoSection"
+    <section class="section reco-section" id="recoSection" data-track-section="remedies_recommendation"
       style="background: linear-gradient(180deg, var(--cream-1) 0%, var(--cream-2) 100%);">
       <div class="sacred-observance-details"
         style="background: var(--ivory); border: 1.5px solid rgba(212, 175, 55, 0.35); border-radius: var(--radius-lg); padding: 28px 24px; box-shadow: 0 16px 48px rgba(0, 0, 0, 0.45); backdrop-filter: blur(12px); -webkit-backdrop-filter: blur(12px); text-align: center; position: relative;">
@@ -2113,7 +2122,7 @@
     </div>
 
     <!-- ═══════════════ SECTION 7: Trust ═══════════════ -->
-    <section class="section trust-section">
+    <section class="section trust-section" data-track-section="trust_factors">
       <div class="section-eyebrow">Why Sri Mandir</div>
       <h2 class="section-title">Walking Beside Lakhs Of Devotees</h2>
 
@@ -2146,7 +2155,7 @@
     <!-- ═══════════════ NEW SECTION: Sacred Temples ═══════════════ -->
 
     <!-- ═══════════════ FINAL CTA ═══════════════ -->
-    <section class="section final-section">
+    <section class="section final-section" data-track-section="footer_cta">
       <div class="divider-ornament" style="margin-bottom: 24px;">
         <svg width="20" height="20" viewBox="0 0 24 24" fill="currentColor">
           <path d="M12 2l2.4 7.4H22l-6.2 4.5 2.4 7.4-6.2-4.5-6.2 4.5 2.4-7.4L2 9.4h7.6z" />
@@ -2868,6 +2877,15 @@
         el.classList.add('is-selected');
       }
       document.getElementById('selCount').textContent = selectedConcerns.size;
+      
+      // Analytics click track
+      if (typeof SriMandirAnalytics !== 'undefined') {
+        SriMandirAnalytics.trackEvent('concern_toggled', {
+          concern_id: id,
+          is_selected: selectedConcerns.has(id),
+          total_selected: selectedConcerns.size
+        });
+      }
       const btn = document.getElementById('revealBtn');
       if (selectedConcerns.size > 0) btn.classList.add('is-ready');
       else btn.classList.remove('is-ready');
@@ -2896,6 +2914,13 @@
       selectedConcerns.clear();
       const ids = RASHI_CONCERNS[rashiEn.toLowerCase()] || [];
       ids.forEach(id => selectedConcerns.add(id));
+
+      // Analytics click track
+      if (typeof SriMandirAnalytics !== 'undefined') {
+        SriMandirAnalytics.trackEvent('zodiac_find_remedies_clicked', {
+          rashi_name: rashiEn.toLowerCase()
+        });
+      }
 
       // Synchronize Concern Selector cards in the DOM
       document.querySelectorAll('.concern-card').forEach(card => {
@@ -3002,6 +3027,20 @@
       // Highlight the selected pill
       if (element) {
         element.classList.add('is-selected');
+      } else {
+        const pill = document.getElementById(`pill-${rashiEn.toLowerCase()}`);
+        if (pill) pill.classList.add('is-selected');
+      }
+
+      // Analytics click track
+      if (typeof SriMandirAnalytics !== 'undefined') {
+        const rashiObj = RASHIS.find(r => r.en.toLowerCase() === rashiEn.toLowerCase());
+        const rashiSa = rashiObj ? rashiObj.sa : '';
+        SriMandirAnalytics.trackEvent('zodiac_selected', {
+          rashi_name: rashiEn.toLowerCase(),
+          sanskrit_name: rashiSa.toLowerCase()
+        });
+      }
       } else {
         const pill = document.getElementById(`pill-${rashiEn.toLowerCase()}`);
         if (pill) pill.classList.add('is-selected');
@@ -3132,6 +3171,19 @@
       primaryCta.href = p.deeplink;
       primaryCta.setAttribute('data-deeplink', p.deeplink);
 
+      // Analytics tracking for recommendation
+      if (typeof SriMandirAnalytics !== 'undefined') {
+        SriMandirAnalytics.trackEvent('find_remedies_clicked', {
+          selected_concerns: [...selectedConcerns].join(','),
+          total_selected_concerns: selectedConcerns.size
+        });
+        SriMandirAnalytics.trackEvent('remedy_revealed', {
+          puja_id: pujaId,
+          puja_name: p.fullName,
+          selected_concerns: [...selectedConcerns].join(',')
+        });
+      }
+
       // Reveal & scroll
       const sec = document.getElementById('recoSection');
       sec.classList.add('is-visible');
@@ -3253,6 +3305,9 @@
       if (!currentStickyState) return;
 
       if (currentStickyState === 'FIND') {
+        if (typeof SriMandirAnalytics !== 'undefined') {
+          SriMandirAnalytics.trackEvent('sticky_cta_clicked', { state: 'FIND' });
+        }
         const concernsSec = document.getElementById('concernsSection');
         if (window.scrollY + window.innerHeight * 0.8 >= (concernsSec ? concernsSec.offsetTop : 9999) && selectedConcerns.size > 0) {
           revealRecommendation();
@@ -3262,12 +3317,28 @@
       } else if (currentStickyState === 'BOOK') {
         const primaryCta = document.getElementById('primaryCta');
         if (primaryCta) {
+          const key = getConcernsKey();
+          const pujaId = RECO_MAP[key] || 'panch-guru';
+          const p = PUJAS[pujaId];
+          const deeplink = primaryCta.getAttribute('data-deeplink') || primaryCta.href;
+          if (typeof SriMandirAnalytics !== 'undefined') {
+            SriMandirAnalytics.trackEvent('sticky_cta_clicked', { state: 'BOOK' });
+            SriMandirAnalytics.trackEvent('primary_cta_clicked', {
+              puja_id: pujaId,
+              puja_name: p ? p.fullName : '',
+              deeplink: deeplink,
+              is_sticky: true
+            });
+          }
           primaryCta.click();
         }
       }
     }
 
     function callBackPressed() {
+      if (typeof SriMandirAnalytics !== 'undefined') {
+        SriMandirAnalytics.trackEvent('back_clicked', { page: 'landing' });
+      }
       triggerNavigation('callBackPressed');
     }
 
@@ -3310,6 +3381,21 @@
         primaryCta.addEventListener('click', (e) => {
           e.preventDefault();
           const deeplink = primaryCta.getAttribute('data-deeplink') || primaryCta.href || "srimandir://open?screen=chadhava&action=add_to_cart&action_id=ae29526-bc7c-4585-a82d-8711724524da&store_type=pooja&utm_campaign=Jupiter_transition_recommendation";
+          
+          // Check if click was programmatic (e.g. from sticky CTA) to avoid double tracking
+          const isStickyTriggered = e.isTrusted === false;
+          
+          if (typeof SriMandirAnalytics !== 'undefined' && !isStickyTriggered) {
+            const key = getConcernsKey();
+            const pujaId = RECO_MAP[key] || 'panch-guru';
+            const p = PUJAS[pujaId];
+            SriMandirAnalytics.trackEvent('primary_cta_clicked', {
+              puja_id: pujaId,
+              puja_name: p ? p.fullName : '',
+              deeplink: deeplink,
+              is_sticky: false
+            });
+          }
           triggerNavigation(deeplink);
         });
       }
@@ -3325,10 +3411,20 @@
       renderHeroRashiPills();
       applyPersonalization();
       setupBridgeCTA();
+      
+      // Initialize analytics scroll tracking
+      if (typeof SriMandirAnalytics !== 'undefined') {
+        SriMandirAnalytics.trackEvent('page_view');
+        SriMandirAnalytics.initScrollTracking();
+      }
+
       window.addEventListener('scroll', handleScroll, { passive: true });
       handleScroll();
     });
   </script>
+  
+  <!-- Sri Mandir Analytics Engine -->
+  <script src="analytics.js"></script>
 
 </body>
 

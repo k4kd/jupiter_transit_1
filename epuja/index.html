@@ -9,7 +9,9 @@
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800;900&family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link
+    href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700;800;900&family=Inter:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700&display=swap"
+    rel="stylesheet">
 
   <style>
     :root {
@@ -50,7 +52,9 @@
       -webkit-tap-highlight-color: transparent;
     }
 
-    html { scroll-behavior: smooth; }
+    html {
+      scroll-behavior: smooth;
+    }
 
     body {
       font-family: var(--font-body);
@@ -62,7 +66,11 @@
       overflow-x: hidden;
     }
 
-    p { max-width: 380px; margin-left: auto; margin-right: auto; }
+    p {
+      max-width: 380px;
+      margin-left: auto;
+      margin-right: auto;
+    }
 
     .page {
       max-width: 480px;
@@ -107,8 +115,14 @@
       box-shadow: 0 6px 20px rgba(212, 175, 55, 0.15);
     }
 
-    .back-btn:active { transform: scale(0.95); }
-    .back-btn svg { width: 20px; height: 20px; }
+    .back-btn:active {
+      transform: scale(0.95);
+    }
+
+    .back-btn svg {
+      width: 20px;
+      height: 20px;
+    }
 
     /* ── HERO ── */
     .hero {
@@ -283,7 +297,9 @@
       color: var(--brown-3);
     }
 
-    .hero-intro p { margin: 0; }
+    .hero-intro p {
+      margin: 0;
+    }
 
     /* ── CONTENT SECTIONS ── */
     .section {
@@ -291,7 +307,9 @@
       background: var(--cream-1);
     }
 
-    .section-alt { background: var(--cream-2); }
+    .section-alt {
+      background: var(--cream-2);
+    }
 
     .section-label {
       font-family: var(--font-serif);
@@ -352,7 +370,9 @@
       font-weight: 500;
     }
 
-    .emoji-card-text strong { color: var(--brown-1); }
+    .emoji-card-text strong {
+      color: var(--brown-1);
+    }
 
     /* 2-col grid */
     .grid-2col {
@@ -376,7 +396,9 @@
       box-shadow: 0 2px 12px rgba(0, 0, 0, 0.04);
     }
 
-    .grid-card-icon { font-size: 26px; }
+    .grid-card-icon {
+      font-size: 26px;
+    }
 
     .grid-card-label {
       font-family: var(--font-body);
@@ -407,7 +429,9 @@
       gap: 6px;
     }
 
-    .benefit-cell-icon { font-size: 22px; }
+    .benefit-cell-icon {
+      font-size: 22px;
+    }
 
     .benefit-cell-label {
       font-family: var(--font-body);
@@ -460,7 +484,9 @@
       font-weight: 500;
     }
 
-    .step-text strong { color: var(--brown-1); }
+    .step-text strong {
+      color: var(--brown-1);
+    }
 
     /* Story cards */
     .story-card {
@@ -507,8 +533,14 @@
       text-align: left;
     }
 
-    .bridge-text p { max-width: 100%; margin: 0 0 14px; }
-    .bridge-text p:last-child { margin-bottom: 0; }
+    .bridge-text p {
+      max-width: 100%;
+      margin: 0 0 14px;
+    }
+
+    .bridge-text p:last-child {
+      margin-bottom: 0;
+    }
 
     /* ── PUJA CARD ── */
     .puja-section {
@@ -666,7 +698,10 @@
       margin-top: 2px;
     }
 
-    .puja-benefit-dot svg { width: 10px; height: 10px; }
+    .puja-benefit-dot svg {
+      width: 10px;
+      height: 10px;
+    }
 
     .puja-benefit-strong {
       font-weight: 700;
@@ -773,8 +808,14 @@
 
   <!-- Mixpanel Snippet -->
   <script type="text/javascript">
-    (function(f,b){if(!b.__SV){var a,e,i,g;window.mixpanel=b;b._i=[];b.init=function(a,e,d){function f(b,h){var a=h.split(".");2==a.length&&(b=b[a[0]],h=a[1]);b[h]=function(){b.push([h].concat(Array.prototype.slice.call(arguments,0)))}}var c=b;"undefined"!==typeof d?c=b[d]=[]:d="mixpanel";c.people=c.people||[];c.toString=function(b){var a="mixpanel";"mixpanel"!==d&&(a+="."+d);b||(a+=" (stub)");return a};c.people.toString=function(){return c.toString(1)+".people (stub)"};i="disable_time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
-    for(g=0;g<i.length;g++)f(c,i[g]);b._i.push([a,e,d])};b.__SV=1.2;a=f.createElement("script");a.type="text/javascript";a.async=!0;a.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===f.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";e=f.getElementsByTagName("script")[0];e.parentNode.insertBefore(a,e)}})(document,window.mixpanel||[]);
+    (function (f, b) {
+      if (!b.__SV) {
+        var a, e, i, g; window.mixpanel = b; b._i = []; b.init = function (a, e, d) {
+          function f(b, h) { var a = h.split("."); 2 == a.length && (b = b[a[0]], h = a[1]); b[h] = function () { b.push([h].concat(Array.prototype.slice.call(arguments, 0))) } } var c = b; "undefined" !== typeof d ? c = b[d] = [] : d = "mixpanel"; c.people = c.people || []; c.toString = function (b) { var a = "mixpanel"; "mixpanel" !== d && (a += "." + d); b || (a += " (stub)"); return a }; c.people.toString = function () { return c.toString(1) + ".people (stub)" }; i = "disable_time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.unset people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+          for (g = 0; g < i.length; g++)f(c, i[g]); b._i.push([a, e, d])
+        }; b.__SV = 1.2; a = f.createElement("script"); a.type = "text/javascript"; a.async = !0; a.src = "undefined" !== typeof MIXPANEL_CUSTOM_LIB_URL ? MIXPANEL_CUSTOM_LIB_URL : "file:" === f.location.protocol && "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//) ? "https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js" : "//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js"; e = f.getElementsByTagName("script")[0]; e.parentNode.insertBefore(a, e)
+      }
+    })(document, window.mixpanel || []);
     mixpanel.init("6c2040d084041cda96ac31489ae328c8", { batch_requests: true });
   </script>
 </head>
@@ -812,12 +853,23 @@
         </div>
 
         <h1>Somvati<br>Amavasya</h1>
-
-        <p class="hero-sub">
-          When Monday meets the New Moon — a day when Lord Shiva and your ancestors both answer prayers
-        </p>
-
         <!-- Date pills -->
+        <!-- Intro -->
+        <div class="hero-intro">
+          <p>
+            <strong>Amavasya</strong> is the New Moon day. It is the darkest night of the month. The moon is not seen in
+            the sky.
+          </p>
+          <p>
+            <strong>Somvar</strong> means Monday — the day of Lord Shiva. When Amavasya falls on a Monday, it is called
+            <strong>Somvati Amavasya</strong>. This is very rare. In a whole year, it comes only once or twice.
+          </p>
+          <p>
+            This day is believed to carry the blessings of both Lord Shiva and our ancestors (Pitra). Prayers offered
+            with faith on this day are said to travel far.
+          </p>
+        </div>
+
         <div class="date-pills">
           <div class="date-pill">
             <div class="date-pill-title">🪷 Jyeshtha Amavasya — 15 June 2026</div>
@@ -837,19 +889,6 @@
           </div>
         </div>
 
-        <!-- Intro -->
-        <div class="hero-intro">
-          <p>
-            <strong>Amavasya</strong> is the New Moon day. It is the darkest night of the month. The moon is not seen in the sky.
-          </p>
-          <p>
-            <strong>Somvar</strong> means Monday — the day of Lord Shiva. When Amavasya falls on a Monday, it is called <strong>Somvati Amavasya</strong>. This is very rare. In a whole year, it comes only once or twice.
-          </p>
-          <p>
-            This day is believed to carry the blessings of both Lord Shiva and our ancestors (Pitra). Prayers offered with faith on this day are said to travel far.
-          </p>
-        </div>
-
       </div>
     </header>
 
@@ -864,25 +903,29 @@
         <div class="emoji-card">
           <span class="emoji-card-icon">🌑</span>
           <div class="emoji-card-text">
-            <strong>New Moon = Thin Veil.</strong> Amavasya is when the moon disappears. It is believed that on this day, the gap between our world and the world of our ancestors becomes very thin.
+            <strong>New Moon = Thin Veil.</strong> Amavasya is when the moon disappears. It is believed that on this
+            day, the gap between our world and the world of our ancestors becomes very thin.
           </div>
         </div>
         <div class="emoji-card">
           <span class="emoji-card-icon">🙏</span>
           <div class="emoji-card-text">
-            <strong>Monday = Lord Shiva's Day.</strong> Every Monday is special for Lord Shiva. When Amavasya falls on a Monday, the blessings of both come together. Prayers to Shiva on this day are said to be very powerful.
+            <strong>Monday = Lord Shiva's Day.</strong> Every Monday is special for Lord Shiva. When Amavasya falls on a
+            Monday, the blessings of both come together. Prayers to Shiva on this day are said to be very powerful.
           </div>
         </div>
         <div class="emoji-card">
           <span class="emoji-card-icon">👴</span>
           <div class="emoji-card-text">
-            <strong>Best Day for Pitra Puja.</strong> Our ancestors (Pitra) are believed to be closer to us on Amavasya. Offering prayers for them on this day brings peace to their souls — and good things to our families.
+            <strong>Best Day for Pitra Puja.</strong> Our ancestors (Pitra) are believed to be closer to us on Amavasya.
+            Offering prayers for them on this day brings peace to their souls — and good things to our families.
           </div>
         </div>
         <div class="emoji-card">
           <span class="emoji-card-icon">📖</span>
           <div class="emoji-card-text">
-            <strong>Written in the Mahabharata.</strong> Bhishma Pitamah himself told Yudhishthira: "Observe Somvati Amavasya Vrat. It will bring noble children to your family and make your dynasty strong again."
+            <strong>Written in the Mahabharata.</strong> Bhishma Pitamah himself told Yudhishthira: "Observe Somvati
+            Amavasya Vrat. It will bring noble children to your family and make your dynasty strong again."
           </div>
         </div>
       </div>
@@ -922,7 +965,8 @@
         </div>
       </div>
 
-      <p style="text-align: center; font-size: 13.5px; color: var(--gold-deep); font-weight: 600; margin-top: 20px; max-width: 300px; margin-left: auto; margin-right: auto; line-height: 1.6;">
+      <p
+        style="text-align: center; font-size: 13.5px; color: var(--gold-deep); font-weight: 600; margin-top: 20px; max-width: 300px; margin-left: auto; margin-right: auto; line-height: 1.6;">
         Somvati Amavasya has been observed for thousands of years for all of these — and more.
       </p>
     </section>
@@ -983,25 +1027,29 @@
         <div class="step-card">
           <div class="step-number">1</div>
           <div class="step-text">
-            Find a <strong>Peepal tree</strong>. Walk around it <strong>108 times</strong>. As you walk, tie a sacred thread (Mauli) around the trunk. This is called Parikrama.
+            Find a <strong>Peepal tree</strong>. Walk around it <strong>108 times</strong>. As you walk, tie a sacred
+            thread (Mauli) around the trunk. This is called Parikrama.
           </div>
         </div>
         <div class="step-card">
           <div class="step-number">2</div>
           <div class="step-text">
-            Offer <strong>milk, flowers, sandal paste, and sindoor</strong> (red powder) to the Peepal tree. These are sacred offerings believed to please the divine energy of the tree.
+            Offer <strong>milk, flowers, sandal paste, and sindoor</strong> (red powder) to the Peepal tree. These are
+            sacred offerings believed to please the divine energy of the tree.
           </div>
         </div>
         <div class="step-card">
           <div class="step-number">3</div>
           <div class="step-text">
-            Keep a <strong>fast for the whole day</strong>. Do not eat food. Fasting is said to purify the body and mind — and bring the person closer to God.
+            Keep a <strong>fast for the whole day</strong>. Do not eat food. Fasting is said to purify the body and mind
+            — and bring the person closer to God.
           </div>
         </div>
         <div class="step-card">
           <div class="step-number">4</div>
           <div class="step-text">
-            Give <strong>white things to the poor</strong> — rice, curd, sugar, or milk. Donating on this day is believed to bring good fortune back to you.
+            Give <strong>white things to the poor</strong> — rice, curd, sugar, or milk. Donating on this day is
+            believed to bring good fortune back to you.
           </div>
         </div>
       </div>
@@ -1019,8 +1067,10 @@
       <div class="story-card">
         <div class="story-card-title">📖 From the Mahabharata</div>
         <div class="story-card-text">
-          After the great Kurukshetra war ended, Yudhishthira was very sad. He was worried about the future of his family and the Kuru dynasty. He went to Bhishma Pitamah, who lay on a bed of arrows, to ask for help.<br><br>
-          Bhishma Pitamah told him: <em>"Observe the Somvati Amavasya Vrat with full faith. This fast will bring noble children to your family. Your dynasty will grow strong and prosper again."</em><br><br>
+          After the great Kurukshetra war ended, Yudhishthira was very sad. He was worried about the future of his
+          family and the Kuru dynasty. He went to Bhishma Pitamah, who lay on a bed of arrows, to ask for help.<br><br>
+          Bhishma Pitamah told him: <em>"Observe the Somvati Amavasya Vrat with full faith. This fast will bring noble
+            children to your family. Your dynasty will grow strong and prosper again."</em><br><br>
           This is why Somvati Amavasya has been observed with deep faith for thousands of years across India.
         </div>
       </div>
@@ -1028,10 +1078,17 @@
       <div class="story-card">
         <div class="story-card-title">🕊️ The Story of the Girl</div>
         <div class="story-card-text">
-          A monk used to visit a rich family every day. He always blessed their daughters-in-law — but never the family's daughter. The girl and her mother felt hurt and worried.<br><br>
-          A Pandit read the girl's Kundali (birth chart) and found a serious Dosha — a shadow over her future marriage. He said: "Your daughter must travel to the island of Singhal. She must find a washerwoman there, get sindoor from her, and observe the Somvati Amavasya fast."<br><br>
-          The girl went with her younger brother. At the seashore, they rested under a tree. A snake was attacking baby vultures in their nest. The girl and her brother bravely saved the chicks. In return, the grateful vultures helped them cross the sea.<br><br>
-          The girl served the washerwoman with great care for many months. Happy with her devotion, the woman applied sindoor on the girl's forehead. On her way back, the girl observed the Somvati Amavasya fast — without even drinking water.<br><br>
+          A monk used to visit a rich family every day. He always blessed their daughters-in-law — but never the
+          family's daughter. The girl and her mother felt hurt and worried.<br><br>
+          A Pandit read the girl's Kundali (birth chart) and found a serious Dosha — a shadow over her future marriage.
+          He said: "Your daughter must travel to the island of Singhal. She must find a washerwoman there, get sindoor
+          from her, and observe the Somvati Amavasya fast."<br><br>
+          The girl went with her younger brother. At the seashore, they rested under a tree. A snake was attacking baby
+          vultures in their nest. The girl and her brother bravely saved the chicks. In return, the grateful vultures
+          helped them cross the sea.<br><br>
+          The girl served the washerwoman with great care for many months. Happy with her devotion, the woman applied
+          sindoor on the girl's forehead. On her way back, the girl observed the Somvati Amavasya fast — without even
+          drinking water.<br><br>
           The Dosha was fully removed. She went on to live a long and happy married life.
         </div>
       </div>
@@ -1048,13 +1105,17 @@
 
       <div class="bridge-text">
         <p>
-          This year, Somvati Amavasya is falling during <strong>Adhik Maas</strong> — a rare extra sacred month that comes only once every 30 years. The last time this happened was 30 years ago.
+          This year, Somvati Amavasya is falling during <strong>Adhik Maas</strong> — a rare extra sacred month that
+          comes only once every 30 years. The last time this happened was 30 years ago.
         </p>
         <p>
-          In our tradition, Adhik Maas is very dear to Lord Vishnu. And Somvati Amavasya is the day of Lord Shiva and our ancestors. When these three sacred energies come together — it is believed to be a once-in-a-generation blessing window.
+          In our tradition, Adhik Maas is very dear to Lord Vishnu. And Somvati Amavasya is the day of Lord Shiva and
+          our ancestors. When these three sacred energies come together — it is believed to be a once-in-a-generation
+          blessing window.
         </p>
         <p>
-          Sri Mandir has arranged a very special puja at <strong>Gangotri Dham</strong> — one of India's most sacred temples — so that <strong>you can receive these blessings from your home.</strong>
+          Sri Mandir has arranged a very special puja at <strong>Gangotri Dham</strong> — one of India's most sacred
+          temples — so that <strong>you can receive these blessings from your home.</strong>
         </p>
       </div>
     </section>
@@ -1075,7 +1136,8 @@
         <img src="somvati-puja-deities.png" class="puja-card-image" alt="Lord Shiva and Lord Vishnu Puja">
 
         <div class="puja-card-name">
-          1,25,000 Pitru Gayatri Mantra Jaap &amp; 1,25,000 Shiv Mantra Jaap &amp; 1,25,000 Vishnu Mantra Jaap with Pitru Tarpan
+          1,25,000 Pitru Gayatri Mantra Jaap &amp; 1,25,000 Shiv Mantra Jaap &amp; 1,25,000 Vishnu Mantra Jaap with
+          Pitru Tarpan
         </div>
 
         <div class="puja-card-badges">
@@ -1102,35 +1164,41 @@
         <div class="puja-benefits-list">
           <div class="puja-benefit-item">
             <div class="puja-benefit-dot">
-              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="20 6 9 17 4 12"/>
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round"
+                stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12" />
               </svg>
             </div>
             <div>
               <span class="puja-benefit-strong">For ancestral peace and family blessings</span>
-              Pitru Tarpan and Pitru Gayatri chanting are done to bring peace to your ancestors. It is believed to invite their blessings and bring harmony into your home.
+              Pitru Tarpan and Pitru Gayatri chanting are done to bring peace to your ancestors. It is believed to
+              invite their blessings and bring harmony into your home.
             </div>
           </div>
           <div class="puja-benefit-item">
             <div class="puja-benefit-dot">
-              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="20 6 9 17 4 12"/>
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round"
+                stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12" />
               </svg>
             </div>
             <div>
               <span class="puja-benefit-strong">To reduce delays and mental stress</span>
-              Chanting of Shiva and Vishnu mantras is believed to slowly clear obstacles, ease unexplained delays, and bring calm to the mind and home.
+              Chanting of Shiva and Vishnu mantras is believed to slowly clear obstacles, ease unexplained delays, and
+              bring calm to the mind and home.
             </div>
           </div>
           <div class="puja-benefit-item">
             <div class="puja-benefit-dot">
-              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
-                <polyline points="20 6 9 17 4 12"/>
+              <svg viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="3" stroke-linecap="round"
+                stroke-linejoin="round">
+                <polyline points="20 6 9 17 4 12" />
               </svg>
             </div>
             <div>
               <span class="puja-benefit-strong">For protection and positive energy</span>
-              The combined worship of Shiva, Vishnu, and ancestors is considered very auspicious. It is believed to strengthen confidence and bring balance to the family.
+              The combined worship of Shiva, Vishnu, and ancestors is considered very auspicious. It is believed to
+              strengthen confidence and bring balance to the family.
             </div>
           </div>
         </div>
@@ -1138,7 +1206,8 @@
         <div class="puja-divider"></div>
 
         <p class="gangotri-note">
-          This puja is being performed at <strong>Gangotri Dham</strong> — the sacred place where Goddess Ganga first came to Earth to bring peace to the souls of 60,000 ancestors. A deeply meaningful place for Pitru Shanti.
+          This puja is being performed at <strong>Gangotri Dham</strong> — the sacred place where Goddess Ganga first
+          came to Earth to bring peace to the souls of 60,000 ancestors. A deeply meaningful place for Pitru Shanti.
         </p>
 
         <button id="primaryCta" class="cta-btn"
@@ -1152,7 +1221,8 @@
     <!-- Sticky CTA -->
     <div class="sticky-cta" id="stickyCta" onclick="handleStickyCtaClick()">
       <div class="sticky-cta-inner" id="stickyCtaInner">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round">
+        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4"
+          stroke-linecap="round" stroke-linejoin="round">
           <line x1="12" y1="5" x2="12" y2="19"></line>
           <polyline points="19 12 12 19 5 12"></polyline>
         </svg>
@@ -1336,4 +1406,5 @@
   <script src="analytics.js"></script>
 
 </body>
+
 </html>

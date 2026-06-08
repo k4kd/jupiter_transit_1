@@ -1,10 +1,10 @@
 {
   "cleanUrls": true,
-  "trailingSlash": false,
-  "rewrites": [
+  "redirects": [
     {
-      "source": "/epuja",
-      "destination": "/epuja/index.html"
+      "source": "/",
+      "destination": "/epuja/",
+      "permanent": true
     }
   ]
 }

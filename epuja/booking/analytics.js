@@ -15,30 +15,8 @@
                   window.location.hostname === 'localhost' ||
                   window.location.hostname === '127.0.0.1';
 
-  // Simple OS detection utility
-  const getDeviceOS = () => {
-    // 1. Explicit native app bridge check
-    if (window.webkit && window.webkit.messageHandlers && window.webkit.messageHandlers.navigate) {
-      return 'iOS App';
-    }
-    if ((window.Android && typeof window.Android.navigate === 'function') || 
-        (window.AndroidInterface && typeof window.AndroidInterface.navigate === 'function')) {
-      return 'Android App';
-    }
-    
-    // 2. Fallback User Agent parse
-    const ua = navigator.userAgent || navigator.vendor || window.opera;
-    if (/android/i.test(ua)) return 'Android Web';
-    if (/iPad|iPhone|iPod/.test(ua) && !window.MSStream) return 'iOS Web';
-    if (/Macintosh/i.test(ua)) return 'macOS';
-    if (/Windows/i.test(ua)) return 'Windows';
-    if (/Linux/i.test(ua)) return 'Linux';
-    return 'Unknown';
-  };
-
   // Get active query params to pass as default properties (e.g. tracking attribution, campaign)
   const defaultCampaignParams = {
-    device_os: getDeviceOS(),
     name_param: urlParams.get('name') || '',
     rashi_param: urlParams.get('rashi') || '',
     utm_source: urlParams.get('utm_source') || '',
